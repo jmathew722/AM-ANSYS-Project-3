@@ -1,0 +1,4 @@
+system created: SYS
+geometry file set
+material imported: /Engineering Data/Material:Tough 2000
+['AnalysisType', 'Container', 'Copy', 'Delete', 'DisplayText', 'Duplicate', 'GetComponent', 'GetContainer', 'GetEntityProperties', 'GetEntityProperty', 'GetExpression', 'GetProperties', 'GetProperty', 'GetReplaceableTemplates', 'HasAssociatedParameter', 'Move', 'Name', 'Notes', 'Physics', 'RecreateDeletedComponents', 'Refresh', 'SetEntityProperties', 'SetEntityProperty', 'SimulationSetEntityProperty', 'Solver', 'ToString', 'Type', 'Update', 'UserId']

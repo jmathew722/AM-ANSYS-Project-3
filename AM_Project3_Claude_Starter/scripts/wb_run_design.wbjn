@@ -1,0 +1,55 @@
+# -*- coding: utf-8 -*-
+# Workbench journal: one design -> Static Structural, Tough 2000, Mechanical script, save + archive.
+# Config via environment variables: DESIGN, IGES, MODE(force|disp), MESH_SIZES, DISP_MM, FORCE_N, INIT_SUB, MAX_SUB, TAG, PROBE_ONLY
+import os
+R = r"C:\Users\jmathew7\Downloads\AM-ANSYS-Project-3"
+S = R + r"\AM_Project3_Claude_Starter"
+E = os.environ
+design = E["DESIGN"]; tag = E.get("TAG", "run")
+outroot = S + r"\OUTPUTS_Folder"
+logdir = outroot + r"\Logs"
+logfile = logdir + r"\%s_%s_mech.log" % (design, tag)
+wlog = open(logdir + r"\%s_%s_wb.log" % (design, tag), "w")
+def L(m):
+    wlog.write(str(m) + "\n"); wlog.flush()
+try:
+    for f in (logfile,):
+        if os.path.exists(f): os.remove(f)
+    cfg = {
+        'logfile': logfile, 'material': 'Tough 2000',
+        'simdir': outroot + r"\Simulation_Data\%s\%s" % (design, tag),
+        'shotdir': outroot + r"\Screenshots\%s" % design,
+        'mode': E.get("MODE", "disp"), 'force_N': float(E.get("FORCE_N", "1000")),
+        'disp_mm': float(E.get("DISP_MM", "0.9")),
+        'init_sub': int(E.get("INIT_SUB", "40")), 'max_sub': int(E.get("MAX_SUB", "400")),
+        'mesh_sizes': [float(x) for x in E.get("MESH_SIZES", "0.5,0.35,0.25").split(",")],
+        'probe_only': E.get("PROBE_ONLY", "0") == "1", 'diag': E.get("DIAG","0")=="1"}
+    template = GetTemplate(TemplateName="Static Structural", Solver="ANSYS")
+    system = template.CreateSystem()
+    geometry = system.GetContainer(ComponentName="Geometry")
+    geometry.SetFile(FilePath=E["IGES"])
+    ed = system.GetContainer(ComponentName="Engineering Data")
+    ed.ImportMaterial(Name="Tough 2000", Source=S + r"\materials\AM_Formlabs.xml")
+    L("system + material ok")
+    system.GetComponent(Name="Geometry").Refresh()
+    model = system.GetContainer(ComponentName="Model")
+    model.Edit()
+    L("mechanical open")
+    code = "CFG = " + repr(cfg) + "\n" + open(S + r"\scripts\mech_run.py").read()
+    model.SendCommand(Language="Python", Command=code)
+    L("mech script returned")
+    if not cfg['probe_only']:
+        proj = outroot + r"\Workbench_Projects\%s_%s.wbpj" % (design, tag)
+        Save(FilePath=proj, Overwrite=True)
+        L("saved " + proj)
+        try:
+            arc = outroot + r"\Workbench_Archives\%s_%s.wbpz" % (design, tag)
+            Archive(FilePath=arc, IncludeExternalImportedFiles=True)
+            L("archived " + arc)
+        except Exception as e:
+            L("ARCHIVE ERR %s" % e)
+    model.Exit()
+except Exception as e:
+    import traceback
+    L("ERR " + traceback.format_exc())
+wlog.close()

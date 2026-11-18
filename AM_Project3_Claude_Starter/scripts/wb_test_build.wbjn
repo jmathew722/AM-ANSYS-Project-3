@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+R=r"C:\Users\jmathew7\Downloads\AM-ANSYS-Project-3"
+S=R+r"\AM_Project3_Claude_Starter"
+log=open(S+r"\OUTPUTS_Folder\Logs\wb_test_build_result.txt","w")
+def L(m):
+    log.write(str(m)+"\n"); log.flush()
+try:
+    template = GetTemplate(TemplateName="Static Structural", Solver="ANSYS")
+    system = template.CreateSystem()
+    L("system created: "+system.Name)
+    geometry = system.GetContainer(ComponentName="Geometry")
+    geometry.SetFile(FilePath=R+r"\Octet_Truss_Smooth\Octet Truss Optimized 2025.IGS")
+    L("geometry file set")
+    ed = system.GetContainer(ComponentName="Engineering Data")
+    m = ed.ImportMaterial(Name="Tough 2000", Source=S+r"\materials\AM_Formlabs.xml")
+    L("material imported: "+str(m))
+    L(dir(system))
+except Exception as e:
+    import traceback
+    L("ERR "+traceback.format_exc())
+log.close()

@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+import os
+log=open(r"C:\Users\jmathew7\Downloads\AM-ANSYS-Project-3\OUTPUTS_Folder\Logs\wb_preflight_result.txt","w")
+log.write("WB journal executed\n")
+try:
+    log.write("Version: %s\n" % GetFrameworkVersion() if 'GetFrameworkVersion' in globals() else "no GetFrameworkVersion\n")
+except Exception as e:
+    log.write("err %s\n"%e)
+log.close()
