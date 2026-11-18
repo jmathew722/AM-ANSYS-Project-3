@@ -1,0 +1,30 @@
+bodies=1
+LengthXYZ 6.00000000011 6.0 6.000005995 unit=mm
+volume 103.619206167 mm mm mm
+material assigned: Tough 2000
+bbox raw [-1.1214203871068307e-10, 0.0, -5.9949998103547841e-06, 6.0, 6.0, 6.0]
+scale coord->mm = 1.0
+zmin=-5.99499981035e-06 zmax=6.0 top faces=1 bottom faces=1 of 54
+LEVEL 1 size=0.5 nodes=5057 elements=2393
+SHOT 05_mesh_L1_size0.5.png ok=True mesh
+solve returned; status=Done
+history rows 61 last=[1.0, 64.81847103642508, 42.371626386105788, 0.25052668154239655, -0.9262353777885437, 494.20691104385782, 0.95019374806894374]
+LEVEL 2 size=0.35 nodes=11397 elements=5958
+SHOT 05_mesh_L2_size0.35.png ok=True mesh
+solve returned; status=Done
+history rows 61 last=[1.0, 64.81847282988943, 43.084298250210686, 0.44516180455684662, -0.9406358003616333, 487.39167714891749, 0.96509059027169464]
+LEVEL 3 size=0.25 nodes=20167 elements=10741
+SHOT 05_mesh_L3_size0.25.png ok=True mesh
+SHOT 05_mesh.png ok=True mesh final
+solve returned; status=Done
+history rows 61 last=[1.0, 64.8184742211628, 43.771973431504726, 0.64412796497344971, -0.93916404247283936, 476.74192631429486, 0.96670309818588684]
+SHOT 07_total_deformation.png ok=True Total Deformation
+SHOT 08_directional_deformation_z.png ok=True Directional Deformation Z
+SHOT 09_equivalent_stress_von_mises.png ok=True Equivalent Stress
+SHOT 10_equivalent_total_strain.png ok=True Equivalent Total Strain
+SHOT 10b_equivalent_plastic_strain.png ok=True Equivalent Plastic Strain
+SHOT 06_fixed_support_and_loading.png ok=True loading
+SHOT 03_ansys_geometry.png ok=True geometry
+SHOT 04_tough2000_assignment.png ok=True body details
+SHOT 11_mechanical_stress_strain_chart.png ok=True reaction chart
+DONE

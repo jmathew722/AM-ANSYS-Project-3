@@ -1,0 +1,4 @@
+level,element_size_mm,nodes,elements,solution_status
+1,0.5,5057,2393,Done
+2,0.35,11397,5958,Done
+3,0.25,20167,10741,Done
