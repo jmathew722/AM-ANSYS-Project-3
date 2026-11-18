@@ -1,0 +1,37 @@
+project: AME_40643_60643_Project3
+material_library: materials/AM_Formlabs.xml
+material_name: Tough 2000
+unit_system: {length: mm, force: N, stress: MPa}
+geometry_sources: {solidworks: geometry/SolidWorks_SLDPRT, iges: geometry/IGES}
+analysis:
+  type: Static Structural
+  loading_direction: Z
+  compression_sign: verify_from_geometry
+  load_mode: force_controlled_initial
+  trial_max_force_N: 1000   # trial ONLY; not validated/mandatory
+  ramped: true
+  load_substeps_initial: 40  # tuning parameter
+  large_deflection: review
+  displacement_controlled_yield_followup: true
+mesh:
+  convergence_tolerance_fraction: 0.02  # proposed engineering target, not from slides
+  min_successive_levels: 2
+  refine_factor: 0.7
+  minimum_element_size_mm: null # derive from CAD and mesher quality
+outputs_root: OUTPUTS_Folder
+required_design_checks:
+  length_mm: [30,40]
+  width_mm: [30,40]
+  height_mm: [15,20]
+  min_unit_cells_exclusive: 100
+  max_relative_density_exclusive: 0.5
+  min_feature_mm: 0.2
+
+# FINAL scope lock (November 18, 2026)
+number_of_designs: 4
+design_ids: [Design_01, Design_02, Design_03, Design_04]
+required_per_design_figures: [engineering_stress_strain_yield, equivalent_max_stress_strain_yield, force_displacement, mesh_convergence]
+required_per_design_contours: [equivalent_stress, equivalent_total_strain, total_deformation, directional_deformation_z]
+yield_plot_red_dot: true
+yield_annotation_units: {stress: MPa, strain: mm/mm}
+yield_unknown_policy: label_NOT_REACHED_do_not_fabricate

@@ -1,0 +1,23 @@
+{
+  "archive_status": "INSTRUCTIONS_ONLY_NO_SIMULATIONS",
+  "missing_input_models": [
+    "SolidWorks .sldprt/.sldasm",
+    "IGES .igs/.iges"
+  ],
+  "bundled_sources": [
+    "AM project 3-finite element modeling (1).pdf",
+    "AME 40643_60643 Project 3 Fall 2026.pdf",
+    "Yield strength calculations project 3.pptx",
+    "AM_Formlabs.xml"
+  ],
+  "strength_definition": "engineering reaction force / full external loaded footprint",
+  "load_N": "1000 trial only; must validate",
+  "design_count_required": 4,
+  "design_ids": [
+    "Design_01",
+    "Design_02",
+    "Design_03",
+    "Design_04"
+  ],
+  "source_yield_example_screenshot": "screenshots/reference_slides/REFERENCE_YIELD_GRAPH_RED_DOT.png"
+}

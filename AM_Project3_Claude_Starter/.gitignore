@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+# Keep generated data local by default; user may choose to version selected reports
+OUTPUTS_Folder/Workbench_Projects/*_files/
+OUTPUTS_Folder/Workbench_Archives/*.wbpz
+OUTPUTS_Folder/Simulation_Data/**/*.rst
+OUTPUTS_Folder/Simulation_Data/**/*.full

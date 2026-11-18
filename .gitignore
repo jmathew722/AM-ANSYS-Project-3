@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.venv/
+# Large CAD sources (>100MB IGES/SLDPRT exceed GitHub limits) - kept local, tracked via SHA-256 in OUTPUTS_Folder/Geometry_Mass_Properties
+BCCZ_Topo_Smooth/
+Fluorite_Topo_Smooth/
+Octet_Truss_Smooth/
+*.SLDPRT
+*.IGS
+*.igs
+*.step
+*.stl
+~$*
+# Heavy solver artifacts
+OUTPUTS_Folder/Workbench_Projects/*_files/
+OUTPUTS_Folder/Workbench_Archives/*.wbpz
+OUTPUTS_Folder/Simulation_Data/**/*.rst
+OUTPUTS_Folder/Simulation_Data/**/*.full

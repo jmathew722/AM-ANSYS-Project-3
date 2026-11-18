@@ -1,0 +1,1 @@
+Design_02: Output directory, populated by Claude after actual ANSYS simulation.
