@@ -1,0 +1,7 @@
+bodies=1
+LengthXYZ 6.0 6.0 6.0 unit=mm
+volume 56.7399580720 mm mm mm
+material assigned: Tough 2000
+bbox raw [-6.9388955582684535e-18, -1.3876940774867202e-17, -2.0816681711721685e-17, 6.0, 6.0, 6.0]
+scale coord->mm = 1.0
+zmin=-2.08166817117e-17 zmax=6.0 top faces=2 bottom faces=2 of 4840
