@@ -4,30 +4,34 @@ volume 32.8479211035 mm mm mm
 material assigned: Tough 2000
 bbox raw [-5.5993237824125686e-10, 0.0, 6.3035292263702303e-11, 6.0, 6.0, 6.0] nfaces=40
 scale coord->mm = 1.0 ; extents mm = [6.0000000005599325, 6.0, 5.999999999936965]
-zmin=6.30352922637e-11 zmax=6.0 top faces=2 bottom faces=2 of 40
-mesh time 2.4 s
+axis X: top faces=2 area=3.8610 | bottom faces=2 area=3.8610
+axis Y: top faces=4 area=5.1916 | bottom faces=4 area=5.1917
+axis Z: top faces=2 area=3.8610 | bottom faces=2 area=3.8610
+axis areas (min of top/bottom) X,Y,Z = [3.8609819412231445, 5.191558180376887, 3.8609819412231445] ; selected Y
+COMPRESSION AXIS = Y (forced=auto); footprint 6.0000 x 6.0000 mm; H0=6.0000 mm
+mesh time 2.6 s
 LEVEL 1 size=0.5 nodes=5169 elements=2277
 SHOT 05_mesh_L1_size0.5.png ok=True mesh
-solve returned; status=Done
-history rows 61 last=[1.0, 64.631119941577921, 10.571618610843217, 0.27156295180320739, -1.073117971420288, 4.835938272585103, 1.113627206986249]
-mesh time 1.9 s
+solve returned; status=RestartRequired
+history rows 61 last=[1.0, 0.0, 0.0, 0.0, -0.92782551050186157, 0.0, 2.0942571881904395]
+mesh time 2.0 s
 LEVEL 2 size=0.35 nodes=7562 elements=3377
 SHOT 05_mesh_L2_size0.35.png ok=True mesh
-solve returned; status=Done
-history rows 61 last=[1.0, 64.547189885740693, 8.747571464425056, 0.30396594320024761, -1.0417919158935547, 4.75419018494062, 1.110430228136807]
-mesh time 2.2 s
+solve returned; status=RestartRequired
+history rows 61 last=[1.0, 0.0, 0.0, 0.0, -81.100349426269531, 0.0, 102.00158823846063]
+mesh time 3.2 s
 LEVEL 3 size=0.25 nodes=10934 elements=4992
 SHOT 05_mesh_L3_size0.25.png ok=True mesh
-solve returned; status=Done
-history rows 61 last=[1.0, 64.685662934153441, 6.799700103599736, 0.24202345311641693, -1.0336230993270874, 4.457024453413998, 1.0743058085710702]
-mesh time 2.4 s
+solve returned; status=RestartRequired
+history rows 61 last=[1.0, 0.0, 0.0, 0.0, -1546.04541015625, 0.0, 3452.2122111171939]
+mesh time 2.6 s
 LEVEL 4 size=0.18 nodes=18247 elements=8872
 SHOT 05_mesh_L4_size0.18.png ok=True mesh
 SHOT 05_mesh.png ok=True mesh final
-solve returned; status=Done
-history rows 61 last=[1.0, 64.562928425882873, 6.242406066353618, 0.2406468391418457, -1.0386936664581299, 4.550523018068715, 1.0808001407434658]
+solve returned; status=RestartRequired
+history rows 61 last=[1.0, 0.0, 0.0, 0.0, -36.251926422119141, 0.0, 57.195329652369168]
 SHOT 07_total_deformation.png ok=True Total Deformation
-SHOT 08_directional_deformation_z.png ok=True Directional Deformation Z
+SHOT 08_directional_deformation_z.png ok=True Directional Deformation (compression axis)
 SHOT 09_equivalent_stress_von_mises.png ok=True Equivalent Stress
 SHOT 10_equivalent_total_strain.png ok=True Equivalent Total Strain
 SHOT 10b_equivalent_plastic_strain.png ok=True Equivalent Plastic Strain

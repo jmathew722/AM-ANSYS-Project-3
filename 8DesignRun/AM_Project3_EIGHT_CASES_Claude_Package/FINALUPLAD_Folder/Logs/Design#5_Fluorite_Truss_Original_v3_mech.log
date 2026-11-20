@@ -13,3 +13,12 @@ mesh time 2.4 s
 LEVEL 1 size=0.25 nodes=8657 elements=4082
 SHOT 05_mesh_L1_size0.25.png ok=True mesh
 solve returned; status=Done
+history rows 61 last=[1.0, 64.818476194239352, 26.203279686554396, 0.15882816351950169, -0.93947148323059082, 29.020185612319416, 0.9880832503616741]
+mesh time 2.6 s
+LEVEL 2 size=0.18 nodes=20784 elements=10706
+SHOT 05_mesh_L2_size0.18.png ok=True mesh
+solve returned; status=Done
+history rows 61 last=[1.0, 64.818474456407628, 26.556284891954881, 0.24530744978359767, -0.94084995985031128, 28.793473651125591, 0.99151078498424139]
+mesh time 3.4 s
+LEVEL 3 size=0.13 nodes=32357 elements=17167
+SHOT 05_mesh_L3_size0.13.png ok=True mesh
