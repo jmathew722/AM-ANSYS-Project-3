@@ -1,0 +1,21 @@
+bodies=1
+LengthXYZ 6.00020993502 6.00020993508 6.00020993508 unit=mm
+volume 26.8731296059 mm mm mm
+material assigned: Tough 2000
+bbox raw [-0.00010503084922675043, -0.00010503090743441135, -0.00010503090743441135, 6.000104904174805, 6.000104904174805, 6.000104904174805] nfaces=94
+scale coord->mm = 1.0 ; extents mm = [6.000209935024031, 6.000209935082239, 6.000209935082239]
+zmin=-0.000105030907434 zmax=6.00010490417 top faces=5 bottom faces=5 of 94
+mesh time 2.5 s
+LEVEL 1 size=0.5 nodes=5170 elements=2354
+SHOT 05_mesh_L1_size0.5.png ok=True mesh
+solve returned; status=Done
+history rows 61 last=[1.0, 64.376957139596, 25.410027624777708, 0.13435093238949775, -0.94087642431259155, 30.058578224605004, 0.98890944232813049]
+mesh time 2.0 s
+LEVEL 2 size=0.35 nodes=6576 elements=3068
+SHOT 05_mesh_L2_size0.35.png ok=True mesh
+solve returned; status=Done
+history rows 61 last=[1.0, 64.818476034395545, 25.113925016482469, 0.14528733491897583, -0.93835932016372681, 28.965611828213476, 0.98808477568735864]
+mesh time 3.4 s
+LEVEL 3 size=0.25 nodes=8657 elements=4082
+SHOT 05_mesh_L3_size0.25.png ok=True mesh
+solve returned; status=Done
