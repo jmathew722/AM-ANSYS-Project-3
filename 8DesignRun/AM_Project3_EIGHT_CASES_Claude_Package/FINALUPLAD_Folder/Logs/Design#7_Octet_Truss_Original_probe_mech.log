@@ -1,0 +1,8 @@
+bodies=1
+LengthXYZ 6.00000000007 6.0 6.000005995 unit=mm
+volume 32.5129237723 mm mm mm
+material assigned: Tough 2000
+bbox raw [-6.6583870361736075e-11, 0.0, -5.9949998103547841e-06, 6.0, 6.0, 6.0] nfaces=54
+scale coord->mm = 1.0 ; extents mm = [6.000000000066584, 6.0, 6.00000599499981]
+zmin=-5.99499981035e-06 zmax=6.0 top faces=1 bottom faces=1 of 54
+probe only done

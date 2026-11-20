@@ -1,0 +1,2 @@
+Lx_mm,Ly_mm,Lz_mm,volume_mm3,n_top_faces,n_bottom_faces,zmin,zmax,n_bodies,n_faces
+6.0,6.0,6.0,0.0,2,2,0.0,6.0,1,48
