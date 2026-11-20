@@ -22,3 +22,8 @@ history rows 61 last=[1.0, 64.818474456407628, 26.556284891954881, 0.24530744978
 mesh time 3.4 s
 LEVEL 3 size=0.13 nodes=32357 elements=17167
 SHOT 05_mesh_L3_size0.13.png ok=True mesh
+solve returned; status=Done
+history rows 61 last=[1.0, 64.818474714859022, 26.736406292739893, 0.24957994052342006, -0.94008719921112061, 28.262259402049487, 0.98994695183662751]
+mesh time 3.9 s
+LEVEL 4 size=0.1 nodes=51616 elements=28022
+SHOT 05_mesh_L4_size0.1.png ok=True mesh

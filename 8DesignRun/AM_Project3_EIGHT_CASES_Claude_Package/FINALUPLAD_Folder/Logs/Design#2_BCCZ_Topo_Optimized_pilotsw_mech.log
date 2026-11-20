@@ -1,0 +1,11 @@
+bodies=1
+LengthXYZ 6.00000005215 6.00000005215 6.00000005215 unit=mm
+volume 56.7204472244 mm mm mm
+material assigned: Tough 2000
+bbox raw [0.0, 0.0, 0.0, 0.0060000000521540642, 0.0060000000521540642, 0.0060000000521540642] nfaces=4840
+scale coord->mm = 1000.0 ; extents mm = [6.000000052154064, 6.000000052154064, 6.000000052154064]
+axis X: top faces=2 area=4.3096 | bottom faces=2 area=4.3096
+axis Y: top faces=4 area=7.5792 | bottom faces=4 area=7.5792
+axis Z: top faces=2 area=4.3096 | bottom faces=2 area=4.3096
+axis areas (min of top/bottom) X,Y,Z = [4.309626540077716, 7.579174685190537, 4.309626540077716] ; selected Y
+COMPRESSION AXIS = Y (forced=auto); footprint 6.0000 x 6.0000 mm; H0=6.0000 mm
