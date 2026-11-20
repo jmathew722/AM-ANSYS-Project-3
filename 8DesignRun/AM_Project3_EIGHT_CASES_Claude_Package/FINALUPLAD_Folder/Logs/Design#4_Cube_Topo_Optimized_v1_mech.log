@@ -23,3 +23,8 @@ mesh time 11.9 s
 LEVEL 3 size=0.25 nodes=53746 elements=31112
 SHOT 05_mesh_L3_size0.25.png ok=True mesh
 solve returned; status=Done
+history rows 61 last=[1.0, 64.817531073940813, 51.139136986705033, 0.97242923293794903, -0.89999997615814209, 930.06408383527378, 0.90253062386973337]
+mesh time 18.2 s
+LEVEL 4 size=0.18 nodes=90189 elements=52490
+SHOT 05_mesh_L4_size0.18.png ok=True mesh
+SHOT 05_mesh.png ok=True mesh final

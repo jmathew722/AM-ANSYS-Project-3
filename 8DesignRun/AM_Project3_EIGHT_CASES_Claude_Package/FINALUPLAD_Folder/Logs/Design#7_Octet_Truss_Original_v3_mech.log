@@ -22,3 +22,14 @@ history rows 61 last=[1.0, 0.0, 0.0, 0.0, -1.1835441589355469, 0.0, 1.3939253519
 mesh time 3.9 s
 LEVEL 3 size=0.13 nodes=43186 elements=21889
 SHOT 05_mesh_L3_size0.13.png ok=True mesh
+solve returned; status=RestartRequired
+history rows 61 last=[1.0, 0.0, 0.0, 0.0, -13.229578971862793, 0.0, 16.635352035083137]
+mesh time 4.2 s
+LEVEL 4 size=0.1 nodes=69210 elements=36180
+SHOT 05_mesh_L4_size0.1.png ok=True mesh
+solve returned; status=RestartRequired
+history rows 61 last=[1.0, 0.0, 0.0, 0.0, -1.2013263702392578, 0.0, 1.2443554324202402]
+mesh time 6.2 s
+LEVEL 5 size=0.08 nodes=102127 elements=54347
+SHOT 05_mesh_L5_size0.08.png ok=True mesh
+SHOT 05_mesh.png ok=True mesh final
