@@ -25,7 +25,7 @@ def rd(p):
 
 def pilot(c):
     out = None
-    for tg in ("pilot2", "pilotpi2", "pilot", "pilotsw"):
+    for tg in ("pilot2", "pilotpi3", "pilotpi2", "pilot", "pilotsw"):
         p = os.path.join(F, "Cases", c["folder"], "Raw_Data", tg, "raw_history_L1.csv")
         if os.path.exists(p):
             gp = rd(os.path.join(F, "Cases", c["folder"], "Raw_Data", tg, "geometry_probe.csv"))[1][0]
