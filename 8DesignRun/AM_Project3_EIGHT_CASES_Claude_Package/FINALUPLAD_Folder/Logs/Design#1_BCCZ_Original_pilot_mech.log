@@ -1,0 +1,23 @@
+bodies=1
+LengthXYZ 6.00000000056 6.0 5.99999999994 unit=mm
+volume 32.8479211035 mm mm mm
+material assigned: Tough 2000
+bbox raw [-5.5993237824125686e-10, 0.0, 6.3035292263702303e-11, 6.0, 6.0, 6.0] nfaces=40
+scale coord->mm = 1.0 ; extents mm = [6.0000000005599325, 6.0, 5.999999999936965]
+zmin=6.30352922637e-11 zmax=6.0 top faces=2 bottom faces=2 of 40
+mesh time 2.4 s
+LEVEL 1 size=0.35 nodes=7562 elements=3377
+SHOT 05_mesh_L1_size0.35.png ok=True mesh
+SHOT 05_mesh.png ok=True mesh final
+solve returned; status=SolveRequiredPartialResultsAvailable
+history rows 21 last=[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+SHOT 07_total_deformation.png ok=True Total Deformation
+SHOT 08_directional_deformation_z.png ok=True Directional Deformation Z
+SHOT 09_equivalent_stress_von_mises.png ok=True Equivalent Stress
+SHOT 10_equivalent_total_strain.png ok=True Equivalent Total Strain
+SHOT 10b_equivalent_plastic_strain.png ok=True Equivalent Plastic Strain
+SHOT 06_fixed_support_and_loading.png ok=True loading
+SHOT 03_ansys_geometry.png ok=True geometry
+SHOT 04_tough2000_assignment.png ok=True body details
+SHOT 11_mechanical_stress_strain_chart.png ok=True reaction chart
+DONE

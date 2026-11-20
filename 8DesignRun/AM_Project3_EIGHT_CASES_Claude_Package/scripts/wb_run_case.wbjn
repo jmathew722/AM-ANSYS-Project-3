@@ -26,7 +26,7 @@ try:
            'init_sub': int(E.get("INIT_SUB", "60")), 'max_sub': int(E.get("MAX_SUB", "240")),
            'mesh_sizes': [float(x) for x in E.get("MESH_SIZES", "0.5,0.35,0.25").split(",")],
            'probe_only': E.get("PROBE_ONLY", "0") == "1", 'diag': False, 'mesh_props': mp}
-    iges = R + "\\" + case["iges"].replace("/", "\\")
+    iges = E.get("GEOM") or (R + "\\" + case["iges"].replace("/", "\\"))
     L("IGES: " + iges)
     template = GetTemplate(TemplateName="Static Structural", Solver="ANSYS")
     system = template.CreateSystem()
