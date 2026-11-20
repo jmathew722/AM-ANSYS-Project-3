@@ -1,0 +1,15 @@
+bodies=1
+LengthXYZ 6.0 6.0 6.0 unit=mm
+volume 216.00000006 mm mm mm
+material assigned: Tough 2000
+bbox raw [0.0, 0.0, -6.0, 6.0, 6.0, 0.0] nfaces=6
+scale coord->mm = 1.0 ; extents mm = [6.0, 6.0, 6.0]
+zmin=-6.0 zmax=0.0 top faces=1 bottom faces=1 of 6
+mesh time 2.8 s
+LEVEL 1 size=0.5 nodes=8281 elements=1728
+SHOT 05_mesh_L1_size0.5.png ok=True mesh
+solve returned; status=Done
+history rows 61 last=[1.0, 64.8184738249168, 62.694090023685725, 0.37506628036499023, -0.89999997615814209, 2727.3809831696149, 0.99683965891707493]
+mesh time 1.9 s
+LEVEL 2 size=0.35 nodes=26353 elements=5832
+SHOT 05_mesh_L2_size0.35.png ok=True mesh
