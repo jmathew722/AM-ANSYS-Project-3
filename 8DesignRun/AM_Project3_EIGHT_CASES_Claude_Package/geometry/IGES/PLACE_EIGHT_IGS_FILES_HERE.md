@@ -1,0 +1,8 @@
+- `BCCZ_Original.IGS`
+- `BCCZ_Topo Optimized.IGS`
+- `Cube_Original.IGS`
+- `Cube_Topo Optimized.IGS`
+- `Fluorite Truss_Original.IGS`
+- `Fluorite Truss_Topo Optimized.IGS`
+- `Octet Truss_Original.IGS`
+- `Octet Truss_Topo Optimized.IGS`

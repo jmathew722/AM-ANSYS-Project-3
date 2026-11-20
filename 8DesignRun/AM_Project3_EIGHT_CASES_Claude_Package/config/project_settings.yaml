@@ -1,0 +1,13 @@
+project: AME_Project3_Eight_Final
+outputs_root: FINALUPLAD_Folder
+material_xml: materials/AM_Formlabs.xml
+material_name: Tough 2000
+units: {length: mm, force: N, stress: MPa}
+force_pilot_N: 1000
+force_pilot_ramped: true
+compression_axis: VERIFY_FROM_CAD
+mesh_min_levels: 3
+mesh_relative_tolerance_percent: 2.0  # assumed engineering criterion
+nonlinear_after_pilot: true
+yield_method: DOCUMENT_AND_VERIFY
+source_case_manifest: config/cases.json

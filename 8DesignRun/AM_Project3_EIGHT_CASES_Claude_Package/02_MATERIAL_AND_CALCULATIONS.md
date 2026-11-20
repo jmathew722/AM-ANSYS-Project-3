@@ -1,0 +1,11 @@
+# 02 — Tough 2000 XML, formulas, traceability
+
+Import `materials/AM_Formlabs.xml` into ANSYS Engineering Data. It identifies material `Tough 2000`, elastic modulus **1,109,500,000 Pa = 1109.5 MPa**, Poisson ratio **0.35**, and **21 multilinear isotropic hardening stress–plastic strain points**. First hardening stress is **19,640,502.4 Pa = 19.6405024 MPa** at plastic strain 0; last is **64,818,471.6 Pa** at plastic strain 0.0324693243. Do NOT replace data with steel or collapse full hardening table to one number. Confirm all entries/types/units in the actual XML, import into ANSYS and check all physical bodies are assigned `Tough 2000`.
+
+**Density is not supplied in this XML.** Do not invent resin density. For weight, request verified print resin density, SolidWorks mass with verified material/units, or experimentally measured mass. If missing, calculate volume and relative density (geometry-only) and mark mass/weight TBD. Do not conflate mass (g) with weight (N). For density in consistent units, `m = rho_solid * V_solid`, `W_N = m_kg * 9.80665` (standard gravity is a calculation assumption); if actual SOLIDWORKS mass supplied independently compare them.
+
+For each case: `V_envelope = W*D*H`; `relative_density = V_solid/V_envelope`; `porosity_percent = 100*(1-relative_density)`; `A_gross = W*D` based on verified loading axis; `sigma_eng = |F_reaction_compression| / A_gross` (N/mm²=MPa); `epsilon_eng = |delta_compression| / H`; `sigma_y_eng = F_y / A_gross`; `performance = sigma_y_eng/relative_density` (MPa); `mass_g = rho_g_mm3*V_solid_mm3`; `mass_saving_percent = 100*(m_original-m_optimized)/m_original`; `strength_change_percent = 100*(sigma_y_optimized/sigma_y_original-1)` if denominators nonzero.
+
+For identical resin and common envelope, report design comparisons using relative density. The instructor's slide rescales local or reduced loaded area to whole-cell gross area: example 213 MPa ×22.25 /25 = 189.57 MPa (slide rounds 189.5 MPa). Do NOT adopt 213 MPa as Tough 2000 yield. Preferred is reaction force / gross area rather than multiplying maximum local equivalent stress by an area ratio.
+
+Maintain machine-readable source tags PUBLISHED/USER_FILE/CAD_MEASURED/ANSYS_RESULT/ASSUMED/UNRESOLVED and exact unit metadata in exports.

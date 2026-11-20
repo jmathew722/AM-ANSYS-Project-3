@@ -16,3 +16,8 @@ OUTPUTS_Folder/Workbench_Projects/*_files/
 OUTPUTS_Folder/Workbench_Archives/*.wbpz
 OUTPUTS_Folder/Simulation_Data/**/*.rst
 OUTPUTS_Folder/Simulation_Data/**/*.full
+# 8-design run: raw CAD inputs and zips stay local (hashes recorded in manifest)
+8DesignRun/IGES-*/
+8DesignRun/SLDPRT 2025/
+*.zip
+*.wbpz

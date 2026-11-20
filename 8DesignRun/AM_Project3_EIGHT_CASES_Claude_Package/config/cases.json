@@ -1,0 +1,66 @@
+[
+  {
+    "case_id": "BCCZ_Original",
+    "design": "BCCZ",
+    "variant": "Original",
+    "iges_filename": "BCCZ_Original.IGS",
+    "status": "INPUT_PENDING",
+    "material": "Tough 2000"
+  },
+  {
+    "case_id": "BCCZ_Topo_Optimized",
+    "design": "BCCZ",
+    "variant": "Topo Optimized",
+    "iges_filename": "BCCZ_Topo Optimized.IGS",
+    "status": "INPUT_PENDING",
+    "material": "Tough 2000"
+  },
+  {
+    "case_id": "Cube_Original",
+    "design": "Cube",
+    "variant": "Original",
+    "iges_filename": "Cube_Original.IGS",
+    "status": "INPUT_PENDING",
+    "material": "Tough 2000"
+  },
+  {
+    "case_id": "Cube_Topo_Optimized",
+    "design": "Cube",
+    "variant": "Topo Optimized",
+    "iges_filename": "Cube_Topo Optimized.IGS",
+    "status": "INPUT_PENDING",
+    "material": "Tough 2000"
+  },
+  {
+    "case_id": "Fluorite_Truss_Original",
+    "design": "Fluorite Truss",
+    "variant": "Original",
+    "iges_filename": "Fluorite Truss_Original.IGS",
+    "status": "INPUT_PENDING",
+    "material": "Tough 2000"
+  },
+  {
+    "case_id": "Fluorite_Truss_Topo_Optimized",
+    "design": "Fluorite Truss",
+    "variant": "Topo Optimized",
+    "iges_filename": "Fluorite Truss_Topo Optimized.IGS",
+    "status": "INPUT_PENDING",
+    "material": "Tough 2000"
+  },
+  {
+    "case_id": "Octet_Truss_Original",
+    "design": "Octet Truss",
+    "variant": "Original",
+    "iges_filename": "Octet Truss_Original.IGS",
+    "status": "INPUT_PENDING",
+    "material": "Tough 2000"
+  },
+  {
+    "case_id": "Octet_Truss_Topo_Optimized",
+    "design": "Octet Truss",
+    "variant": "Topo Optimized",
+    "iges_filename": "Octet Truss_Topo Optimized.IGS",
+    "status": "INPUT_PENDING",
+    "material": "Tough 2000"
+  }
+]

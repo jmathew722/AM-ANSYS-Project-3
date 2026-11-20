@@ -1,0 +1,9 @@
+# 09 — Acceptance checklist and honest completion criteria
+
+Preflight: 8 IGES recognized (not necessarily all imported successfully), 8 SolidWorks mapping attempts, Tough 2000 XML properties verified, Workbench API exercised, outputs folder created.
+
+Per-case PASS requires (A) confirmed geometry and Tough 2000 assignment (B) valid mesh & 3+ refinement levels, numerical convergence or clearly documented sensitivity (C) physically consistent supports/loads and converged increments (D) real force/displacement/stress/strain data (E) both curves and yield dot + numbers **if a yield point exists** (F) screenshots of CAD, mesh, loading, von Mises, equivalent strain, total/axial deformation (G) native Workbench `.wbpj`, `_files` and `.wbpz`, all verified (H) CSV, Excel entries, reports, provenance. Mark per-item PASS/FAIL/BLOCKED and make per-case status PARTIAL if some absent. Avoid fake 'PASS' for missing yield and deformation screenshots.
+
+Validation needs a trustworthy reference and applicable material conditions, not simply an elastic analytical check. Distinguish verification, mesh independence, external validation and unvalidated model. If 8 cases have not been fully solved, present case-by-case progress with blockers; make no assertions of true numerical yield and no fake comparison values.
+
+Required machine `manifest.json` enumerates 8 case IDs, input file checksums, solver result paths, timestamps, mesh stages, converged flag, yield method and values, exported figures, Excel, native projects, archives, unresolved warnings. Validate existence plus nonzero size of all files; verify CSV contains real increments, Excel has 8 distinct cases, output pictures are readable. Final ZIP is a copy of checked final folder, not a replacement for native project saves. Keep logs and errors, not only successful figure exports.

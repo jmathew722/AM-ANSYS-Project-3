@@ -1,0 +1,6 @@
+__pycache__/
+.venv/
+*.lock
+# Keep final output locally; push large projects only intentionally
+FINALUPLAD_Folder/Workbench_Projects/*_files/
+FINALUPLAD_Folder/Workbench_Archives/*.wbpz

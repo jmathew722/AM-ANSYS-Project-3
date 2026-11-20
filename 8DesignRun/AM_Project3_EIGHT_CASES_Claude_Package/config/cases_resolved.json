@@ -1,0 +1,74 @@
+[
+ {
+  "num": 1,
+  "case_id": "BCCZ_Original",
+  "folder": "Design#1_BCCZ_Original",
+  "iges": "8DesignRun/IGES-20261120T162524Z-1-001/IGES/BCCZ Optimized Config1.IGS",
+  "sldprt": "8DesignRun/SLDPRT 2025/BCCZ Optimized Config1.SLDPRT",
+  "mapping_status": "PROVISIONAL_NEEDS_HUMAN_CONFIRMATION",
+  "mapping_note": "Actual filenames differ from manifest; mapped by design name and 'Topo' keyword (files with 'Topo' = Topo_Optimized, other = Original)."
+ },
+ {
+  "num": 2,
+  "case_id": "BCCZ_Topo_Optimized",
+  "folder": "Design#2_BCCZ_Topo_Optimized",
+  "iges": "8DesignRun/IGES-20261120T162524Z-1-001/IGES/BCCZ Topo Cell.IGS",
+  "sldprt": "8DesignRun/SLDPRT 2025/BCCZ Topo Cell.SLDPRT",
+  "mapping_status": "PROVISIONAL_NEEDS_HUMAN_CONFIRMATION",
+  "mapping_note": "Actual filenames differ from manifest; mapped by design name and 'Topo' keyword (files with 'Topo' = Topo_Optimized, other = Original)."
+ },
+ {
+  "num": 3,
+  "case_id": "Cube_Original",
+  "folder": "Design#3_Cube_Original",
+  "iges": "8DesignRun/IGES-20261120T162524Z-1-001/IGES/Cube base.IGS",
+  "sldprt": "8DesignRun/SLDPRT 2025/Cube base.SLDPRT",
+  "mapping_status": "PROVISIONAL_NEEDS_HUMAN_CONFIRMATION",
+  "mapping_note": "Actual filenames differ from manifest; mapped by design name and 'Topo' keyword (files with 'Topo' = Topo_Optimized, other = Original)."
+ },
+ {
+  "num": 4,
+  "case_id": "Cube_Topo_Optimized",
+  "folder": "Design#4_Cube_Topo_Optimized",
+  "iges": "8DesignRun/IGES-20261120T162524Z-1-001/IGES/Cube Topo.IGS",
+  "sldprt": "8DesignRun/SLDPRT 2025/Cube Topo.SLDPRT",
+  "mapping_status": "PROVISIONAL_NEEDS_HUMAN_CONFIRMATION",
+  "mapping_note": "Actual filenames differ from manifest; mapped by design name and 'Topo' keyword (files with 'Topo' = Topo_Optimized, other = Original)."
+ },
+ {
+  "num": 5,
+  "case_id": "Fluorite_Truss_Original",
+  "folder": "Design#5_Fluorite_Truss_Original",
+  "iges": "8DesignRun/IGES-20261120T162524Z-1-001/IGES/Fluorite Truss Optimized.IGS",
+  "sldprt": "8DesignRun/SLDPRT 2025/Fluorite Truss Optimized.SLDPRT",
+  "mapping_status": "PROVISIONAL_NEEDS_HUMAN_CONFIRMATION",
+  "mapping_note": "Actual filenames differ from manifest; mapped by design name and 'Topo' keyword (files with 'Topo' = Topo_Optimized, other = Original)."
+ },
+ {
+  "num": 6,
+  "case_id": "Fluorite_Truss_Topo_Optimized",
+  "folder": "Design#6_Fluorite_Truss_Topo_Optimized",
+  "iges": "8DesignRun/IGES-20261120T162524Z-1-001/IGES/Fluorite_Topo Cell.IGS",
+  "sldprt": "8DesignRun/SLDPRT 2025/Fluorite_Topo Cell.SLDPRT",
+  "mapping_status": "PROVISIONAL_NEEDS_HUMAN_CONFIRMATION",
+  "mapping_note": "Actual filenames differ from manifest; mapped by design name and 'Topo' keyword (files with 'Topo' = Topo_Optimized, other = Original)."
+ },
+ {
+  "num": 7,
+  "case_id": "Octet_Truss_Original",
+  "folder": "Design#7_Octet_Truss_Original",
+  "iges": "8DesignRun/IGES-20261120T162524Z-1-001/IGES/Octet Truss Optimized Config1.IGS",
+  "sldprt": "8DesignRun/SLDPRT 2025/Octet Truss Optimized Config1.SLDPRT",
+  "mapping_status": "PROVISIONAL_NEEDS_HUMAN_CONFIRMATION",
+  "mapping_note": "Actual filenames differ from manifest; mapped by design name and 'Topo' keyword (files with 'Topo' = Topo_Optimized, other = Original)."
+ },
+ {
+  "num": 8,
+  "case_id": "Octet_Truss_Topo_Optimized",
+  "folder": "Design#8_Octet_Truss_Topo_Optimized",
+  "iges": "8DesignRun/IGES-20261120T162524Z-1-001/IGES/Octet_Topo_Cell.IGS",
+  "sldprt": "8DesignRun/SLDPRT 2025/Octet_Topo_Cell.SLDPRT",
+  "mapping_status": "PROVISIONAL_NEEDS_HUMAN_CONFIRMATION",
+  "mapping_note": "Actual filenames differ from manifest; mapped by design name and 'Topo' keyword (files with 'Topo' = Topo_Optimized, other = Original)."
+ }
+]
