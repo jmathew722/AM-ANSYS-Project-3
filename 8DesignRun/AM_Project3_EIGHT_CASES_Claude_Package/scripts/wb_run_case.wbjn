@@ -12,6 +12,10 @@ F = P + r"\FINALUPLAD_Folder"
 logdir = F + r"\Logs"
 cdir = F + r"\Cases\%s" % case["folder"]
 logfile = logdir + r"\%s_%s_mech.log" % (case["folder"], tag)
+SKIPFLAG = logdir + r"\%s_%s.skip" % (case["folder"], tag)
+if os.path.exists(SKIPFLAG):
+    open(logdir + r"\%s_%s_wb.log" % (case["folder"], tag), "a").write("SKIPPED by flag")
+    raise SystemExit
 wlog = open(logdir + r"\%s_%s_wb.log" % (case["folder"], tag), "w")
 def L(m):
     wlog.write(str(m) + "\n"); wlog.flush()

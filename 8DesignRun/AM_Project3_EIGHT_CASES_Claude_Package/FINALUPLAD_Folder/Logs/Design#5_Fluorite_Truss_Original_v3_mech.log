@@ -34,3 +34,14 @@ LEVEL 5 size=0.08 nodes=79514 elements=44028
 SHOT 05_mesh_L5_size0.08.png ok=True mesh
 SHOT 05_mesh.png ok=True mesh final
 solve returned; status=Done
+history rows 61 last=[1.0, 64.818471437734473, 27.0941687618249, 0.32262706425454879, -0.94055843353271484, 27.588420892224349, 0.99084869669274445]
+SHOT 07_total_deformation.png ok=True Total Deformation
+SHOT 08_directional_deformation_z.png ok=True Directional Deformation (compression axis)
+SHOT 09_equivalent_stress_von_mises.png ok=True Equivalent Stress
+SHOT 10_equivalent_total_strain.png ok=True Equivalent Total Strain
+SHOT 10b_equivalent_plastic_strain.png ok=True Equivalent Plastic Strain
+SHOT 06_fixed_support_and_loading.png ok=True loading
+SHOT 03_ansys_geometry.png ok=True geometry
+SHOT 04_tough2000_assignment.png ok=True body details
+SHOT 11_mechanical_stress_strain_chart.png ok=True reaction chart
+DONE
