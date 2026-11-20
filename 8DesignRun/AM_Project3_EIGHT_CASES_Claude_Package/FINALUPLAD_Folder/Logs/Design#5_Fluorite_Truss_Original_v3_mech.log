@@ -33,3 +33,4 @@ mesh time 5.5 s
 LEVEL 5 size=0.08 nodes=79514 elements=44028
 SHOT 05_mesh_L5_size0.08.png ok=True mesh
 SHOT 05_mesh.png ok=True mesh final
+solve returned; status=Done

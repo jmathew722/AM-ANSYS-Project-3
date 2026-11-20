@@ -111,7 +111,7 @@ def chg(a, b): return abs(a - b) / abs(b) if (a is not None and b not in (None, 
 def process_case(c):
     tg = TAG
     if TAG == "v1":
-        for cand in ("v3", "v2"):
+        for cand in ("v4", "v3", "v2"):
             if glob.glob(os.path.join(F, "Cases", c["folder"], "Raw_Data", cand, "raw_history_L*.csv")) and os.path.exists(os.path.join(F, "Cases", c["folder"], "Raw_Data", cand, "mesh_metrics.csv")): tg = cand; break
     sd = os.path.join(F, "Cases", c["folder"], "Raw_Data", tg)
     files = sorted(glob.glob(os.path.join(sd, "raw_history_L*.csv")))
@@ -121,10 +121,13 @@ def process_case(c):
     mm = load_csv(os.path.join(sd, "mesh_metrics.csv"))[1]
     levels = []
     for i, fp in enumerate(files):
-        t, smax, savg, emax, dzmin, Fz, tdmax = load_csv(fp)[1].T
+        arr = load_csv(fp)[1]
+        valid = (arr[:, 1] > 0) | (arr[:, 0] == 0)           # unsolved increments are written as zeros by the extractor -> exclude
+        trunc = None if valid.all() else float(arr[valid, 0].max())
+        t, smax, savg, emax, dzmin, Fz, tdmax = arr[valid].T
         u = t * DISP_MM; Fa = np.abs(Fz); eps = u / H0; sig = Fa / A
         y = yield_offset(eps, sig)
-        levels.append(dict(level=i + 1, size=float(mm[i][1]), nodes=int(mm[i][2]), elements=int(mm[i][3]), E_eff=y["E_eff"], sigma_y=y["sigma_y"], eps_y=y["eps_y"],
+        levels.append(dict(trunc=trunc, level=i + 1, size=float(mm[i][1]), nodes=int(mm[i][2]), elements=int(mm[i][3]), E_eff=y["E_eff"], sigma_y=y["sigma_y"], eps_y=y["eps_y"],
                            F_y=(y["sigma_y"] * A if y["reached"] else None), Keff=float(Fa[1] / u[1]), Fmax=float(Fa.max()), y=y, t=t, u=u, F=Fa, eps=eps, sig=sig, smax=smax, emax=emax))
     fin = levels[-1]; prev = levels[-2] if len(levels) > 1 else None
     cE = chg(fin["E_eff"], prev["E_eff"]) if prev else None; cY = chg(fin["sigma_y"], prev["sigma_y"]) if prev else None
@@ -156,7 +159,7 @@ def process_case(c):
     if os.path.exists(lg): shutil.copy(lg, os.path.join(rd, "solver.log"))
     s = dict(status="SOLVED_CONVERGED" if conv else "SOLVED_UNCONVERGED", Lx=Lx, Ly=Ly, Lz=Lz, vol=vol, A=A, H0=H0, RD=vol / (Lx * Ly * Lz), E_eff=fin["E_eff"], Keff=fin["Keff"],
              yield_reached=fin["y"]["reached"], sigma_y=fin["sigma_y"], eps_y=fin["eps_y"], F_y=fin["F_y"], Fmax=fin["Fmax"], max_eng_stress=float(fin["sig"].max()), first_peak=fin["y"]["first_peak"],
-             conv_E=cE, conv_y=cY, conv_K=cK, elements=fin["elements"], nlevels=len(levels), finest_size=fin["size"], method=fin["y"]["method"], tag=tg,
+             truncated_at_time=fin['trunc'], conv_E=cE, conv_y=cY, conv_K=cK, elements=fin["elements"], nlevels=len(levels), finest_size=fin["size"], method=fin["y"]["method"], tag=tg,
              levels=[{k: r[k] for k in ("level", "size", "nodes", "elements", "E_eff", "Keff", "Fmax", "sigma_y", "eps_y", "F_y")} for r in levels],
              _curve=dict(eps=fin["eps"].tolist(), sig=fin["sig"].tolist(), smax=fin["smax"].tolist(), emax=fin["emax"].tolist()))
     json.dump({k: v for k, v in s.items() if k != "_curve"}, open(os.path.join(F, "Cases", c["folder"], "Reports", "case_results_%s.json" % TAG), "w"), indent=1, default=str)

@@ -25,7 +25,7 @@ def rd(p):
 
 def pilot(c):
     out = None
-    for tg in ("pilot2", "pilot", "pilotsw"):
+    for tg in ("pilot2", "pilotpi2", "pilot", "pilotsw"):
         p = os.path.join(F, "Cases", c["folder"], "Raw_Data", tg, "raw_history_L1.csv")
         if os.path.exists(p):
             gp = rd(os.path.join(F, "Cases", c["folder"], "Raw_Data", tg, "geometry_probe.csv"))[1][0]
@@ -33,10 +33,10 @@ def pilot(c):
             axis = "?"
             if os.path.exists(lg):
                 m = re.search(r"COMPRESSION AXIS = (\w)", open(lg).read()); axis = m.group(1) if m else "Z (pre-axis-verification script; tie-case)"
-            _, h = rd(p); t, smax, savg, emax, dz, Fz, td = h.T
+            _, h = rd(p); ok = (h[:, 1] > 0) | (h[:, 0] == 0); lost = None if ok.all() else float(h[ok, 0].max()); h = h[ok]; t, smax, savg, emax, dz, Fz, td = h.T
             A = gp[0] * gp[1]
             out = dict(tag=tg, axis=axis, F_end=float(abs(Fz[-1])), nominal_MPa=float(abs(Fz[-1]) / A), max_axial_def=float(abs(dz).max()), max_total_def=float(td.max()),
-                       max_eqv_stress=float(smax.max()), eps_nominal=float(abs(dz).max() / gp[2]), substeps=len(t) - 1)
+                       max_eqv_stress=float(smax.max()), eps_nominal=float(abs(dz).max() / gp[2]), substeps=len(t) - 1, lost_at=lost)
             break
     return out
 

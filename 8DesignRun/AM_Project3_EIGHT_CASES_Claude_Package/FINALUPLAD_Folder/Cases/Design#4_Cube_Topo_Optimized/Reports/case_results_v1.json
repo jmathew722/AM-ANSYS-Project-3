@@ -16,6 +16,7 @@
  "Fmax": 925.730394372,
  "max_eng_stress": 25.71259001417634,
  "first_peak": null,
+ "truncated_at_time": null,
  "conv_E": 0.0003617404069743541,
  "conv_y": 0.0003325589647204555,
  "conv_K": 0.0003600820193567,

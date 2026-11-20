@@ -1,0 +1,3408 @@
+{
+ "generated": "2026-11-20T15:45:06.798139",
+ "solver": "ANSYS Mechanical 2025 R1",
+ "cases": [
+  {
+   "case_id": "BCCZ_Original",
+   "folder": "Design#1_BCCZ_Original",
+   "summary": {
+    "status": "SOLVED_CONVERGED",
+    "Lx": 6.00000000056,
+    "Ly": 5.99999999994,
+    "Lz": 6.0,
+    "vol": 32.8479211035,
+    "A": 36.000000003,
+    "H0": 6.0,
+    "RD": 0.1520737087998272,
+    "E_eff": 163.56214306843506,
+    "Keff": 979.4034404847077,
+    "yield_reached": true,
+    "sigma_y": 3.6539788973599205,
+    "eps_y": 0.024340003798012606,
+    "F_y": 131.54324031591906,
+    "Fmax": 132.679644774,
+    "max_eng_stress": 3.685545687859538,
+    "first_peak": [
+     0.02500000000005,
+     3.685545687859538
+    ],
+    "truncated_at_time": 0.683333333333,
+    "conv_E": 0.0007207165418971203,
+    "conv_y": 0.006007761728799315,
+    "conv_K": 0.0007151543489028055,
+    "elements": 8872,
+    "nlevels": 4,
+    "finest_size": 0.18,
+    "method": "0.2% strain offset on initial effective slope (secant of first 2 increments)",
+    "tag": "v2",
+    "levels": [
+     {
+      "level": 1,
+      "size": 0.5,
+      "nodes": 5169,
+      "elements": 2277,
+      "E_eff": 164.14033777283157,
+      "Keff": 982.8522969380342,
+      "Fmax": 87.8480964984,
+      "sigma_y": null,
+      "eps_y": null,
+      "F_y": null
+     },
+     {
+      "level": 2,
+      "size": 0.35,
+      "nodes": 7562,
+      "elements": 3377,
+      "E_eff": 163.82915993485736,
+      "Keff": 980.9981277580379,
+      "Fmax": 116.715851536,
+      "sigma_y": 2.915534917602926,
+      "eps_y": 0.019796190365391708,
+      "F_y": 104.95925704245194
+     },
+     {
+      "level": 3,
+      "size": 0.25,
+      "nodes": 10934,
+      "elements": 4992,
+      "E_eff": 163.68011003131417,
+      "Keff": 980.1043663847064,
+      "Fmax": 133.350906194,
+      "sigma_y": 3.676063812847369,
+      "eps_y": 0.024458830288812055,
+      "F_y": 132.33829727353347
+     },
+     {
+      "level": 4,
+      "size": 0.18,
+      "nodes": 18247,
+      "elements": 8872,
+      "E_eff": 163.56214306843506,
+      "Keff": 979.4034404847077,
+      "Fmax": 132.679644774,
+      "sigma_y": 3.6539788973599205,
+      "eps_y": 0.024340003798012606,
+      "F_y": 131.54324031591906
+     }
+    ]
+   },
+   "mapping": "PROVISIONAL_NEEDS_HUMAN_CONFIRMATION"
+  },
+  {
+   "case_id": "BCCZ_Topo_Optimized",
+   "folder": "Design#2_BCCZ_Topo_Optimized",
+   "summary": null,
+   "mapping": "PROVISIONAL_NEEDS_HUMAN_CONFIRMATION"
+  },
+  {
+   "case_id": "Cube_Original",
+   "folder": "Design#3_Cube_Original",
+   "summary": {
+    "status": "SOLVED_CONVERGED",
+    "Lx": 6.0,
+    "Ly": 6.0,
+    "Lz": 6.0,
+    "vol": 216.00000006,
+    "A": 36.0,
+    "H0": 6.0,
+    "RD": 1.0000000002777778,
+    "E_eff": 1163.485698693797,
+    "Keff": 6964.76244118607,
+    "yield_reached": true,
+    "sigma_y": 49.71049368511748,
+    "eps_y": 0.04472548750786162,
+    "F_y": 1789.577772664229,
+    "Fmax": 2721.42228811,
+    "max_eng_stress": 75.59506355861112,
+    "first_peak": null,
+    "truncated_at_time": null,
+    "conv_E": 0.0001897521731141546,
+    "conv_y": 0.0014150389885881909,
+    "conv_K": 0.0001884337618140274,
+    "elements": 39304,
+    "nlevels": 4,
+    "finest_size": 0.18,
+    "method": "0.2% strain offset on initial effective slope (secant of first 2 increments)",
+    "tag": "v1",
+    "levels": [
+     {
+      "level": 1,
+      "size": 0.5,
+      "nodes": 8281,
+      "elements": 1728,
+      "E_eff": 1164.585977298242,
+      "Keff": 6971.3088109193895,
+      "Fmax": 2727.38098317,
+      "sigma_y": 49.94823093073983,
+      "eps_y": 0.04488926013570611,
+      "F_y": 1798.136313506634
+     },
+     {
+      "level": 2,
+      "size": 0.35,
+      "nodes": 26353,
+      "elements": 5832,
+      "E_eff": 1163.9812467604638,
+      "Keff": 6967.709311452731,
+      "Fmax": 2724.53637928,
+      "sigma_y": 49.84453442808379,
+      "eps_y": 0.0448224548864586,
+      "F_y": 1794.4032394110163
+     },
+     {
+      "level": 3,
+      "size": 0.25,
+      "nodes": 60625,
+      "elements": 13824,
+      "E_eff": 1163.706514533797,
+      "Keff": 6966.0750849194,
+      "Fmax": 2722.97793178,
+      "sigma_y": 49.78093564995056,
+      "eps_y": 0.04477791266803533,
+      "F_y": 1792.11368339822
+     },
+     {
+      "level": 4,
+      "size": 0.18,
+      "nodes": 167825,
+      "elements": 39304,
+      "E_eff": 1163.485698693797,
+      "Keff": 6964.76244118607,
+      "Fmax": 2721.42228811,
+      "sigma_y": 49.71049368511748,
+      "eps_y": 0.04472548750786162,
+      "F_y": 1789.577772664229
+     }
+    ]
+   },
+   "mapping": "PROVISIONAL_NEEDS_HUMAN_CONFIRMATION"
+  },
+  {
+   "case_id": "Cube_Topo_Optimized",
+   "folder": "Design#4_Cube_Topo_Optimized",
+   "summary": {
+    "status": "SOLVED_CONVERGED",
+    "Lx": 6.00050005215,
+    "Ly": 6.00000005215,
+    "Lz": 6.00002519786,
+    "vol": 100.764513098,
+    "A": 36.003000625826076,
+    "H0": 6.00002519786,
+    "RD": 0.4664615364146448,
+    "E_eff": 466.5764692726053,
+    "Keff": 2792.9299256544136,
+    "yield_reached": true,
+    "sigma_y": 19.301275584995683,
+    "eps_y": 0.04336787184121491,
+    "F_y": 694.9038369658412,
+    "Fmax": 925.730394372,
+    "max_eng_stress": 25.71259001417634,
+    "first_peak": null,
+    "truncated_at_time": null,
+    "conv_E": 0.0003617404069743541,
+    "conv_y": 0.0003325589647204555,
+    "conv_K": 0.0003600820193567,
+    "elements": 52490,
+    "nlevels": 4,
+    "finest_size": 0.18,
+    "method": "0.2% strain offset on initial effective slope (secant of first 2 increments)",
+    "tag": "v1",
+    "levels": [
+     {
+      "level": 1,
+      "size": 0.5,
+      "nodes": 17807,
+      "elements": 10126,
+      "E_eff": 467.3269401336138,
+      "Keff": 2797.405481027738,
+      "Fmax": 941.949073984,
+      "sigma_y": 19.32990928926843,
+      "eps_y": 0.043362711261075174,
+      "F_y": 695.9347362386925
+     },
+     {
+      "level": 2,
+      "size": 0.35,
+      "nodes": 32291,
+      "elements": 18592,
+      "E_eff": 466.9810544740534,
+      "Keff": 2795.341078074409,
+      "Fmax": 935.247506907,
+      "sigma_y": 19.31856078023959,
+      "eps_y": 0.04336904612114832,
+      "F_y": 695.526155861025
+     },
+     {
+      "level": 3,
+      "size": 0.25,
+      "nodes": 53746,
+      "elements": 31112,
+      "E_eff": 466.7453099109659,
+      "Keff": 2793.9359717610787,
+      "Fmax": 930.064083835,
+      "sigma_y": 19.30769653256569,
+      "eps_y": 0.04336666426546147,
+      "F_y": 695.1350103452224
+     },
+     {
+      "level": 4,
+      "size": 0.18,
+      "nodes": 90189,
+      "elements": 52490,
+      "E_eff": 466.5764692726053,
+      "Keff": 2792.9299256544136,
+      "Fmax": 925.730394372,
+      "sigma_y": 19.301275584995683,
+      "eps_y": 0.04336787184121491,
+      "F_y": 694.9038369658412
+     }
+    ]
+   },
+   "mapping": "PROVISIONAL_NEEDS_HUMAN_CONFIRMATION"
+  },
+  {
+   "case_id": "Fluorite_Truss_Original",
+   "folder": "Design#5_Fluorite_Truss_Original",
+   "summary": {
+    "status": "SOLVED_UNCONVERGED",
+    "Lx": 6.00020993502,
+    "Ly": 6.00020993508,
+    "Lz": 6.00020993508,
+    "vol": 26.8731296059,
+    "A": 36.00251926467273,
+    "H0": 6.00020993508,
+    "RD": 0.12439957869095254,
+    "E_eff": 7.697727613127466,
+    "Keff": 46.307093370640715,
+    "yield_reached": true,
+    "sigma_y": 0.29610414748241576,
+    "eps_y": 0.04046643611777701,
+    "F_y": 10.660495274085168,
+    "Fmax": 28.7934736511,
+    "max_eng_stress": 0.7997627454741324,
+    "first_peak": null,
+    "truncated_at_time": null,
+    "conv_E": 0.020677388253968226,
+    "conv_y": 0.0022341396228891057,
+    "conv_K": 0.020706037833070772,
+    "elements": 10706,
+    "nlevels": 4,
+    "finest_size": 0.18,
+    "method": "0.2% strain offset on initial effective slope (secant of first 2 increments)",
+    "tag": "v1",
+    "levels": [
+     {
+      "level": 1,
+      "size": 0.5,
+      "nodes": 5170,
+      "elements": 2354,
+      "E_eff": 7.790850757003768,
+      "Keff": 46.8648190306396,
+      "Fmax": 30.0585782246,
+      "sigma_y": 0.30655080920240096,
+      "eps_y": 0.04134753966719487,
+      "F_y": 11.036601413910454
+     },
+     {
+      "level": 2,
+      "size": 0.35,
+      "nodes": 6576,
+      "elements": 3068,
+      "E_eff": 7.466583296212949,
+      "Keff": 44.914113820776834,
+      "Fmax": 28.9656118282,
+      "sigma_y": 0.2940327969065313,
+      "eps_y": 0.04137983214567026,
+      "F_y": 10.585921435072995
+     },
+     {
+      "level": 3,
+      "size": 0.25,
+      "nodes": 8657,
+      "elements": 4082,
+      "E_eff": 7.541783233089604,
+      "Keff": 45.36770789457592,
+      "Fmax": 29.0201856123,
+      "sigma_y": 0.29544408414767326,
+      "eps_y": 0.041174300694749644,
+      "F_y": 10.636731331160197
+     },
+     {
+      "level": 4,
+      "size": 0.18,
+      "nodes": 20784,
+      "elements": 10706,
+      "E_eff": 7.697727613127466,
+      "Keff": 46.307093370640715,
+      "Fmax": 28.7934736511,
+      "sigma_y": 0.29610414748241576,
+      "eps_y": 0.04046643611777701,
+      "F_y": 10.660495274085168
+     }
+    ]
+   },
+   "mapping": "PROVISIONAL_NEEDS_HUMAN_CONFIRMATION"
+  },
+  {
+   "case_id": "Fluorite_Truss_Topo_Optimized",
+   "folder": "Design#6_Fluorite_Truss_Topo_Optimized",
+   "summary": null,
+   "mapping": "PROVISIONAL_NEEDS_HUMAN_CONFIRMATION"
+  },
+  {
+   "case_id": "Octet_Truss_Original",
+   "folder": "Design#7_Octet_Truss_Original",
+   "summary": {
+    "status": "SOLVED_CONVERGED",
+    "Lx": 6.00000000007,
+    "Ly": 6.0,
+    "Lz": 6.000005995,
+    "vol": 32.5129237723,
+    "A": 36.00000000042,
+    "H0": 6.000005995,
+    "RD": 0.1505226448431642,
+    "E_eff": 30.812295994018992,
+    "Keff": 185.32906417962934,
+    "yield_reached": true,
+    "sigma_y": 1.0890573295529908,
+    "eps_y": 0.03734489379708636,
+    "F_y": 39.20606386436508,
+    "Fmax": 60.7943200156,
+    "max_eng_stress": 1.6887311115247425,
+    "first_peak": null,
+    "truncated_at_time": 0.5,
+    "conv_E": 0.0017264746744113592,
+    "conv_y": 0.0022502219818146176,
+    "conv_K": 0.0017303020402348376,
+    "elements": 54347,
+    "nlevels": 5,
+    "finest_size": 0.08,
+    "method": "0.2% strain offset on initial effective slope (secant of first 2 increments)",
+    "tag": "v3",
+    "levels": [
+     {
+      "level": 1,
+      "size": 0.25,
+      "nodes": 10764,
+      "elements": 4524,
+      "E_eff": 28.59211822929639,
+      "Keff": 172.01471334432262,
+      "Fmax": 58.7415038778,
+      "sigma_y": 0.9729320606324015,
+      "eps_y": 0.0360279811670443,
+      "F_y": 35.02555418317509
+     },
+     {
+      "level": 2,
+      "size": 0.18,
+      "nodes": 19837,
+      "elements": 9067,
+      "E_eff": 31.016645885707202,
+      "Keff": 186.56212545429352,
+      "Fmax": 62.9930653486,
+      "sigma_y": 1.0970420572031456,
+      "eps_y": 0.03736946132878521,
+      "F_y": 39.493514059774
+     },
+     {
+      "level": 3,
+      "size": 0.13,
+      "nodes": 43186,
+      "elements": 21889,
+      "E_eff": 30.896042128472093,
+      "Keff": 185.83436389496165,
+      "Fmax": 61.7274813282,
+      "sigma_y": 1.0923318951994747,
+      "eps_y": 0.03735507527654624,
+      "F_y": 39.32394822763987
+     },
+     {
+      "level": 4,
+      "size": 0.1,
+      "nodes": 69210,
+      "elements": 36180,
+      "E_eff": 30.865584644218135,
+      "Keff": 185.65029526429535,
+      "Fmax": 61.0462377824,
+      "sigma_y": 1.091513477172772,
+      "eps_y": 0.037363447339632316,
+      "F_y": 39.29448517867823
+     },
+     {
+      "level": 5,
+      "size": 0.08,
+      "nodes": 102127,
+      "elements": 54347,
+      "E_eff": 30.812295994018992,
+      "Keff": 185.32906417962934,
+      "Fmax": 60.7943200156,
+      "sigma_y": 1.0890573295529908,
+      "eps_y": 0.03734489379708636,
+      "F_y": 39.20606386436508
+     }
+    ]
+   },
+   "mapping": "PROVISIONAL_NEEDS_HUMAN_CONFIRMATION"
+  },
+  {
+   "case_id": "Octet_Truss_Topo_Optimized",
+   "folder": "Design#8_Octet_Truss_Topo_Optimized",
+   "summary": null,
+   "mapping": "PROVISIONAL_NEEDS_HUMAN_CONFIRMATION"
+  }
+ ],
+ "inputs": [
+  {
+   "case": "BCCZ_Original",
+   "kind": "iges",
+   "path": "8DesignRun/IGES-20261120T162524Z-1-001/IGES/BCCZ Optimized Config1.IGS",
+   "exists": true,
+   "sha256": "7f53eaa06e2a5f9579c48aaa6389a076811e86ded7cea463f4357458ee10ed38"
+  },
+  {
+   "case": "BCCZ_Original",
+   "kind": "sldprt",
+   "path": "8DesignRun/SLDPRT 2025/BCCZ Optimized Config1.SLDPRT",
+   "exists": true,
+   "sha256": "d4c96e18711cce3e969c9f3a39ad33e76e71edfb886f3c727c0ab2b3b1e51503"
+  },
+  {
+   "case": "BCCZ_Topo_Optimized",
+   "kind": "iges",
+   "path": "8DesignRun/IGES-20261120T162524Z-1-001/IGES/BCCZ Topo Cell.IGS",
+   "exists": true,
+   "sha256": "60ed86c037305052403bb3d1f01d3b5c640f008389fa8bd5a518738e503add18"
+  },
+  {
+   "case": "BCCZ_Topo_Optimized",
+   "kind": "sldprt",
+   "path": "8DesignRun/SLDPRT 2025/BCCZ Topo Cell.SLDPRT",
+   "exists": true,
+   "sha256": "562acbe7907583ee8e5f43085f8434e9524902dc43b13021babc72ef2f603c75"
+  },
+  {
+   "case": "Cube_Original",
+   "kind": "iges",
+   "path": "8DesignRun/IGES-20261120T162524Z-1-001/IGES/Cube base.IGS",
+   "exists": true,
+   "sha256": "fdec00c3a1be94e5c2e6c071b797139d0bf15d2deac52ba11ca32ee5ff80919f"
+  },
+  {
+   "case": "Cube_Original",
+   "kind": "sldprt",
+   "path": "8DesignRun/SLDPRT 2025/Cube base.SLDPRT",
+   "exists": true,
+   "sha256": "6b748fa483944564ce7a7052d0d0853fdff7461e460d93dbae5ee5af428c4272"
+  },
+  {
+   "case": "Cube_Topo_Optimized",
+   "kind": "iges",
+   "path": "8DesignRun/IGES-20261120T162524Z-1-001/IGES/Cube Topo.IGS",
+   "exists": true,
+   "sha256": "36dfd3f8f3755d48b463c208b74c7419faf885a54d4576718f4798cb3d1e0187"
+  },
+  {
+   "case": "Cube_Topo_Optimized",
+   "kind": "sldprt",
+   "path": "8DesignRun/SLDPRT 2025/Cube Topo.SLDPRT",
+   "exists": true,
+   "sha256": "c59214740c0cd14e2a78e3158bbe117af5297c37cc3dabcae9622f014ffa42af"
+  },
+  {
+   "case": "Fluorite_Truss_Original",
+   "kind": "iges",
+   "path": "8DesignRun/IGES-20261120T162524Z-1-001/IGES/Fluorite Truss Optimized.IGS",
+   "exists": true,
+   "sha256": "d0913ba539aa02770b021fe1a1d38f5ef80688d59e87c604324b0e5935c3521e"
+  },
+  {
+   "case": "Fluorite_Truss_Original",
+   "kind": "sldprt",
+   "path": "8DesignRun/SLDPRT 2025/Fluorite Truss Optimized.SLDPRT",
+   "exists": true,
+   "sha256": "1694d0f2817922c4d1fcfa00367ebbf94814749ab7333965ffaa3c735c457d57"
+  },
+  {
+   "case": "Fluorite_Truss_Topo_Optimized",
+   "kind": "iges",
+   "path": "8DesignRun/IGES-20261120T162524Z-1-001/IGES/Fluorite_Topo Cell.IGS",
+   "exists": true,
+   "sha256": "09897bcb81ac512e6d5dbfc9ef4f227b1de55dfecb504f200d06c0f5a8e93e31"
+  },
+  {
+   "case": "Fluorite_Truss_Topo_Optimized",
+   "kind": "sldprt",
+   "path": "8DesignRun/SLDPRT 2025/Fluorite_Topo Cell.SLDPRT",
+   "exists": true,
+   "sha256": "ea87134decf54ea7b5baac9f2499c6132a177863ddfd33f6775c197057576c03"
+  },
+  {
+   "case": "Octet_Truss_Original",
+   "kind": "iges",
+   "path": "8DesignRun/IGES-20261120T162524Z-1-001/IGES/Octet Truss Optimized Config1.IGS",
+   "exists": true,
+   "sha256": "7d3e56ca5b7b3ac3ef298ca6433a9637fe60bc26b5ffd82cf4ec8ac81093ddcd"
+  },
+  {
+   "case": "Octet_Truss_Original",
+   "kind": "sldprt",
+   "path": "8DesignRun/SLDPRT 2025/Octet Truss Optimized Config1.SLDPRT",
+   "exists": true,
+   "sha256": "c64325db415b98b2b2965e262aa7e20623c902ddbf60cd32a878fa955be53044"
+  },
+  {
+   "case": "Octet_Truss_Topo_Optimized",
+   "kind": "iges",
+   "path": "8DesignRun/IGES-20261120T162524Z-1-001/IGES/Octet_Topo_Cell.IGS",
+   "exists": true,
+   "sha256": "d67a3ef41b9bece2b5054323dea7c96730fc0b94d341865f8cbf2e8f2a05c9ca"
+  },
+  {
+   "case": "Octet_Truss_Topo_Optimized",
+   "kind": "sldprt",
+   "path": "8DesignRun/SLDPRT 2025/Octet_Topo_Cell.SLDPRT",
+   "exists": true,
+   "sha256": "db5506b5219403f7949bb13dbdeca3fddf11879c92538886be7af0951aa8b27c"
+  }
+ ],
+ "outputs": [
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Mesh_Convergence/Design#1_BCCZ_Original_mesh_convergence.pdf",
+   "bytes": 20219,
+   "sha256": "c18ed1e186bffa7aa565dad48bbd672bb3af9e514630c0ed330a7b0c7f1de03d",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Mesh_Convergence/Design#1_BCCZ_Original_mesh_convergence.png",
+   "bytes": 179071,
+   "sha256": "d1de0c9d70c795f3e407eec8260074cbe1234c7984fb52602ee7e0f03804e826",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Mesh_Convergence/Design#1_BCCZ_Original_mesh_convergence.svg",
+   "bytes": 62673,
+   "sha256": "4f8bd0c710ac4e42227e3cd6171b998f52caab17fb04560246c341293c444dac",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Plots/Design#1_BCCZ_Original_ENGINEERING_STRESS_STRAIN_YIELD.pdf",
+   "bytes": 30541,
+   "sha256": "d3c04212576a773926e5d12b522276d33e13d8005531dec7a7d6080ea95af8cf",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Plots/Design#1_BCCZ_Original_ENGINEERING_STRESS_STRAIN_YIELD.png",
+   "bytes": 216545,
+   "sha256": "43b7321fc5adefa409fecaed72c5c14d92d7c7fa3bb6429e0a2a4081d65f6db4",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Plots/Design#1_BCCZ_Original_ENGINEERING_STRESS_STRAIN_YIELD.svg",
+   "bytes": 89788,
+   "sha256": "3b895f189cef0d3d2ae7efd942127e18d4473c2a373b6fdcd860656e744874de",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Plots/Design#1_BCCZ_Original_equivalent_max_stress_strain_yield.pdf",
+   "bytes": 32790,
+   "sha256": "51f02147e5b74f4de6926e44c6205ce98ddc0cfdf86b44b4019eec513fb8dd07",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Plots/Design#1_BCCZ_Original_equivalent_max_stress_strain_yield.png",
+   "bytes": 171320,
+   "sha256": "a8726bc4ccc24f8b83f9d63182b70bef87ce41e5828dd1b1ff4df0ae15296455",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Plots/Design#1_BCCZ_Original_equivalent_max_stress_strain_yield.svg",
+   "bytes": 88930,
+   "sha256": "b18c79a7ae2079c9befa1d9b82b566ffd4745f1a9cd2824d7c2bb157b0118a0d",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Plots/Design#1_BCCZ_Original_force_displacement.pdf",
+   "bytes": 29114,
+   "sha256": "f9040e342592d4bb765103ac5990b6649994748b6dbf3f085238f34a06c0d5c6",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Plots/Design#1_BCCZ_Original_force_displacement.png",
+   "bytes": 135947,
+   "sha256": "2fcd4d72268daf37576cce3da1c9e143ce859eb66f693ea66ea35f40dad02c6e",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Plots/Design#1_BCCZ_Original_force_displacement.svg",
+   "bytes": 64649,
+   "sha256": "77b7784d01cfdf6fa59cd8c59941c550e1ae64e7ad7d9aed87fb78bc68f80f6e",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Plots/Design#1_BCCZ_Original_mesh_convergence.pdf",
+   "bytes": 20219,
+   "sha256": "d5def5f875eaa01749c9390504f648886c67938039fa560f6c0a4f42f5962c8c",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Plots/Design#1_BCCZ_Original_mesh_convergence.png",
+   "bytes": 179071,
+   "sha256": "d1de0c9d70c795f3e407eec8260074cbe1234c7984fb52602ee7e0f03804e826",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Plots/Design#1_BCCZ_Original_mesh_convergence.svg",
+   "bytes": 62673,
+   "sha256": "c97135d5a8e68cbb13e73ce562012a301e06e234b0b842bd93bc0d6f7de2e34f",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/engineering_stress_strain.csv",
+   "bytes": 2786,
+   "sha256": "e03ddccd4f4393c88d85dcfba95af35fbf32f39e083437a8d55015b1cdbfb5c8",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/equivalent_max_history.csv",
+   "bytes": 1774,
+   "sha256": "cac47dd990901d24bfb22351c88aab3b7ed71496d0d990f94251bc246bff6751",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/force_displacement.csv",
+   "bytes": 3020,
+   "sha256": "68ac2ce953854068d4221565e3afb00a869fa3a4f810d19fa438f64e1be728a2",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/mesh_convergence.csv",
+   "bytes": 553,
+   "sha256": "51644f8ba74c0d9194b91ec614699722e928d2686407233753a18d1a4503d4fd",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/solver.log",
+   "bytes": 2228,
+   "sha256": "e8f49daebd6bb7b388db61e395bea98f47ffebe9b080e173e746040eb4424bbe",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/pilot/geometry_probe.csv",
+   "bytes": 162,
+   "sha256": "4f25da65045124f9391e2ce7fd4ed58f26e7ace7eebcf2b83176249dde819b2c",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/pilot/mesh_metrics.csv",
+   "bytes": 109,
+   "sha256": "506af5200701605a026136d64d8928d04d4869c87c9c8b614a5d284dad00754c",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/pilot/raw_history_L1.csv",
+   "bytes": 723,
+   "sha256": "1dd3fc8fc641e98a7e484e4007f585bee8ed1b078dce8e7c94f1450b0c462889",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/pilot2/geometry_probe.csv",
+   "bytes": 268,
+   "sha256": "97d17cca3de3793fffebf0ec7c30e2ebdbc894fb2cccb256ad35d88348547130",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/pilot2/mesh_metrics.csv",
+   "bytes": 88,
+   "sha256": "02326162dc0589c53d37376f0b6036a971d9eb0cc36b0ef17d435e6caa9ebf15",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/pilot2/raw_history_L1.csv",
+   "bytes": 1188,
+   "sha256": "18a8b1d221b0dd4cb8b034b7e455d4330fd3046e2e2f55e20f7ba0151b1d10ef",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/probe/geometry_probe.csv",
+   "bytes": 162,
+   "sha256": "4f25da65045124f9391e2ce7fd4ed58f26e7ace7eebcf2b83176249dde819b2c",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/probeaxis/geometry_probe.csv",
+   "bytes": 268,
+   "sha256": "97d17cca3de3793fffebf0ec7c30e2ebdbc894fb2cccb256ad35d88348547130",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/v1/geometry_probe.csv",
+   "bytes": 162,
+   "sha256": "4f25da65045124f9391e2ce7fd4ed58f26e7ace7eebcf2b83176249dde819b2c",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/v1/mesh_metrics.csv",
+   "bytes": 147,
+   "sha256": "afd071c915d45f86f360092e2c4959012666b8f7e4fd7154a09253eadad076c0",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/v1/raw_history_L1.csv",
+   "bytes": 6182,
+   "sha256": "90211d84f6dc01f35c23ca612c1ca6e6126447ff0cead218fab3368ffa9235de",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/v1/raw_history_L2.csv",
+   "bytes": 6187,
+   "sha256": "377251af0b8a22c92cffbe1535464bcceadf1451c2299ff7e6938ec43b184b47",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/v1/raw_history_L3.csv",
+   "bytes": 6199,
+   "sha256": "bafc3462a6b3b3d514bc1228573b95167861810a1a22b16cea1a83e8db7f23b9",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/v1/raw_history_L4.csv",
+   "bytes": 6198,
+   "sha256": "e917cf9dee598b0dea7d9f63f56ef2850db0db8e09f577a374600c24000fcfb2",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/v2/geometry_probe.csv",
+   "bytes": 268,
+   "sha256": "97d17cca3de3793fffebf0ec7c30e2ebdbc894fb2cccb256ad35d88348547130",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/v2/mesh_metrics.csv",
+   "bytes": 191,
+   "sha256": "21bd06aa21d39c23095a66733af79e00354ff6619926d4d6517b79f4d40de3df",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/v2/raw_history_L1.csv",
+   "bytes": 3917,
+   "sha256": "4a83551d6cbfce4cc8e9e7e98bef822b3fff83cce51b3ac8cd1e87eb6aa7772e",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/v2/raw_history_L2.csv",
+   "bytes": 4460,
+   "sha256": "2994bd24a2ecdc1e6448349c5936e17f0cea7537e509dd38946d8b7e4983a6fa",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/v2/raw_history_L3.csv",
+   "bytes": 5178,
+   "sha256": "160d211aa4bf7eea3b0216c344928c596126b6dfb49dbdd45d0a382ca4a20547",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Raw_Data/v2/raw_history_L4.csv",
+   "bytes": 5341,
+   "sha256": "d63616a42823c4dacb856be4a59655dbbe9e020f93319fb93ac2e62c7ddcb9fb",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Reports/case_results_v1.json",
+   "bytes": 1879,
+   "sha256": "4aa48a0153f01984a57ff335d055a264ecb87225c3d9af0fd1b231b321b7649b",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Reports/Design#1_BCCZ_Original_report.md",
+   "bytes": 2750,
+   "sha256": "2c6adfbed41e5270095aca1a8d6f5e0ede2d60a444e09e6de2583db14083a5cf",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Screenshots/03_ansys_geometry.png",
+   "bytes": 73519,
+   "sha256": "18bdbce2af2f5482be2571900fa99d1944dff48a0a0e3afdae07c95d0a70b948",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Screenshots/04_tough2000_assignment.png",
+   "bytes": 78220,
+   "sha256": "2430ebb9ce108c3196030cd9fc45c9712ca245279918d4673b6b87852c0c2a9b",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Screenshots/05_mesh.png",
+   "bytes": 163539,
+   "sha256": "e0bf645bdc1f70bdbf7b8febe990a90521910f7e010dbaae7d7ada10ecf1e5c9",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Screenshots/05_mesh_L1_size0.35.png",
+   "bytes": 125753,
+   "sha256": "3977db3a97a3d17ccd192cc4eff077a7baaf27b882ea4923315465717a0c833a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Screenshots/05_mesh_L1_size0.5.png",
+   "bytes": 111781,
+   "sha256": "7baeabb0e3332650e9a9b7c7bab889b9fa4cc741b5ec710816dad0f6fb50e4a3",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Screenshots/05_mesh_L2_size0.35.png",
+   "bytes": 125753,
+   "sha256": "3977db3a97a3d17ccd192cc4eff077a7baaf27b882ea4923315465717a0c833a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Screenshots/05_mesh_L3_size0.25.png",
+   "bytes": 143525,
+   "sha256": "205c283ced43f8c9968af582b933bdf0b3b870fcccc231eb295f7cf6b913f557",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Screenshots/05_mesh_L4_size0.18.png",
+   "bytes": 163539,
+   "sha256": "e0bf645bdc1f70bdbf7b8febe990a90521910f7e010dbaae7d7ada10ecf1e5c9",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Screenshots/06_fixed_support_and_loading.png",
+   "bytes": 89798,
+   "sha256": "b1ebee63b1168be7e9bafdfbfa3ed0e392279f8f66aa4c0953d9e927ba9b7f2d",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Screenshots/07_total_deformation.png",
+   "bytes": 110015,
+   "sha256": "6232e60bcd363f36df8c114b3d1888e9f2ab916084241477f569b9d768963789",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Screenshots/08_directional_deformation_z.png",
+   "bytes": 119737,
+   "sha256": "4ef228953a558d34753feec21e0f92fb53f07e1b94f0a269201c9be24f24de19",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Screenshots/09_equivalent_stress_von_mises.png",
+   "bytes": 151040,
+   "sha256": "e9ab4e35ac139cb2783e39e2e5d8c7e9181948369f8243fe9b6534ac137ca023",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Screenshots/10b_equivalent_plastic_strain.png",
+   "bytes": 149980,
+   "sha256": "afb502752bab907562a7aa3dd70f682c73a821dbedca6ed6c4b8f13b0c761ab9",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Screenshots/10_equivalent_total_strain.png",
+   "bytes": 149585,
+   "sha256": "91b50c0ef1c30eccbeda8a07f2347e331a0d02889f51910f8a89e8edf877ad7b",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#1_BCCZ_Original/Screenshots/11_mechanical_stress_strain_chart.png",
+   "bytes": 75644,
+   "sha256": "eea3c4e1245b43def18955d1e0c0e7fde33c4c0d62184b61f0983b81467170f9",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#2_BCCZ_Topo_Optimized/Raw_Data/pilot/geometry_probe.csv",
+   "bytes": 245,
+   "sha256": "c60eea3cdb2818370faf220a2422e2d370791f37195f9b4234dc7f81c092e93a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#2_BCCZ_Topo_Optimized/Raw_Data/pilotpi/geometry_probe.csv",
+   "bytes": 245,
+   "sha256": "c60eea3cdb2818370faf220a2422e2d370791f37195f9b4234dc7f81c092e93a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#2_BCCZ_Topo_Optimized/Raw_Data/pilotpi2/geometry_probe.csv",
+   "bytes": 245,
+   "sha256": "c60eea3cdb2818370faf220a2422e2d370791f37195f9b4234dc7f81c092e93a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#2_BCCZ_Topo_Optimized/Raw_Data/pilotsw/geometry_probe.csv",
+   "bytes": 300,
+   "sha256": "36cb2e23e333e5193fc4b6ce0f49b5da5765c164e9149132d6375a5b4a38514f",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#2_BCCZ_Topo_Optimized/Raw_Data/probe/geometry_probe.csv",
+   "bytes": 145,
+   "sha256": "8525d4256964cce8b3bc60324a8f8aa266e6e31f2609fefbd930908677cbde3f",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#2_BCCZ_Topo_Optimized/Raw_Data/probeaxis/geometry_probe.csv",
+   "bytes": 245,
+   "sha256": "c60eea3cdb2818370faf220a2422e2d370791f37195f9b4234dc7f81c092e93a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#2_BCCZ_Topo_Optimized/Reports/Design#2_BCCZ_Topo_Optimized_report.md",
+   "bytes": 1090,
+   "sha256": "4d1e440d05dc0c03c4ecc8c2a28915adb7357f2579d8ce2cccb3afeea7096483",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#2_BCCZ_Topo_Optimized/Screenshots/05_mesh.png",
+   "bytes": 300484,
+   "sha256": "2770867f20119173d064fa5c6aa0efe5e5517d44001204d9bc6b3f485a537a22",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#2_BCCZ_Topo_Optimized/Screenshots/05_mesh_L1_size0.6.png",
+   "bytes": 300484,
+   "sha256": "2770867f20119173d064fa5c6aa0efe5e5517d44001204d9bc6b3f485a537a22",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Mesh_Convergence/Design#3_Cube_Original_mesh_convergence.pdf",
+   "bytes": 20348,
+   "sha256": "42e061ef37d9e2589b11bd3a749a58a6897de8c190d9cb97814b23814f1e83b3",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Mesh_Convergence/Design#3_Cube_Original_mesh_convergence.png",
+   "bytes": 197987,
+   "sha256": "1b2639401adc90572c3bc99e1d7c3f1f95e7811bbbf2a284cc7f12516e40049d",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Mesh_Convergence/Design#3_Cube_Original_mesh_convergence.svg",
+   "bytes": 66876,
+   "sha256": "164e91753eedc8281dc8d6eeefdf47338aff590cee584326668417a39c3300cf",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Plots/Design#3_Cube_Original_ENGINEERING_STRESS_STRAIN_YIELD.pdf",
+   "bytes": 31342,
+   "sha256": "ac7101d8d363fac98acff14e6ace4e203b6becb08cda1b18ab09871f88842a4a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Plots/Design#3_Cube_Original_ENGINEERING_STRESS_STRAIN_YIELD.png",
+   "bytes": 217024,
+   "sha256": "7adfdde930f4b3842c996b2b4b18f6b99d7d8ef8b3adc599a87841a49866dce8",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Plots/Design#3_Cube_Original_ENGINEERING_STRESS_STRAIN_YIELD.svg",
+   "bytes": 94081,
+   "sha256": "c6b698fd0078edbfff790267cbd9687d9814f3b53fdf4442c63fd861bce44af7",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Plots/Design#3_Cube_Original_equivalent_max_stress_strain_yield.pdf",
+   "bytes": 32883,
+   "sha256": "740cb5eb44dc3457933bfbb950c6bde8a22b2769f7ab9d6f3dad4c547e08d2fd",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Plots/Design#3_Cube_Original_equivalent_max_stress_strain_yield.png",
+   "bytes": 163567,
+   "sha256": "ef8562d36bfc41a717b9acd1316d74b29bf920231f0d06303e28e85aeda03b59",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Plots/Design#3_Cube_Original_equivalent_max_stress_strain_yield.svg",
+   "bytes": 89171,
+   "sha256": "ddf418fd51e87593e13ecbd6eb97bc59da1bbf7275922bc2173b5405c5ac0abd",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Plots/Design#3_Cube_Original_force_displacement.pdf",
+   "bytes": 29731,
+   "sha256": "e596f27047252e1b98f3068b03798a7421c8549b2c3e440ef3beedaf4525afc0",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Plots/Design#3_Cube_Original_force_displacement.png",
+   "bytes": 121866,
+   "sha256": "96bfb5808d905125fbd1d9a78c8f6c640271c8f0c16d19cb787a2972a7f70860",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Plots/Design#3_Cube_Original_force_displacement.svg",
+   "bytes": 66316,
+   "sha256": "dbe36caab63b35fc55874a7f02efd070567ddad8580f0cf9e85b7667cbc22d7d",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Plots/Design#3_Cube_Original_mesh_convergence.pdf",
+   "bytes": 20348,
+   "sha256": "08076a8fffd64c43483e85abea4a0d1fa3b8aef9734c112bdbb2968cdba7788b",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Plots/Design#3_Cube_Original_mesh_convergence.png",
+   "bytes": 197987,
+   "sha256": "1b2639401adc90572c3bc99e1d7c3f1f95e7811bbbf2a284cc7f12516e40049d",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Plots/Design#3_Cube_Original_mesh_convergence.svg",
+   "bytes": 66876,
+   "sha256": "f6ae01caf8b982a60f2a88043848a1b6880b37c5e6dd0471536a31b5df0e9ec5",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Raw_Data/engineering_stress_strain.csv",
+   "bytes": 3422,
+   "sha256": "201bdd5a6a7c6a367c4d4cbdb836b532844341846caf314181b6d6e0e6fbaf74",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Raw_Data/equivalent_max_history.csv",
+   "bytes": 2555,
+   "sha256": "8418e2b59c6ee90a666d7c8ffdad74fe56c95a9ad0f7fa66125da01c1e027cae",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Raw_Data/force_displacement.csv",
+   "bytes": 4318,
+   "sha256": "293d4f2538910c535e7ff256727fd687d7de0ff270288b80d3fb55b5bfa3cf7f",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Raw_Data/mesh_convergence.csv",
+   "bytes": 597,
+   "sha256": "18e792fd986e24de85efb9b43eb72c94be76df15090e67c4eea6bdc8814b5bbb",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Raw_Data/solver.log",
+   "bytes": 2002,
+   "sha256": "c61a44ce5df70849d6d33bfe6c2548223ad15c5e97a6f8577c43cf25b372b7e5",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Raw_Data/pilot/geometry_probe.csv",
+   "bytes": 127,
+   "sha256": "d0361482109ab97215796c85e23659f7ff547dffcd971a69947eea93ea085b5a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Raw_Data/pilot/mesh_metrics.csv",
+   "bytes": 78,
+   "sha256": "18feca5e054c6e4ab066fac5307c3d12d3ff43d4e05f9f23f10c0bc3431dfb4f",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Raw_Data/pilot/raw_history_L1.csv",
+   "bytes": 2048,
+   "sha256": "07a341f3700620501459dd40717467d001205d34c6a3d45401bca796fbc13b23",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Raw_Data/probe/geometry_probe.csv",
+   "bytes": 127,
+   "sha256": "d0361482109ab97215796c85e23659f7ff547dffcd971a69947eea93ea085b5a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Raw_Data/probeaxis/geometry_probe.csv",
+   "bytes": 208,
+   "sha256": "80c0354e3b334853ad0f366d497e1eb63440224ac7e5a2f171a88acbe39141b3",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Raw_Data/v1/geometry_probe.csv",
+   "bytes": 127,
+   "sha256": "d0361482109ab97215796c85e23659f7ff547dffcd971a69947eea93ea085b5a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Raw_Data/v1/mesh_metrics.csv",
+   "bytes": 151,
+   "sha256": "cbb23eabdf6a60fa1c32bc19b07ed3045e3b3b50c9be27bea087889d59b3ba0b",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Raw_Data/v1/raw_history_L1.csv",
+   "bytes": 6162,
+   "sha256": "c63554ec958ba9b738b2b8592f7f18bb0a8486be96b9a31640603ca1c95e734d",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Raw_Data/v1/raw_history_L2.csv",
+   "bytes": 6161,
+   "sha256": "93d39dfe7eb348939ca107e01be6da741ae0568ba3711b6d62940f0b50d82330",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Raw_Data/v1/raw_history_L3.csv",
+   "bytes": 6156,
+   "sha256": "eaaa589cf51590953c34b18c0a37da2aa08cead61cf7901fa7e35efe568ef900",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Raw_Data/v1/raw_history_L4.csv",
+   "bytes": 6156,
+   "sha256": "cdcbe32280b9559010e030650961637e649eca74e7213bdcde30307ecd9a573c",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Reports/case_results_v1.json",
+   "bytes": 1826,
+   "sha256": "e3fbe13c246c65104a5300d08bde3d640d81f99cacc4ac28feddf7e06c7b436d",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Reports/Design#3_Cube_Original_report.md",
+   "bytes": 2793,
+   "sha256": "096b97fe43d22caf1ea495efe86a2f94bd8a07fed712713bebb3b7733271bdea",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Screenshots/03_ansys_geometry.png",
+   "bytes": 72566,
+   "sha256": "fece62a377a67f5bec43f2c9ec5288913493711c1b4b75fb230885f9223d0791",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Screenshots/04_tough2000_assignment.png",
+   "bytes": 73760,
+   "sha256": "6a25706a0373590e7a294e4892da4fadeb7ee2eacc79d6294a1b736759d8bb5c",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Screenshots/05_mesh.png",
+   "bytes": 108050,
+   "sha256": "30149d70cb5a9b6a66d203e1c7a181276ffda1a7b54b0e627f09febc6fe20a08",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Screenshots/05_mesh_L1_size0.35.png",
+   "bytes": 93621,
+   "sha256": "aaa0b0260cd58d3d1fb969e8beb74cb34cacb5886d52dca2ea294a049affb14b",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Screenshots/05_mesh_L1_size0.5.png",
+   "bytes": 85077,
+   "sha256": "4c832e654d22a090d8d5f68fec798ca75255311f35130931ca2499cd0d16fe6f",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Screenshots/05_mesh_L2_size0.35.png",
+   "bytes": 93621,
+   "sha256": "aaa0b0260cd58d3d1fb969e8beb74cb34cacb5886d52dca2ea294a049affb14b",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Screenshots/05_mesh_L3_size0.25.png",
+   "bytes": 97157,
+   "sha256": "ab869524d3e316c6cfdcae6833d780240b086828079c8ce06fae1d61683713ef",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Screenshots/05_mesh_L4_size0.18.png",
+   "bytes": 108050,
+   "sha256": "30149d70cb5a9b6a66d203e1c7a181276ffda1a7b54b0e627f09febc6fe20a08",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Screenshots/06_fixed_support_and_loading.png",
+   "bytes": 85722,
+   "sha256": "bd6022091bfb70521f204980ce5152a70053e568af0707788c116f8827ea46e1",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Screenshots/07_total_deformation.png",
+   "bytes": 206605,
+   "sha256": "de7f57e3079b97e65b6cfe5765278d1357902870525aa036f9ed9a1ffbf4aa1b",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Screenshots/08_directional_deformation_z.png",
+   "bytes": 207035,
+   "sha256": "f1dd35714afebf660b119bcb5fdf06ea68a550e1d100a3bdbbf17a4c954d18bf",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Screenshots/09_equivalent_stress_von_mises.png",
+   "bytes": 188724,
+   "sha256": "12c5bdc30c9767474672497fa9a1323d17913df2832480718704c3264f516b44",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Screenshots/10b_equivalent_plastic_strain.png",
+   "bytes": 201276,
+   "sha256": "335504da451f2581b8c9055619b473744aeb97b4593c67669c07307d0cd2029c",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Screenshots/10_equivalent_total_strain.png",
+   "bytes": 206116,
+   "sha256": "c58906cd3484a366ac9793a323dc36c38c53d1ede0ac159780596786da14f0df",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#3_Cube_Original/Screenshots/11_mechanical_stress_strain_chart.png",
+   "bytes": 159101,
+   "sha256": "d79e309688c32bc976dbe3c4946b2c1fd9df6e3eba95ae6fa2a5532f30046ff2",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Mesh_Convergence/Design#4_Cube_Topo_Optimized_mesh_convergence.pdf",
+   "bytes": 21289,
+   "sha256": "2299933647d82f0668149dfccdaa072ff20889e0d0e9f6587e4df991fb2e7da8",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Mesh_Convergence/Design#4_Cube_Topo_Optimized_mesh_convergence.png",
+   "bytes": 228666,
+   "sha256": "a1545eb94c35510c371575299031e9eb304f0dae76bc27362cb086cae6daa890",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Mesh_Convergence/Design#4_Cube_Topo_Optimized_mesh_convergence.svg",
+   "bytes": 73943,
+   "sha256": "f7457b1cd33f55b421bff129d5dca8def3f3197f80a28b34dec8a7d98b5427fe",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Plots/Design#4_Cube_Topo_Optimized_ENGINEERING_STRESS_STRAIN_YIELD.pdf",
+   "bytes": 31487,
+   "sha256": "43d8c4bef5d685ba8e4a50b1fa6468e657691fcafb210b4baa79363e2eaa5a12",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Plots/Design#4_Cube_Topo_Optimized_ENGINEERING_STRESS_STRAIN_YIELD.png",
+   "bytes": 206233,
+   "sha256": "da366bb088d7115b473af51b496734e04e1a1fa6705d1b948e47ff3134443927",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Plots/Design#4_Cube_Topo_Optimized_ENGINEERING_STRESS_STRAIN_YIELD.svg",
+   "bytes": 92488,
+   "sha256": "4cada28aae1a014833b2f7116bd5ac3af0519035bcc01829559aa61aa5e9cc86",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Plots/Design#4_Cube_Topo_Optimized_equivalent_max_stress_strain_yield.pdf",
+   "bytes": 33461,
+   "sha256": "35eed2e177dea0ca8c3ed645a3ab00d48667f8c9d43f2cfe5e3cd3c4a54d0d77",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Plots/Design#4_Cube_Topo_Optimized_equivalent_max_stress_strain_yield.png",
+   "bytes": 167908,
+   "sha256": "6b90bafc375f32d6587149e0c474fa71e05e5421a31b7ef70176155ba2860c3b",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Plots/Design#4_Cube_Topo_Optimized_equivalent_max_stress_strain_yield.svg",
+   "bytes": 91558,
+   "sha256": "0c26a53fc62815e7cb86aa7d70f51ea3f09af677ecbeb67660138caffb2ae6de",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Plots/Design#4_Cube_Topo_Optimized_force_displacement.pdf",
+   "bytes": 29488,
+   "sha256": "5c00c9eb2e4383c4c265a2aa1161bec6c60d26ad89ef462c93562453e7f0cb00",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Plots/Design#4_Cube_Topo_Optimized_force_displacement.png",
+   "bytes": 119961,
+   "sha256": "45dd0799f6a92b4f81e493d27c9b775eab7abf46f31b0011009f48e38bacbfb1",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Plots/Design#4_Cube_Topo_Optimized_force_displacement.svg",
+   "bytes": 65062,
+   "sha256": "d889cb66e35e06e1fbc9b74d7e72121ece3df40d94e2e5a456eec58999bf81e2",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Plots/Design#4_Cube_Topo_Optimized_mesh_convergence.pdf",
+   "bytes": 21289,
+   "sha256": "837b2d0362322ad0a7a5babe7b65e587f7d93d5833f36a54bf4ae85878a39c6c",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Plots/Design#4_Cube_Topo_Optimized_mesh_convergence.png",
+   "bytes": 228666,
+   "sha256": "a1545eb94c35510c371575299031e9eb304f0dae76bc27362cb086cae6daa890",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Plots/Design#4_Cube_Topo_Optimized_mesh_convergence.svg",
+   "bytes": 73943,
+   "sha256": "2f7594f85791eeaa09b3ae2c50abc3ce142b2216084079a1ffb02699d6baca13",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Raw_Data/engineering_stress_strain.csv",
+   "bytes": 5145,
+   "sha256": "6690e3d252c854070a0d0ac81f5a67a25ca913ecb6cb6227294048e8e556466c",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Raw_Data/equivalent_max_history.csv",
+   "bytes": 2553,
+   "sha256": "fbf88832254d5cb7d5a6b638d116454d0f10137c69af6bd9bd17af6da14d2d91",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Raw_Data/force_displacement.csv",
+   "bytes": 4318,
+   "sha256": "e8117102850097fdf570f833cf566ad7155ba500c4e5790069236d478fe4dff8",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Raw_Data/mesh_convergence.csv",
+   "bytes": 604,
+   "sha256": "c4d14f2fe557f06cbc64d239b05150c43da4cbd48e381ecb90577163ff019558",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Raw_Data/solver.log",
+   "bytes": 2504,
+   "sha256": "e1c5c2ef7054ed16626c74d8ddaf49b9ed40f02f5eb86eb59f5c1be145664002",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Raw_Data/pilot/geometry_probe.csv",
+   "bytes": 298,
+   "sha256": "096afe3c0b2604181ad694293554f1c6ea42ecf3ace0760a365841f3ad20e4a1",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Raw_Data/pilot/mesh_metrics.csv",
+   "bytes": 90,
+   "sha256": "69ded4c64ef89cefe052014e89564ef3c08c78177d752de91d842d61021ea03f",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Raw_Data/pilot/raw_history_L1.csv",
+   "bytes": 1853,
+   "sha256": "84728c4e3bc452559aacdd1f1a21456ff291adec7f66059cb84ce56d8c2c7ffe",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Raw_Data/probe/geometry_probe.csv",
+   "bytes": 118,
+   "sha256": "6ebd519719ca566d15caff5098874bb94dbd7516024fe2ec27c2d2fbe8d2e9d8",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Raw_Data/probeaxis/geometry_probe.csv",
+   "bytes": 298,
+   "sha256": "096afe3c0b2604181ad694293554f1c6ea42ecf3ace0760a365841f3ad20e4a1",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Raw_Data/probe_sldprt/geometry_probe.csv",
+   "bytes": 168,
+   "sha256": "b53dc1ee2ea0c91dbd1631ce34e6aaf058ea9d2b1e39b1a3064dbe53e0b988e7",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Raw_Data/v1/geometry_probe.csv",
+   "bytes": 298,
+   "sha256": "096afe3c0b2604181ad694293554f1c6ea42ecf3ace0760a365841f3ad20e4a1",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Raw_Data/v1/mesh_metrics.csv",
+   "bytes": 153,
+   "sha256": "606f1e2608f13014005755678f522a4b838a1f311d79a527aabb781db45d1379",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Raw_Data/v1/raw_history_L1.csv",
+   "bytes": 6160,
+   "sha256": "330b59fcffdd75628f1ad53471178580b062ada8dd3dc25110cd1d81009782ff",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Raw_Data/v1/raw_history_L2.csv",
+   "bytes": 6161,
+   "sha256": "e8df475c93f001cd5097013ab2b54f386a3847840aa52ab32c31e729fc91e5d6",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Raw_Data/v1/raw_history_L3.csv",
+   "bytes": 6165,
+   "sha256": "8cee8135371b569d4ca449913aef58135b327687e6f3a95bc0b53c557efaf887",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Raw_Data/v1/raw_history_L4.csv",
+   "bytes": 6158,
+   "sha256": "ef1b2cb30d321933f81079cccc3418ad55b5bff69427f47ccf8144eda577599e",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Reports/case_results_v1.json",
+   "bytes": 1888,
+   "sha256": "999cc63885063e409f1d74232fad31477dd7016c582ff876c00ef27c39cfc5af",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Reports/Design#4_Cube_Topo_Optimized_report.md",
+   "bytes": 2749,
+   "sha256": "25cb1464260c16fce211b7b182d7a2a03102685fbcbec0707ec0e9f457c5986a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Screenshots/03_ansys_geometry.png",
+   "bytes": 115329,
+   "sha256": "acd6cf8b41299c5fd6505f5145a2c596d9e8a4d12fb64632e7a1f10170be6907",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Screenshots/04_tough2000_assignment.png",
+   "bytes": 139015,
+   "sha256": "f3c4ac9a0ea2dfcb562dc14b219182fd6f019a1ab2b5dc0d1551a224d2560c95",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Screenshots/05_mesh.png",
+   "bytes": 248697,
+   "sha256": "ad963617d84d4c7600600c82ec4b9d4beb74dc97be9bea52c4afc57e7b7f6e4f",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Screenshots/05_mesh_L1_size0.35.png",
+   "bytes": 170242,
+   "sha256": "3aead79be1dcc34a3a457290b8c794ec61b483dbbcd6928425cdac9df22847fb",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Screenshots/05_mesh_L1_size0.5.png",
+   "bytes": 146157,
+   "sha256": "e806a956f19aba5c5a87be50981ef3cc6a9c2595cc9c11f0794d5fcdec44e680",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Screenshots/05_mesh_L2_size0.35.png",
+   "bytes": 170242,
+   "sha256": "3aead79be1dcc34a3a457290b8c794ec61b483dbbcd6928425cdac9df22847fb",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Screenshots/05_mesh_L3_size0.25.png",
+   "bytes": 212377,
+   "sha256": "6922d7babebc3d45bfc24be2398d3a4fb11978f80b972f49cd2b2adad6b186cf",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Screenshots/05_mesh_L4_size0.18.png",
+   "bytes": 248697,
+   "sha256": "ad963617d84d4c7600600c82ec4b9d4beb74dc97be9bea52c4afc57e7b7f6e4f",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Screenshots/06_fixed_support_and_loading.png",
+   "bytes": 129708,
+   "sha256": "316751d23526df3aa116d23ef731f0574cf68be6bbd924d07aa57c0fde938ed0",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Screenshots/07_total_deformation.png",
+   "bytes": 305950,
+   "sha256": "74b309a19af3c12defb058581b3be497d2db323770d9a13fbcd1e370286649dc",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Screenshots/08_directional_deformation_z.png",
+   "bytes": 318252,
+   "sha256": "0048ce5f46ca27f3ae8fe97f4b6bcc7c6f5277aa17617b53e1234286b8033f83",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Screenshots/09_equivalent_stress_von_mises.png",
+   "bytes": 332106,
+   "sha256": "8935bf25ef5d0cba622ad95eb7410d61251b690f4378e971340c3413ec99fa23",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Screenshots/10b_equivalent_plastic_strain.png",
+   "bytes": 308166,
+   "sha256": "3b1eb5105a1e53b48dbf48c2bd0e7943c3058626b9c45cf8c2adde7eca8b5075",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Screenshots/10_equivalent_total_strain.png",
+   "bytes": 313582,
+   "sha256": "238b4749a4f566b36085b3b2892515c9fc1eee41f6d0d6a1294e2e336927d923",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#4_Cube_Topo_Optimized/Screenshots/11_mechanical_stress_strain_chart.png",
+   "bytes": 284384,
+   "sha256": "35022e84268a0549f11ed4d88a44a204f4a713d3897bc177451252b5184c72e7",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Mesh_Convergence/Design#5_Fluorite_Truss_Original_mesh_convergence.pdf",
+   "bytes": 20152,
+   "sha256": "19d8a1514b2abe4b0334b28352f94082966b352d832333aa56610b420e113ac0",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Mesh_Convergence/Design#5_Fluorite_Truss_Original_mesh_convergence.png",
+   "bytes": 196122,
+   "sha256": "e7f1a4f625dcdd1879be277c14676dfae8e937cac05384142d71c500fa3608c6",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Mesh_Convergence/Design#5_Fluorite_Truss_Original_mesh_convergence.svg",
+   "bytes": 68792,
+   "sha256": "5f841acf119c7ed6aec3b4498652a7186fa1b68cae6b730a3bc1d86283363956",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Plots/Design#5_Fluorite_Truss_Original_ENGINEERING_STRESS_STRAIN_YIELD.pdf",
+   "bytes": 30108,
+   "sha256": "0b6157e81195b14f5c7bc90e381b49d093ef6614b474683b7f9383c3a757ddb2",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Plots/Design#5_Fluorite_Truss_Original_ENGINEERING_STRESS_STRAIN_YIELD.png",
+   "bytes": 213419,
+   "sha256": "255389cf6239463838c9fd7cb9c5fe4a9ce28529fdf417db9f0a4a5cf728b6d3",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Plots/Design#5_Fluorite_Truss_Original_ENGINEERING_STRESS_STRAIN_YIELD.svg",
+   "bytes": 90444,
+   "sha256": "ec44bb945b38b3f765137beb596ad1070050f6e9836758abca1af64d5fd4f223",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Plots/Design#5_Fluorite_Truss_Original_equivalent_max_stress_strain_yield.pdf",
+   "bytes": 32792,
+   "sha256": "cba87d867800fd1c29a54ab67640a125b224f14961021ece82ce10b7679d94e0",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Plots/Design#5_Fluorite_Truss_Original_equivalent_max_stress_strain_yield.png",
+   "bytes": 175926,
+   "sha256": "6c661f6b3b8ac9388232635cf0dfde5c9945b8ed7e6dffa37ea077698e78f675",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Plots/Design#5_Fluorite_Truss_Original_equivalent_max_stress_strain_yield.svg",
+   "bytes": 90624,
+   "sha256": "97d0a2562bd861c2901421dbabbdddcb6f4df92234b16faf99b000e3e80714fe",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Plots/Design#5_Fluorite_Truss_Original_force_displacement.pdf",
+   "bytes": 28875,
+   "sha256": "0ef498bc0e5239cd474cb8548e20d859eaeeb00100b56db605faa7f02cfa704f",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Plots/Design#5_Fluorite_Truss_Original_force_displacement.png",
+   "bytes": 122775,
+   "sha256": "8cc39a1783095cb5fd18c1cef3adbe7133ad4021bf897e24bdfe81c59436a180",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Plots/Design#5_Fluorite_Truss_Original_force_displacement.svg",
+   "bytes": 65442,
+   "sha256": "6787f6de41de52bc790922efb6b0ad65261ee0b4308647e32fc22d29bac80c2a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Plots/Design#5_Fluorite_Truss_Original_mesh_convergence.pdf",
+   "bytes": 20152,
+   "sha256": "6c4aee4fa4444626fabbe07383f739a2e3730dd5efd54690fd43dac9fc033d0a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Plots/Design#5_Fluorite_Truss_Original_mesh_convergence.png",
+   "bytes": 196122,
+   "sha256": "e7f1a4f625dcdd1879be277c14676dfae8e937cac05384142d71c500fa3608c6",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Plots/Design#5_Fluorite_Truss_Original_mesh_convergence.svg",
+   "bytes": 68792,
+   "sha256": "d4650346ceb3b760f3fa6ac2963875821f73105e6a711ebefb356cf5da5dfe46",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/engineering_stress_strain.csv",
+   "bytes": 5085,
+   "sha256": "40f036c9448d06fd43bee96a6281a18e81f531bfe40be9ac76352c5998b57d5d",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/equivalent_max_history.csv",
+   "bytes": 2577,
+   "sha256": "d08f189aa14f4fcd2f7595b403046a0e45918d11182faf8db0d9555b5f0ac579",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/force_displacement.csv",
+   "bytes": 4315,
+   "sha256": "d58ff292201ca8d2878805cc2fa453c084e6d523b58404291ea6ccf582ed0a8a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/mesh_convergence.csv",
+   "bytes": 608,
+   "sha256": "20350089ed75c7657fe15a8597deb55e7c2d5d6e4fd978de906d58a6ce795fb1",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/solver.log",
+   "bytes": 2200,
+   "sha256": "dc41851770c758fb3c5f15ef59e1658e751a8f8fef7f2b2219ed4d930c412e45",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/pilot/geometry_probe.csv",
+   "bytes": 183,
+   "sha256": "f970f01fe146236ddbd84c437d3bfe5be04eb15d2ba1191bd3c46a3dbd0abf6a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/pilot/mesh_metrics.csv",
+   "bytes": 109,
+   "sha256": "2eedb100d4a5130a2651dd6fe9236102aae6c47fc4e68591e49564b4961428fd",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/pilot/raw_history_L1.csv",
+   "bytes": 723,
+   "sha256": "1dd3fc8fc641e98a7e484e4007f585bee8ed1b078dce8e7c94f1450b0c462889",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/probe/geometry_probe.csv",
+   "bytes": 183,
+   "sha256": "f970f01fe146236ddbd84c437d3bfe5be04eb15d2ba1191bd3c46a3dbd0abf6a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/probeaxis/geometry_probe.csv",
+   "bytes": 313,
+   "sha256": "3531e6c6fe7e93c98b2ff8a80696bad18b0f0e3dbed24af9d94c55aa964b9780",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/v1/geometry_probe.csv",
+   "bytes": 183,
+   "sha256": "f970f01fe146236ddbd84c437d3bfe5be04eb15d2ba1191bd3c46a3dbd0abf6a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/v1/mesh_metrics.csv",
+   "bytes": 147,
+   "sha256": "c8e0ccc7d3df7bdc4c9dc91f07c588b6dfcd1da7f75d635be770afc5ba0456d2",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/v1/raw_history_L1.csv",
+   "bytes": 6217,
+   "sha256": "9b15b6b5bf16044fa8da4930c4fc02a43bbad5f0383e5d27804e57afdffb68e7",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/v1/raw_history_L2.csv",
+   "bytes": 6211,
+   "sha256": "ece947b189cbc9aff5bd1978543b171f2f983541639232e51f7634eda3405eaf",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/v1/raw_history_L3.csv",
+   "bytes": 6207,
+   "sha256": "730b4692970a99b3603554120f20c672719538014523563a4482a8eb698c75e9",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/v1/raw_history_L4.csv",
+   "bytes": 6200,
+   "sha256": "db23997d8d816464746e271a5e599af103858b6cc1b5fea864467413a5ace5c2",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/v3/geometry_probe.csv",
+   "bytes": 313,
+   "sha256": "3531e6c6fe7e93c98b2ff8a80696bad18b0f0e3dbed24af9d94c55aa964b9780",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/v3/raw_history_L1.csv",
+   "bytes": 6207,
+   "sha256": "730b4692970a99b3603554120f20c672719538014523563a4482a8eb698c75e9",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/v3/raw_history_L2.csv",
+   "bytes": 6200,
+   "sha256": "db23997d8d816464746e271a5e599af103858b6cc1b5fea864467413a5ace5c2",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/v3/raw_history_L3.csv",
+   "bytes": 6194,
+   "sha256": "923a28711d27085ce4889caa04e454972ac067f94f5356995bc4124e83b64153",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Raw_Data/v3/raw_history_L4.csv",
+   "bytes": 6188,
+   "sha256": "cc642312ca34114bcffaf58cb0fafecf8852a4f56927dc3f653ce1b667cd80f2",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Reports/case_results_v1.json",
+   "bytes": 1898,
+   "sha256": "9917b2e8ec18ad2791729a989795b3a0b5d9c1f6508b4f729d3a63dfe286d4b6",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Reports/Design#5_Fluorite_Truss_Original_report.md",
+   "bytes": 2793,
+   "sha256": "f6a3c53d02b543ce1673ab4726cf3c0b78282c5fba4167b8843ac365dfd4fc83",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/03_ansys_geometry.png",
+   "bytes": 163905,
+   "sha256": "935d3bc74786d3f2e4bb9e4e79e1f6343fd458c7c2fa0b6db83f93a1c6fcac4e",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/04_tough2000_assignment.png",
+   "bytes": 215532,
+   "sha256": "0a3c121975504ba8d20839e828c5ac3e097838b5de621657714187dc3e2f0f42",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/05_mesh.png",
+   "bytes": 259640,
+   "sha256": "b768888064dfe81a4b6bcdab549cbbeb632fc003f526a1741f0b401779c02856",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/05_mesh_L1_size0.25.png",
+   "bytes": 150338,
+   "sha256": "5c2dac6330dce6eac71ff03d4298efb2a872a97d4127f689c69183239b1ad6c6",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/05_mesh_L1_size0.35.png",
+   "bytes": 143546,
+   "sha256": "a35467fb266d531029812480e4f269ce161b5967e443ca88030b0ec7c0ac796a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/05_mesh_L1_size0.5.png",
+   "bytes": 138481,
+   "sha256": "522fc04d6b082f63443bce3bb03fe37b89a85268f87df3097e35af222ffd7b62",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/05_mesh_L2_size0.18.png",
+   "bytes": 191206,
+   "sha256": "dce6d4c37ba37d563804183f75f83bca7c3991a62ad7c54a8f688f39c32e83bc",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/05_mesh_L2_size0.35.png",
+   "bytes": 143546,
+   "sha256": "a35467fb266d531029812480e4f269ce161b5967e443ca88030b0ec7c0ac796a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/05_mesh_L3_size0.13.png",
+   "bytes": 213045,
+   "sha256": "2fd746ca3accf5e0a1e9ee03c648ed58b3e161cc83dbacbb44bc7bb4ae551746",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/05_mesh_L3_size0.25.png",
+   "bytes": 150338,
+   "sha256": "5c2dac6330dce6eac71ff03d4298efb2a872a97d4127f689c69183239b1ad6c6",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/05_mesh_L4_size0.1.png",
+   "bytes": 236770,
+   "sha256": "bc73a17fd870c6fe9064427f8bd14a4d77d3b5c89f928ec7acfd446c9d76f67d",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/05_mesh_L4_size0.18.png",
+   "bytes": 191206,
+   "sha256": "dce6d4c37ba37d563804183f75f83bca7c3991a62ad7c54a8f688f39c32e83bc",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/05_mesh_L5_size0.08.png",
+   "bytes": 259640,
+   "sha256": "b768888064dfe81a4b6bcdab549cbbeb632fc003f526a1741f0b401779c02856",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/06_fixed_support_and_loading.png",
+   "bytes": 178176,
+   "sha256": "39cec48c6577a9ad1f1e4cf89a28ac9ef9daf21bdf21a95aa5c8c09eed66d924",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/07_total_deformation.png",
+   "bytes": 230985,
+   "sha256": "baeaa9739d4db7cf82d915cb5973c2f32591d68e1ee37781f32b20f0c0711dd7",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/08_directional_deformation_z.png",
+   "bytes": 240708,
+   "sha256": "db6660820d10a2eb96cd5ea11647cab74484bdd68709007f3a675de2e227f2a0",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/09_equivalent_stress_von_mises.png",
+   "bytes": 265242,
+   "sha256": "618e9a7eac0ba55aaab4a40922061cf34d10d4d7e3ac7231e1690b9c00fc5cf1",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/10b_equivalent_plastic_strain.png",
+   "bytes": 221276,
+   "sha256": "0c62bdfea40954dfa98e39df6b5bf5f2428694bd1dc0fcc6d2fd71f4af0bc508",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/10_equivalent_total_strain.png",
+   "bytes": 241786,
+   "sha256": "dd1c7d2c8b3903285e9572804e484f38271d9e875efc9a28249eee74e2ba86df",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#5_Fluorite_Truss_Original/Screenshots/11_mechanical_stress_strain_chart.png",
+   "bytes": 263861,
+   "sha256": "b0849be5f1b82a91b780cb1d2d6ee65a13b8c75b791e6e9253834acc39644c25",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Raw_Data/pilot/geometry_probe.csv",
+   "bytes": 145,
+   "sha256": "713626fc885d3c372d2accfbd0481c7dd7f9063022bdcc2dcf052f86eabd5e0b",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Raw_Data/pilot/mesh_metrics.csv",
+   "bytes": 89,
+   "sha256": "44014edcdc9b14360e51ef176a8387d83d01b38a73329bc466aeacc3524cec58",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Raw_Data/pilot/raw_history_L1.csv",
+   "bytes": 1401,
+   "sha256": "ffe0cef99eeaa4bcaac4f37596d5e71ca789f4d1f1da06dc349e34347b4cd865",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Raw_Data/pilot2/geometry_probe.csv",
+   "bytes": 245,
+   "sha256": "9edb8d1cc20c0e6c19a6c2e25ae0b4f485345142f07c550622227fa8dd26d9e2",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Raw_Data/pilot2/mesh_metrics.csv",
+   "bytes": 89,
+   "sha256": "44014edcdc9b14360e51ef176a8387d83d01b38a73329bc466aeacc3524cec58",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Raw_Data/pilot2/raw_history_L1.csv",
+   "bytes": 1489,
+   "sha256": "c37ecd2dac7068ebe73e457e007fd988fc7e98b3fe2c3909b1603000cb509eed",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Raw_Data/probe/geometry_probe.csv",
+   "bytes": 145,
+   "sha256": "713626fc885d3c372d2accfbd0481c7dd7f9063022bdcc2dcf052f86eabd5e0b",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Raw_Data/probeaxis/geometry_probe.csv",
+   "bytes": 245,
+   "sha256": "9edb8d1cc20c0e6c19a6c2e25ae0b4f485345142f07c550622227fa8dd26d9e2",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Raw_Data/v4/geometry_probe.csv",
+   "bytes": 245,
+   "sha256": "9edb8d1cc20c0e6c19a6c2e25ae0b4f485345142f07c550622227fa8dd26d9e2",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Reports/Design#6_Fluorite_Truss_Topo_Optimized_report.md",
+   "bytes": 1569,
+   "sha256": "42a125cc2d0eb77f335c3a281b7d8cde71242fbb53f5b0abc81c5d6c963c5f91",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Screenshots/03_ansys_geometry.png",
+   "bytes": 261398,
+   "sha256": "ec449e506ffc4dda71d87f106eb32bc2a8a19016252af054ed9dc8450d4d545e",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Screenshots/04_tough2000_assignment.png",
+   "bytes": 319573,
+   "sha256": "dd275c5080eea95e8accb82be8ee7eeb9db37343288c0e5d604dcf4276ea7c3c",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Screenshots/05_mesh.png",
+   "bytes": 260646,
+   "sha256": "496fd071ef7800365fd4d0300fbd738b43e7fa0b356a31924b5029b03e827f8c",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Screenshots/05_mesh_L1_size0.6.png",
+   "bytes": 260646,
+   "sha256": "496fd071ef7800365fd4d0300fbd738b43e7fa0b356a31924b5029b03e827f8c",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Screenshots/06_fixed_support_and_loading.png",
+   "bytes": 272339,
+   "sha256": "3041fcfa31bc114258f326579a399b4b4c3d5041081461d058a0434bd5ec1f7a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Screenshots/07_total_deformation.png",
+   "bytes": 304016,
+   "sha256": "7c4736c8249142e8e14fb119bf6cbdaf0ccb6e9c88b7ac1f2bfc8c3a9cef711b",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Screenshots/08_directional_deformation_z.png",
+   "bytes": 311961,
+   "sha256": "28fa90c6f2e684a02073d7da4655e542417d1d6268f122f04d90e392e08a0cce",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Screenshots/09_equivalent_stress_von_mises.png",
+   "bytes": 283030,
+   "sha256": "cfdef3b61d220871d7fe359e50abefc9196de0c5f262e29d8db79efd4d4d7ae4",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Screenshots/10b_equivalent_plastic_strain.png",
+   "bytes": 282029,
+   "sha256": "79223f5655039a5fa8051b9676f80bfbd37a117e376ab567921f54c2c181d061",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Screenshots/10_equivalent_total_strain.png",
+   "bytes": 281666,
+   "sha256": "63d2635197ea8037e5ced14964170349ed09b8695845fa05e0c01159e4e82ecc",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#6_Fluorite_Truss_Topo_Optimized/Screenshots/11_mechanical_stress_strain_chart.png",
+   "bytes": 263668,
+   "sha256": "b8739bb4407a745f692199c591972fc99124ce4b6020e7ef4e1699cd20ee1524",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Mesh_Convergence/Design#7_Octet_Truss_Original_mesh_convergence.pdf",
+   "bytes": 19931,
+   "sha256": "cf194085a5504bc70ac5b58ea32b914e2dff677d3dbb36d0caf04c14eea29bf7",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Mesh_Convergence/Design#7_Octet_Truss_Original_mesh_convergence.png",
+   "bytes": 173004,
+   "sha256": "e54e055dcf75f64010125e8a26f1d9c5c35d4191cfafabc7c06e5207c562f6a2",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Mesh_Convergence/Design#7_Octet_Truss_Original_mesh_convergence.svg",
+   "bytes": 65735,
+   "sha256": "30505870db8712c2086d2c235165771d3d1eddf70dae09044ff39164226ccb15",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Plots/Design#7_Octet_Truss_Original_ENGINEERING_STRESS_STRAIN_YIELD.pdf",
+   "bytes": 30100,
+   "sha256": "3b0c63544fd99b1406729cc8b57674680baa09d053c592d32f8c67c22d7753c5",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Plots/Design#7_Octet_Truss_Original_ENGINEERING_STRESS_STRAIN_YIELD.png",
+   "bytes": 227621,
+   "sha256": "aebbd8395b9922d89e24c9dd33bf165dbe523d4896c851e2f4f00d55a2b21371",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Plots/Design#7_Octet_Truss_Original_ENGINEERING_STRESS_STRAIN_YIELD.svg",
+   "bytes": 90004,
+   "sha256": "ea7b2a41f6e76763dbb9818f7fa00095121118f2ed08db0037ef3a5f5b064647",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Plots/Design#7_Octet_Truss_Original_equivalent_max_stress_strain_yield.pdf",
+   "bytes": 31516,
+   "sha256": "ebfd211457f1fd5e8d513930be68e6dc25ea96acbe40dbd01b0cd76ad80ceb56",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Plots/Design#7_Octet_Truss_Original_equivalent_max_stress_strain_yield.png",
+   "bytes": 179944,
+   "sha256": "3a7ab827cf6f10ba5bb760ebd992786d471b9b5b2b0c294f1af00eedd40f1b89",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Plots/Design#7_Octet_Truss_Original_equivalent_max_stress_strain_yield.svg",
+   "bytes": 87863,
+   "sha256": "a689c5d292242106111ac8381a27a0501ab308dd8334860516ccee8b1cb68798",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Plots/Design#7_Octet_Truss_Original_force_displacement.pdf",
+   "bytes": 28768,
+   "sha256": "a720b18c1098023939cf8cc2873920b72f0a13b8b71280e48a13d0199f85d9fd",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Plots/Design#7_Octet_Truss_Original_force_displacement.png",
+   "bytes": 124660,
+   "sha256": "e77026384894b9f6b14697771ddd21f10a4a660918cff9bc8ceb0bb9a5e9f0ec",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Plots/Design#7_Octet_Truss_Original_force_displacement.svg",
+   "bytes": 61931,
+   "sha256": "8567659408648cd1fed30dc18318ebd33dd10e0eb0b6ca002ab863c6ccbdb8d0",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Plots/Design#7_Octet_Truss_Original_mesh_convergence.pdf",
+   "bytes": 19931,
+   "sha256": "15fdace092a5c323c60f75e0114ad7976b949c21d427aa38dec3cb26a5a8ea09",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Plots/Design#7_Octet_Truss_Original_mesh_convergence.png",
+   "bytes": 173004,
+   "sha256": "e54e055dcf75f64010125e8a26f1d9c5c35d4191cfafabc7c06e5207c562f6a2",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Plots/Design#7_Octet_Truss_Original_mesh_convergence.svg",
+   "bytes": 65735,
+   "sha256": "5f2be8c88ac4a50a6fc456732896cfbec977e80c3fbe0b2a425f6b243799e55e",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/engineering_stress_strain.csv",
+   "bytes": 2462,
+   "sha256": "b14fef1965892bc97af1a9581c272ad361235d25a5dc0ecfc6a724e6b9ecd9e3",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/equivalent_max_history.csv",
+   "bytes": 1320,
+   "sha256": "ac52137ced482e5e51b27005328208adf61cafe021e737ac91492faf48b631a9",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/force_displacement.csv",
+   "bytes": 2215,
+   "sha256": "6b8949c724e489ac7c417787072f94fef1a88ce3588cc6819b2858060b77d9a3",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/mesh_convergence.csv",
+   "bytes": 737,
+   "sha256": "a9f8b0e782ae35d35f5c53dfa3d7fd38e943a24d4c5197124ea1d31cc6273562",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/solver.log",
+   "bytes": 2520,
+   "sha256": "9bbca68f45f231cdbac20d71b81c7ee2fc92a74d588c61156287bcaa2630d4f0",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/pilot/geometry_probe.csv",
+   "bytes": 161,
+   "sha256": "680986a21c930c0cdf1e815ff62d78f70b4b18a690f5976a3f6c42f27c3f984d",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/pilot/mesh_metrics.csv",
+   "bytes": 88,
+   "sha256": "9bb56e988e3233a8609dc66ce23ed2acfc156236a2db364143f0c81dc5e097ce",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/pilot/raw_history_L1.csv",
+   "bytes": 1143,
+   "sha256": "def0b7c302e17da3d13c06e5fa73c6daf5f0220fd655c7b0cf6693cc5511a644",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/probe/geometry_probe.csv",
+   "bytes": 161,
+   "sha256": "680986a21c930c0cdf1e815ff62d78f70b4b18a690f5976a3f6c42f27c3f984d",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/probeaxis/geometry_probe.csv",
+   "bytes": 279,
+   "sha256": "07a0e26e823839d116cc51372e25aa691383809394b5bc0bd803372b732cad6d",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/v1/geometry_probe.csv",
+   "bytes": 161,
+   "sha256": "680986a21c930c0cdf1e815ff62d78f70b4b18a690f5976a3f6c42f27c3f984d",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/v1/mesh_metrics.csv",
+   "bytes": 158,
+   "sha256": "49dda835aa9bf4d027c6ca6525660f184f5c33895654b7bf9520468a2d8c1a1f",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/v1/raw_history_L1.csv",
+   "bytes": 6160,
+   "sha256": "8a571b2e34931ad5493c4ad354446acdcc3a34e683c272c676b360a622863e03",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/v1/raw_history_L2.csv",
+   "bytes": 6155,
+   "sha256": "a8c48635f539888d2e961e586f1d71df009154c24e219fc6130ec3877ae2b327",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/v1/raw_history_L3.csv",
+   "bytes": 6172,
+   "sha256": "f3a97be844fb627b1f20bd05ea933ca4eb67c8c4e4d2708731e322559c8a1823",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/v1/raw_history_L4.csv",
+   "bytes": 4986,
+   "sha256": "5b0b4a9caddadfac774aaaad329879a3fce724690abe81c1669022558e68c693",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/v3/geometry_probe.csv",
+   "bytes": 279,
+   "sha256": "f20f4f1b7a3da212d2f0c1c2bb436ad59602731e203b22ee821de606f9418686",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/v3/mesh_metrics.csv",
+   "bytes": 221,
+   "sha256": "76e08c8d12ee2591c46e136e695252c102d034612f904cef32a9e06880c292bd",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/v3/raw_history_L1.csv",
+   "bytes": 6172,
+   "sha256": "f3a97be844fb627b1f20bd05ea933ca4eb67c8c4e4d2708731e322559c8a1823",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/v3/raw_history_L2.csv",
+   "bytes": 4986,
+   "sha256": "5b0b4a9caddadfac774aaaad329879a3fce724690abe81c1669022558e68c693",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/v3/raw_history_L3.csv",
+   "bytes": 4932,
+   "sha256": "a80e099e3d32388ab7d678c7c7352d3de5d54f0281984fa63994712386fc3489",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/v3/raw_history_L4.csv",
+   "bytes": 4896,
+   "sha256": "33146986795823c876f781af0ddd55196178c2ca77c4ab5be85ab5474ac61fb3",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Raw_Data/v3/raw_history_L5.csv",
+   "bytes": 4890,
+   "sha256": "6ae303fdf75c0650f57ccc535299135e4d3a1af8d1a13433d7e1da2cede81d69",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Reports/case_results_v1.json",
+   "bytes": 2156,
+   "sha256": "c70da3c668a9fb6babec3223c8d931d057a840fc4da06ecdcde5522d0cf4190e",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Reports/Design#7_Octet_Truss_Original_report.md",
+   "bytes": 2861,
+   "sha256": "1c0d789b6796ffa36a1322e87bc7580aec12cf22ee932c4227ef6872285499eb",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/03_ansys_geometry.png",
+   "bytes": 191053,
+   "sha256": "375903e52f47e7716489ec799c9b1905129fcfa465e35e58b751c9fc07ed7a37",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/04_tough2000_assignment.png",
+   "bytes": 240496,
+   "sha256": "4cce84f09a6bc3e05672131fce257bf69a07c478757a9737277cf470e0bda8b2",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/05_mesh.png",
+   "bytes": 318198,
+   "sha256": "8e050fc706f741da64f7ad52bfb2e1be527c03a216bccc25b2d1a74b83d4b36b",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/05_mesh_L1_size0.25.png",
+   "bytes": 187669,
+   "sha256": "9554c718492361814628fdd6d6c11a2cfb30c2ed6eaa2fc02162476984e4cf25",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/05_mesh_L1_size0.35.png",
+   "bytes": 165156,
+   "sha256": "3d2b80f8ac15c0303c2407a4f5273b1acc7a732293b3ee6e324eb9ff26d9eacb",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/05_mesh_L1_size0.5.png",
+   "bytes": 157882,
+   "sha256": "fd4e565aa3645ea5b477b2536425b5d2d75f4b352668023bf4dc6c93f533ea97",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/05_mesh_L2_size0.18.png",
+   "bytes": 219766,
+   "sha256": "6e1dc954c74ab4270c608b3f9abc8c09b3be80d1873eb51c42a6c9b2a94b7e2f",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/05_mesh_L2_size0.35.png",
+   "bytes": 165156,
+   "sha256": "3d2b80f8ac15c0303c2407a4f5273b1acc7a732293b3ee6e324eb9ff26d9eacb",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/05_mesh_L3_size0.13.png",
+   "bytes": 258486,
+   "sha256": "e165cc0ec53123cbad3bea0641e27e135ab6b138e046eb201d85cb6c82acacde",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/05_mesh_L3_size0.25.png",
+   "bytes": 187669,
+   "sha256": "9554c718492361814628fdd6d6c11a2cfb30c2ed6eaa2fc02162476984e4cf25",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/05_mesh_L4_size0.1.png",
+   "bytes": 290693,
+   "sha256": "d0c35f14ac3f700f3c34c74cc02c93d0adddf46e27795730d08a371e6dd7be21",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/05_mesh_L4_size0.18.png",
+   "bytes": 219766,
+   "sha256": "6e1dc954c74ab4270c608b3f9abc8c09b3be80d1873eb51c42a6c9b2a94b7e2f",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/05_mesh_L5_size0.08.png",
+   "bytes": 318198,
+   "sha256": "8e050fc706f741da64f7ad52bfb2e1be527c03a216bccc25b2d1a74b83d4b36b",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/06_fixed_support_and_loading.png",
+   "bytes": 207127,
+   "sha256": "2b968af05139ffc3d2e4f775a8a3b433047c8d1fee1adfc0cee044626883cafc",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/07_total_deformation.png",
+   "bytes": 343879,
+   "sha256": "5d597341187a98e274b7e3d12b9e3cf3fc47e2dc1f74269a52b81e4e8255944a",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/08_directional_deformation_z.png",
+   "bytes": 351112,
+   "sha256": "5ecd259381e95cb06525d1dd84a530ad0c6a74c6f1fabfbabc1d3152c529692d",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/09_equivalent_stress_von_mises.png",
+   "bytes": 298840,
+   "sha256": "f38f4cfce75192fb72084723311dda0298072c2a1369969322d378608e29ec96",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/10b_equivalent_plastic_strain.png",
+   "bytes": 298317,
+   "sha256": "e67ab873bdb1a6e164a0aab605131c55e557b0fb68e9308fc9e27bc4254f8f0c",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/10_equivalent_total_strain.png",
+   "bytes": 297403,
+   "sha256": "4552a7adb3fd2650b3e7ed295bde377fe28e913835009b42195a46fd8a16d284",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#7_Octet_Truss_Original/Screenshots/11_mechanical_stress_strain_chart.png",
+   "bytes": 193603,
+   "sha256": "3e74cecd338c24e37901c4a5a047459fc6f48bb5c862c90f6a8606ef2db19190",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#8_Octet_Truss_Topo_Optimized/Raw_Data/probe/geometry_probe.csv",
+   "bytes": 180,
+   "sha256": "861c6e441a277c0c8854a68e4402cd027ef72ac9f51d7409170802ecd1651efb",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#8_Octet_Truss_Topo_Optimized/Raw_Data/probeaxis/geometry_probe.csv",
+   "bytes": 310,
+   "sha256": "c1b99441f54bdebb4533a8fd45d9c784d45267c45490a56f608f004e763848ca",
+   "nonzero": true
+  },
+  {
+   "path": "Cases/Design#8_Octet_Truss_Topo_Optimized/Reports/Design#8_Octet_Truss_Topo_Optimized_report.md",
+   "bytes": 1087,
+   "sha256": "7ee0cc198460854aeef2769919b46c49f4f6b123f67432539e8c8b6569c5e22f",
+   "nonzero": true
+  },
+  {
+   "path": "Comparisons/COMPARISON_8_CASES_stress_strain.pdf",
+   "bytes": 30208,
+   "sha256": "e8c65ae6310500e71c4c0bc394721cdc49dc00f5080a337615986f4d8c1ccaf7",
+   "nonzero": true
+  },
+  {
+   "path": "Comparisons/COMPARISON_8_CASES_stress_strain.png",
+   "bytes": 178155,
+   "sha256": "d71c623a08fa1620c0a8c5675d920eb3764e12cc66b8e08f9b8fe946931995b8",
+   "nonzero": true
+  },
+  {
+   "path": "Comparisons/COMPARISON_8_CASES_stress_strain.svg",
+   "bytes": 77138,
+   "sha256": "f1594b2ce5f99b7d87c63f6b072d19d3fb9d36589838fc7b4ec77f40da5a3e33",
+   "nonzero": true
+  },
+  {
+   "path": "Comparisons/COMPARISON_8_CASES_yield_to_relative_density.pdf",
+   "bytes": 19649,
+   "sha256": "c491ed17617118591d764ec3bcfcc341d43943858a8cfa178decd07c17df4f5e",
+   "nonzero": true
+  },
+  {
+   "path": "Comparisons/COMPARISON_8_CASES_yield_to_relative_density.png",
+   "bytes": 98171,
+   "sha256": "9aa730af6b9fb548d6a7fe1fba83092f200fbdc8928492f60ad2d9e704aa9e36",
+   "nonzero": true
+  },
+  {
+   "path": "Comparisons/COMPARISON_8_CASES_yield_to_relative_density.svg",
+   "bytes": 50532,
+   "sha256": "2353a425af7c0128231485a6828ba5ad5d6cd3780de80e2193cebc098aaf5c66",
+   "nonzero": true
+  },
+  {
+   "path": "Comparisons/PAIR_BCCZ_report.md",
+   "bytes": 182,
+   "sha256": "cf74879185577eb70fd37e572e1d67857fa8665d84d3c99f1269c748dcd1116c",
+   "nonzero": true
+  },
+  {
+   "path": "Comparisons/PAIR_Cube_report.md",
+   "bytes": 848,
+   "sha256": "9c212574004004e30bb1632b304f2e14d8fb1f22aab1b5baaf0dafe0f895979f",
+   "nonzero": true
+  },
+  {
+   "path": "Comparisons/PAIR_Cube_vs_Topo_stress_strain.pdf",
+   "bytes": 21505,
+   "sha256": "9d470d8fb9a4d171743556394cee453537cb01232d8cc412f186e823ab5aee44",
+   "nonzero": true
+  },
+  {
+   "path": "Comparisons/PAIR_Cube_vs_Topo_stress_strain.png",
+   "bytes": 124202,
+   "sha256": "9622ca9d4c194fe4273faf7000fceaa8dd1250868f7562f277da4986075d6a13",
+   "nonzero": true
+  },
+  {
+   "path": "Comparisons/PAIR_Cube_vs_Topo_stress_strain.svg",
+   "bytes": 50086,
+   "sha256": "8f35797dde74739ebf6afd5d751e6413fcf4d7046c2fd62dfde19843e23b2ee8",
+   "nonzero": true
+  },
+  {
+   "path": "Comparisons/PAIR_Fluorite_Truss_report.md",
+   "bytes": 224,
+   "sha256": "91eae4a1a0e330a2a537299b81da058f1d79ecf1cfa46e7401fd3d4e4d0e24a7",
+   "nonzero": true
+  },
+  {
+   "path": "Comparisons/PAIR_Octet_Truss_report.md",
+   "bytes": 210,
+   "sha256": "8650cc1b9cf55cc45019004e85bd18fc47440a9b89023def7b2fc6db36e8b5aa",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/batch1.done",
+   "bytes": 5,
+   "sha256": "d117fa006ba9208500b2930ce69cbde436c647afa917cb7396a9bc9111a46dd2",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/batch2.done",
+   "bytes": 5,
+   "sha256": "d117fa006ba9208500b2930ce69cbde436c647afa917cb7396a9bc9111a46dd2",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/batch4.done",
+   "bytes": 5,
+   "sha256": "d117fa006ba9208500b2930ce69cbde436c647afa917cb7396a9bc9111a46dd2",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#1_BCCZ_Original_pilot2_mech.log",
+   "bytes": 1529,
+   "sha256": "46beae58b471ff5476a6ee06f0312e455f4a80ea85ef5dd08e2ae64ddd6e8e41",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#1_BCCZ_Original_pilot2_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#1_BCCZ_Original_pilot2_wb.log",
+   "bytes": 541,
+   "sha256": "5b321576c49b836fb1374b585845f15c00e4e8a37be2aae68f639122da8e3cc0",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#1_BCCZ_Original_pilot_mech.log",
+   "bytes": 1190,
+   "sha256": "eae9114cbc7492aa5482fe6069d19bace25b2be6b60936a90bb6b0dd0de7c6b6",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#1_BCCZ_Original_pilot_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#1_BCCZ_Original_pilot_wb.log",
+   "bytes": 539,
+   "sha256": "46a53f12397030974ffaef3f9f4622131e7e176201842a99e96f27cd520b4f1d",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#1_BCCZ_Original_probeaxis_mech.log",
+   "bytes": 579,
+   "sha256": "3be401ee7c57700b7425cce5e36adc3498281dfe9086f66841a26fb1de71ddf4",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#1_BCCZ_Original_probeaxis_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#1_BCCZ_Original_probeaxis_wb.log",
+   "bytes": 186,
+   "sha256": "f29e926817becf6bec9c28684f99abb26e594875c67462f1674834eea54d9017",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#1_BCCZ_Original_probe_mech.log",
+   "bytes": 379,
+   "sha256": "93ac78ca13ec033588f6457a5680ee5e7d5049ef5660ca01e1da143e0dbd3570",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#1_BCCZ_Original_probe_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#1_BCCZ_Original_probe_wb.log",
+   "bytes": 186,
+   "sha256": "f29e926817becf6bec9c28684f99abb26e594875c67462f1674834eea54d9017",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#1_BCCZ_Original_v1_mech.log",
+   "bytes": 2087,
+   "sha256": "92499be20d0dffc52d6fc3bb82a1996ff27f85d107a30e02066aa4d7fb82f4f6",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#1_BCCZ_Original_v1_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#1_BCCZ_Original_v1_wb.log",
+   "bytes": 533,
+   "sha256": "8cc88f1d6596dfc987f0da7080a39a706f885d4d469e8d6b8ae294f220b1fe7a",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#1_BCCZ_Original_v2_mech.log",
+   "bytes": 2228,
+   "sha256": "e8f49daebd6bb7b388db61e395bea98f47ffebe9b080e173e746040eb4424bbe",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#1_BCCZ_Original_v2_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#1_BCCZ_Original_v2_wb.log",
+   "bytes": 533,
+   "sha256": "5e219b3c8f5f700c3856bdd525f67a7c10b3c9237ad8caa8c6ea586bebad51ee",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#2_BCCZ_Topo_Optimized_pilotpi2_mech.log",
+   "bytes": 832,
+   "sha256": "da1741845926778aceb9e15c68106f4dcbca1aa14cfa472be46c25a81564f85a",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#2_BCCZ_Topo_Optimized_pilotpi2_stdout.log",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "nonzero": false
+  },
+  {
+   "path": "Logs/Design#2_BCCZ_Topo_Optimized_pilotpi2_wb.log",
+   "bytes": 156,
+   "sha256": "0b9e150094fc13b64f1faf91ab5912a889874cf75754116627e88fd795d0004b",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#2_BCCZ_Topo_Optimized_pilotpi_mech.log",
+   "bytes": 965,
+   "sha256": "e4662151f6e33918a787ac62682c0dcd5370193e0460df803c40b34c65674f7c",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#2_BCCZ_Topo_Optimized_pilotpi_stdout.log",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "nonzero": false
+  },
+  {
+   "path": "Logs/Design#2_BCCZ_Topo_Optimized_pilotpi_wb.log",
+   "bytes": 156,
+   "sha256": "0b9e150094fc13b64f1faf91ab5912a889874cf75754116627e88fd795d0004b",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#2_BCCZ_Topo_Optimized_pilotsw_mech.log",
+   "bytes": 716,
+   "sha256": "e72d8079c158468c50c156e04135346d4618b8058830e2641fc8b5fb9d57c9fc",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#2_BCCZ_Topo_Optimized_pilotsw_stdout.log",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "nonzero": false
+  },
+  {
+   "path": "Logs/Design#2_BCCZ_Topo_Optimized_pilotsw_wb.log",
+   "bytes": 138,
+   "sha256": "90d44f9185d6d25a21d23f9ffb7d167b668075957f044dfbf0f6f6dc6b278949",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#2_BCCZ_Topo_Optimized_pilot_mech.log",
+   "bytes": 646,
+   "sha256": "7482667696b6c0e0dd23d3cd8c5ec08fbc4b964038da8f00cfbbcfefe55f6d03",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#2_BCCZ_Topo_Optimized_pilot_stdout.log",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "nonzero": false
+  },
+  {
+   "path": "Logs/Design#2_BCCZ_Topo_Optimized_pilot_wb.log",
+   "bytes": 156,
+   "sha256": "0b9e150094fc13b64f1faf91ab5912a889874cf75754116627e88fd795d0004b",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#2_BCCZ_Topo_Optimized_probeaxis_mech.log",
+   "bytes": 553,
+   "sha256": "0f079e0c728e35803b8f2d893e809fd48f217e3077d98a7321d1436fa54af9f4",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#2_BCCZ_Topo_Optimized_probeaxis_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#2_BCCZ_Topo_Optimized_probeaxis_wb.log",
+   "bytes": 178,
+   "sha256": "6c6413889130972e97724f9f79332174fde46521a1b58c509d6744d67a704f5c",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#2_BCCZ_Topo_Optimized_probe_mech.log",
+   "bytes": 356,
+   "sha256": "4cfbf58236ffb47f4ef343a8766c3fc0af43f8b34e3a384dc6a9fa1c08e0a8c6",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#2_BCCZ_Topo_Optimized_probe_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#2_BCCZ_Topo_Optimized_probe_wb.log",
+   "bytes": 178,
+   "sha256": "6c6413889130972e97724f9f79332174fde46521a1b58c509d6744d67a704f5c",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#3_Cube_Original_names_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#3_Cube_Original_names_wb.log",
+   "bytes": 173,
+   "sha256": "4e34a8c09b6b83ac147627666e9693dc64fbc05d6ce072a4951a47aaa501d10b",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#3_Cube_Original_pilot_mech.log",
+   "bytes": 1149,
+   "sha256": "ce38870e5b6f95d97a876644f3855821e05962495c6a3cb84acc3162d552234d",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#3_Cube_Original_pilot_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#3_Cube_Original_pilot_wb.log",
+   "bytes": 526,
+   "sha256": "6c83cf4c464a3346035fe06f5e7d97f18c61180bb0ba25615a7b1bde42e8b2c0",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#3_Cube_Original_probeaxis_mech.log",
+   "bytes": 496,
+   "sha256": "6a9021e1448b5c310a48bccab79effabae3e39bbc7f0b8aa99279d1eedadd0a5",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#3_Cube_Original_probeaxis_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#3_Cube_Original_probeaxis_wb.log",
+   "bytes": 173,
+   "sha256": "4e34a8c09b6b83ac147627666e9693dc64fbc05d6ce072a4951a47aaa501d10b",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#3_Cube_Original_probe_mech.log",
+   "bytes": 276,
+   "sha256": "4b3fccca3a154b5c1ab2c3285043cbfcd63406b3310e8ddb12ba7e81e7a9db88",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#3_Cube_Original_probe_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#3_Cube_Original_probe_wb.log",
+   "bytes": 173,
+   "sha256": "4e34a8c09b6b83ac147627666e9693dc64fbc05d6ce072a4951a47aaa501d10b",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#3_Cube_Original_v1_mech.log",
+   "bytes": 2002,
+   "sha256": "c61a44ce5df70849d6d33bfe6c2548223ad15c5e97a6f8577c43cf25b372b7e5",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#3_Cube_Original_v1_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#3_Cube_Original_v1_wb.log",
+   "bytes": 520,
+   "sha256": "c4f1aa9a4092343799be0f58f3d7895944b7deabe328738959d6519b84ee7e2c",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#4_Cube_Topo_Optimized_pilot_mech.log",
+   "bytes": 1594,
+   "sha256": "c809f7ac25c6a713162b0fbe4b9ac2799b54e7d02b777734b339ea424af42f1b",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#4_Cube_Topo_Optimized_pilot_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#4_Cube_Topo_Optimized_pilot_wb.log",
+   "bytes": 520,
+   "sha256": "4b6bd17809e342fa2919e37dcffb7491bffcc074f1aba642b99abca442da7a8d",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#4_Cube_Topo_Optimized_probeaxis_mech.log",
+   "bytes": 642,
+   "sha256": "4b49f5a1e38f77d9f32fdefa8d76d4011103cf848999df16e30e7a8e61cdecfe",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#4_Cube_Topo_Optimized_probeaxis_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#4_Cube_Topo_Optimized_probeaxis_wb.log",
+   "bytes": 155,
+   "sha256": "59e3b54f1c300b7f5a52df459119944542c4afc32af436cbfac2f0e219e4df7b",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#4_Cube_Topo_Optimized_probe_mech.log",
+   "bytes": 267,
+   "sha256": "a52f90497043aeb1ec875b1c854f607a20689c3e76515cedba2b9797722759e6",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#4_Cube_Topo_Optimized_probe_sldprt_mech.log",
+   "bytes": 436,
+   "sha256": "7af05c022ff468ca9faaefb23c3b99061100afdf21315b0d59c5b3348c65d5aa",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#4_Cube_Topo_Optimized_probe_sldprt_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#4_Cube_Topo_Optimized_probe_sldprt_wb.log",
+   "bytes": 155,
+   "sha256": "59e3b54f1c300b7f5a52df459119944542c4afc32af436cbfac2f0e219e4df7b",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#4_Cube_Topo_Optimized_probe_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#4_Cube_Topo_Optimized_probe_wb.log",
+   "bytes": 173,
+   "sha256": "6ba1d590670fb4c99ea50d3a4a43a32fafdb26c98da0afa7c7a7f99fb810edac",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#4_Cube_Topo_Optimized_v1_mech.log",
+   "bytes": 2504,
+   "sha256": "e1c5c2ef7054ed16626c74d8ddaf49b9ed40f02f5eb86eb59f5c1be145664002",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#4_Cube_Topo_Optimized_v1_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#4_Cube_Topo_Optimized_v1_wb.log",
+   "bytes": 514,
+   "sha256": "875de33f70283620e084b3a482d085782b78847757203a0651f536e41d11e634",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#5_Fluorite_Truss_Original_pilot_mech.log",
+   "bytes": 1287,
+   "sha256": "6bd3650307da8ba25037123b7f9e027cc818841a7de1ba87b883dee983af9112",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#5_Fluorite_Truss_Original_pilot_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#5_Fluorite_Truss_Original_pilot_wb.log",
+   "bytes": 561,
+   "sha256": "bb7c4997e069fef5532eeab54c397a412f86fb569e51fc4095aa81f9802dfada",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#5_Fluorite_Truss_Original_probeaxis_mech.log",
+   "bytes": 665,
+   "sha256": "562d6797fcc9b9c05eec5c86cfb715d75e0e88d899228aeaf49774b9f034c5f7",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#5_Fluorite_Truss_Original_probeaxis_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#5_Fluorite_Truss_Original_probeaxis_wb.log",
+   "bytes": 188,
+   "sha256": "88854dee67d0a9bfb87859d01a94faa5686c2fd2d53d6243fde4f8dd791f493e",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#5_Fluorite_Truss_Original_probe_mech.log",
+   "bytes": 476,
+   "sha256": "9f4a17209e8540129dd5e02778c75d3d3300d40546de39df78d6fd6ba7c89c03",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#5_Fluorite_Truss_Original_probe_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#5_Fluorite_Truss_Original_probe_wb.log",
+   "bytes": 188,
+   "sha256": "88854dee67d0a9bfb87859d01a94faa5686c2fd2d53d6243fde4f8dd791f493e",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#5_Fluorite_Truss_Original_v1_mech.log",
+   "bytes": 2200,
+   "sha256": "dc41851770c758fb3c5f15ef59e1658e751a8f8fef7f2b2219ed4d930c412e45",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#5_Fluorite_Truss_Original_v1_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#5_Fluorite_Truss_Original_v1_wb.log",
+   "bytes": 555,
+   "sha256": "87bcb9b613c613c09db7cf6364fb15341a546273611169babdebf1e60a274980",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#5_Fluorite_Truss_Original_v3_mech.log",
+   "bytes": 2075,
+   "sha256": "6f0b652c358e88c321d3f72141ae075a15dbe9ee3ddb798ae550b78f570e0028",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#5_Fluorite_Truss_Original_v3_stdout.log",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "nonzero": false
+  },
+  {
+   "path": "Logs/Design#5_Fluorite_Truss_Original_v3_wb.log",
+   "bytes": 166,
+   "sha256": "33d3f56edda4dae9136411fc96bc648c13ac20cce0512c3509ff9147f27b7c98",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#6_Fluorite_Truss_Topo_Optimized_pilot2_mech.log",
+   "bytes": 1506,
+   "sha256": "7b70886f6bfd539702278c99c35f75ce9f38a28a80e8696f79fd8a9fe9a9b003",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#6_Fluorite_Truss_Topo_Optimized_pilot2_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#6_Fluorite_Truss_Topo_Optimized_pilot2_wb.log",
+   "bytes": 569,
+   "sha256": "260394ea53e39ee919e049859d1eb3d1cf6cc1fe3808642fb8045726241ee0e3",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#6_Fluorite_Truss_Topo_Optimized_pilot_mech.log",
+   "bytes": 1264,
+   "sha256": "c7ead6f4c22c7e1794215538193c8607ac815b227f4f27a7c32c29f9569db77f",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#6_Fluorite_Truss_Topo_Optimized_pilot_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#6_Fluorite_Truss_Topo_Optimized_pilot_wb.log",
+   "bytes": 567,
+   "sha256": "4fb8e32b512cf0dac60659d15b1acc8216011b077bfda96d6956bdab7325cd23",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#6_Fluorite_Truss_Topo_Optimized_probeaxis_mech.log",
+   "bytes": 555,
+   "sha256": "2563fc882b576e704d92f5e30fbb64229af3fcb37aee9a914dabb5d80b7d4ba9",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#6_Fluorite_Truss_Topo_Optimized_probeaxis_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#6_Fluorite_Truss_Topo_Optimized_probeaxis_wb.log",
+   "bytes": 182,
+   "sha256": "efc430452eeb8049a1be92761f6f5bb6e48bec094886d43c1a8f2d5f10a938ac",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#6_Fluorite_Truss_Topo_Optimized_probe_mech.log",
+   "bytes": 356,
+   "sha256": "6d2dcf8aba3f09765b752726416e7d03bb8114afd05ea951b9e9c939a4d61f06",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#6_Fluorite_Truss_Topo_Optimized_probe_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#6_Fluorite_Truss_Topo_Optimized_probe_wb.log",
+   "bytes": 182,
+   "sha256": "efc430452eeb8049a1be92761f6f5bb6e48bec094886d43c1a8f2d5f10a938ac",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#6_Fluorite_Truss_Topo_Optimized_v4_mech.log",
+   "bytes": 755,
+   "sha256": "620442f89fcb1b9e6a1c7e5187d6ec6413c6b88f55fb2a18eda02a33c0c16a9b",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#6_Fluorite_Truss_Topo_Optimized_v4_stdout.log",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "nonzero": false
+  },
+  {
+   "path": "Logs/Design#6_Fluorite_Truss_Topo_Optimized_v4_wb.log",
+   "bytes": 160,
+   "sha256": "a6ed5ee83d69f8076d828be4acc0b330dc0c62c476d7581369da670ff5ba7cf9",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#7_Octet_Truss_Original_pilot_mech.log",
+   "bytes": 1197,
+   "sha256": "14a36213bc6122bf11e062eeee20fb4c595b4d3635352acbea53e76506fb9f9f",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#7_Octet_Truss_Original_pilot_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#7_Octet_Truss_Original_pilot_wb.log",
+   "bytes": 560,
+   "sha256": "8acdb49503a332ec58b9385714c73a954f459f6f160719642bcfb67aa0d73c21",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#7_Octet_Truss_Original_probeaxis_mech.log",
+   "bytes": 582,
+   "sha256": "3d61fad348226916c7bfbce39c89b84540ca50e950e929760cf73af97e5e5ad8",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#7_Octet_Truss_Original_probeaxis_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#7_Octet_Truss_Original_probeaxis_wb.log",
+   "bytes": 193,
+   "sha256": "6aa149d55bfb6327939aaec2a972f0363dd8ddbc19f4d0065bd9e4a0616d9f26",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#7_Octet_Truss_Original_probe_mech.log",
+   "bytes": 377,
+   "sha256": "9062437b2454f3a1a90e10ecd2dc0bcd3dcbb97fe254bb234b9cee66ebba9ed7",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#7_Octet_Truss_Original_probe_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#7_Octet_Truss_Original_probe_wb.log",
+   "bytes": 193,
+   "sha256": "6aa149d55bfb6327939aaec2a972f0363dd8ddbc19f4d0065bd9e4a0616d9f26",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#7_Octet_Truss_Original_v1_mech.log",
+   "bytes": 2044,
+   "sha256": "808d097429c55fabc313d2656ae63564ebb996a6b9d8b4083e82c6cf66059ab7",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#7_Octet_Truss_Original_v1_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#7_Octet_Truss_Original_v1_wb.log",
+   "bytes": 554,
+   "sha256": "6f49c23b6dfb0822ecf83d2e7be6a964afe56f3a9b222420c82720ce401765de",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#7_Octet_Truss_Original_v3_mech.log",
+   "bytes": 2520,
+   "sha256": "9bbca68f45f231cdbac20d71b81c7ee2fc92a74d588c61156287bcaa2630d4f0",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#7_Octet_Truss_Original_v3_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#7_Octet_Truss_Original_v3_wb.log",
+   "bytes": 554,
+   "sha256": "7f7ba2fea36c444b7834f026a347748352be812a656dab277a9b7c87bdc3e479",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#8_Octet_Truss_Topo_Optimized_probeaxis_mech.log",
+   "bytes": 639,
+   "sha256": "ee08f1a8d5c5c94961b21472f678222227c50000534000116be8777e987119a5",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#8_Octet_Truss_Topo_Optimized_probeaxis_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#8_Octet_Truss_Topo_Optimized_probeaxis_wb.log",
+   "bytes": 179,
+   "sha256": "e76c0994157e019d071d375808131978e5da192dc214b94baa987283a4ea9e2b",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#8_Octet_Truss_Topo_Optimized_probe_mech.log",
+   "bytes": 433,
+   "sha256": "e66ad64aafbe9f7a06e27591c9e19b1286e0151e11b0d25baa1ddcaae7100979",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#8_Octet_Truss_Topo_Optimized_probe_stdout.log",
+   "bytes": 7,
+   "sha256": "28d3b9e880a77975493dc7e359144c0295a4f694cfe0af4f928c22307bc5c320",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/Design#8_Octet_Truss_Topo_Optimized_probe_wb.log",
+   "bytes": 179,
+   "sha256": "e76c0994157e019d071d375808131978e5da192dc214b94baa987283a4ea9e2b",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/probeaxis.done",
+   "bytes": 5,
+   "sha256": "d117fa006ba9208500b2930ce69cbde436c647afa917cb7396a9bc9111a46dd2",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/probe_all.done",
+   "bytes": 5,
+   "sha256": "d117fa006ba9208500b2930ce69cbde436c647afa917cb7396a9bc9111a46dd2",
+   "nonzero": true
+  },
+  {
+   "path": "Logs/run_manifest.json",
+   "bytes": 1884,
+   "sha256": "eedc242d9ab122e14b54c6b8fb03bfd4025337fc63260c0a8c9d2d54c397c0d8",
+   "nonzero": true
+  },
+  {
+   "path": "Reports/results_summary_v1.json",
+   "bytes": 10288,
+   "sha256": "095b15bc9bdced0d2c64d23c579ae204849db6fe00cee6fc3b3eb09b572c6b6c",
+   "nonzero": true
+  },
+  {
+   "path": "Reports/status.md",
+   "bytes": 129,
+   "sha256": "7da979ea083be0c4e919d3b43ba92f6b0e53aa045233c65f51ef12ac2f8167d3",
+   "nonzero": true
+  },
+  {
+   "path": "Reports/_results_with_curves_v1.json",
+   "bytes": 26579,
+   "sha256": "3c228b492b0708fd7ffd34299686f01ffa29749690f7e3586d54cfac2160f4bb",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Archives/Design#1_BCCZ_Original_pilot.wbpz",
+   "bytes": 2697332,
+   "sha256": "cab9d2e669508b9473ccb796bfaf01c09f2c60a5a6a0be621f31093852b5a350",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Archives/Design#1_BCCZ_Original_pilot2.wbpz",
+   "bytes": 12960362,
+   "sha256": "61031213e4ab5e54d6f625a46fcab9ca39fa658301bcbca8c3280f42351ffda4",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Archives/Design#1_BCCZ_Original_v1.wbpz",
+   "bytes": 241775026,
+   "sha256": "36034c9c6164a7a33d998b883ca35fda2ded0d83305af5ba8005f220e5fc7db6",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Archives/Design#1_BCCZ_Original_v2.wbpz",
+   "bytes": 493478203,
+   "sha256": "e615331394ef46230362c730854d94a27ccaea6fe1e41f5d2e073f0833591f4f",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Archives/Design#3_Cube_Original_pilot.wbpz",
+   "bytes": 105199944,
+   "sha256": "ad901eab9b345431b7970c7f0843f4fe55d4b73677d648750a2a3f0e4d7b294f",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Archives/Design#3_Cube_Original_v1.wbpz",
+   "bytes": 2333081560,
+   "sha256": "SKIPPED_TOO_LARGE",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Archives/Design#4_Cube_Topo_Optimized_pilot.wbpz",
+   "bytes": 380698351,
+   "sha256": "017e45271c50438cdace8c464dbb8ff439662a5e81510171bb2891f76802a768",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Archives/Design#4_Cube_Topo_Optimized_v1.wbpz",
+   "bytes": 1661102703,
+   "sha256": "SKIPPED_TOO_LARGE",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Archives/Design#5_Fluorite_Truss_Original_pilot.wbpz",
+   "bytes": 2556062,
+   "sha256": "59b51023da2e1e6bdabe818bcb1fc6e9e5147d59c4e00de5d0a89b2e9f18e786",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Archives/Design#5_Fluorite_Truss_Original_v1.wbpz",
+   "bytes": 309115259,
+   "sha256": "e199f8a18d61a171f1ed02116d5a8515729cc24b2700ab1253490115b4c40339",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Archives/Design#6_Fluorite_Truss_Topo_Optimized_pilot.wbpz",
+   "bytes": 454410197,
+   "sha256": "92cccaa88ef9054f0140788b28ed038494922b5b8b9318c4fae61fe03188f055",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Archives/Design#6_Fluorite_Truss_Topo_Optimized_pilot2.wbpz",
+   "bytes": 387631383,
+   "sha256": "5fe93678775a43aa51d145c819c21be8609b6ede75c2b8a5c520ec16978232d5",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Archives/Design#7_Octet_Truss_Original_pilot.wbpz",
+   "bytes": 14164028,
+   "sha256": "4e8ce164531907267d5618dda513d886275ba3138e8ebdcb9cc5ee8c6777c1c9",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Archives/Design#7_Octet_Truss_Original_v1.wbpz",
+   "bytes": 325258255,
+   "sha256": "5143f5cb5d3ef8d1f35caf4a0ceb41b98c134cc8e1d782112206356ccf47c093",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Archives/Design#7_Octet_Truss_Original_v3.wbpz",
+   "bytes": 1737935764,
+   "sha256": "SKIPPED_TOO_LARGE",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Projects/Design#1_BCCZ_Original_pilot.wbpj",
+   "bytes": 51182,
+   "sha256": "8d5708d0b93ba64443282cec07927e8e886eefabc8d9a99310c3eba5a38dbb8c",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Projects/Design#1_BCCZ_Original_pilot2.wbpj",
+   "bytes": 51183,
+   "sha256": "caabd02ec6bcafa9e847b3a2aecf2ea9aa81a16eebdffc64a1ebb141a627cb54",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Projects/Design#1_BCCZ_Original_v1.wbpj",
+   "bytes": 51177,
+   "sha256": "710bdfe727fabbe180a2f6ab0b650cdd5885709f4f0e05315f657854efd18657",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Projects/Design#1_BCCZ_Original_v2.wbpj",
+   "bytes": 51178,
+   "sha256": "e4f777a67af8131e9e506fe41ee3fc1a75dd4526b41d1dccdb99645aff9d63a5",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Projects/Design#3_Cube_Original_pilot.wbpj",
+   "bytes": 51153,
+   "sha256": "ee085f5aa9f66d993e0233238bea4e98b0821689fb61774a32579ab2b2e85ba0",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Projects/Design#3_Cube_Original_v1.wbpj",
+   "bytes": 51151,
+   "sha256": "556b6a2fe323a9b0bf5fc359463f3eba68fe9362a79eef9fc905fe6eba65d91d",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Projects/Design#4_Cube_Topo_Optimized_pilot.wbpj",
+   "bytes": 51150,
+   "sha256": "425bb17ce1d2e7bad1b41ee2d681b8be1de352a421bbead5db3ef27e73fb5b9c",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Projects/Design#4_Cube_Topo_Optimized_v1.wbpj",
+   "bytes": 51145,
+   "sha256": "c4e670879d9706125f8765e51b31e3274e85c38604f52d14ccfad661cb95c5af",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Projects/Design#5_Fluorite_Truss_Original_pilot.wbpj",
+   "bytes": 51196,
+   "sha256": "83391a71d55c606bfa7ff19049eff9929de7b31f3097c1f94cbff824fb2cee89",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Projects/Design#5_Fluorite_Truss_Original_v1.wbpj",
+   "bytes": 51191,
+   "sha256": "9014fd549d4c3bdcb33d41a7d0e7d881c6b67b484c8ed2c63a7d150a957bbdf9",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Projects/Design#6_Fluorite_Truss_Topo_Optimized_pilot.wbpj",
+   "bytes": 51190,
+   "sha256": "83b604fae6ed1009717ffd1f08a8a5ff54d6535dd2b9aadc131b938010e89905",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Projects/Design#6_Fluorite_Truss_Topo_Optimized_pilot2.wbpj",
+   "bytes": 51190,
+   "sha256": "2b17db3b19d4a887e55141b7172884e814c5c8d27009aaa87e9b39b08aeba53c",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Projects/Design#7_Octet_Truss_Original_pilot.wbpj",
+   "bytes": 51203,
+   "sha256": "6e69faee9f3f483f983eac5b661d3e437adb12ae81d5523f06b5bd5e37b116fe",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Projects/Design#7_Octet_Truss_Original_v1.wbpj",
+   "bytes": 51199,
+   "sha256": "caa6a5428b7c711b124222b7f28ab0e5a13b407873a10bc832e703d85ca5dfb7",
+   "nonzero": true
+  },
+  {
+   "path": "Workbench_Projects/Design#7_Octet_Truss_Original_v3.wbpj",
+   "bytes": 51199,
+   "sha256": "8089b2aed1aa46c40f2fc64b7f95e4cd8472bad2d15e3f124706ae8b0f002c20",
+   "nonzero": true
+  }
+ ]
+}
