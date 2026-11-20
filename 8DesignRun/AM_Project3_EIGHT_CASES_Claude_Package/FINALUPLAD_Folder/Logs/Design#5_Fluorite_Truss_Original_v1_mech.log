@@ -19,3 +19,20 @@ mesh time 3.4 s
 LEVEL 3 size=0.25 nodes=8657 elements=4082
 SHOT 05_mesh_L3_size0.25.png ok=True mesh
 solve returned; status=Done
+history rows 61 last=[1.0, 64.818476194239352, 26.203279686554396, 0.15882816351950169, -0.93947148323059082, 29.020185612319416, 0.9880832503616741]
+mesh time 3.6 s
+LEVEL 4 size=0.18 nodes=20784 elements=10706
+SHOT 05_mesh_L4_size0.18.png ok=True mesh
+SHOT 05_mesh.png ok=True mesh final
+solve returned; status=Done
+history rows 61 last=[1.0, 64.818474456407628, 26.556284891954881, 0.24530744978359767, -0.94084995985031128, 28.793473651125591, 0.99151078498424139]
+SHOT 07_total_deformation.png ok=True Total Deformation
+SHOT 08_directional_deformation_z.png ok=True Directional Deformation Z
+SHOT 09_equivalent_stress_von_mises.png ok=True Equivalent Stress
+SHOT 10_equivalent_total_strain.png ok=True Equivalent Total Strain
+SHOT 10b_equivalent_plastic_strain.png ok=True Equivalent Plastic Strain
+SHOT 06_fixed_support_and_loading.png ok=True loading
+SHOT 03_ansys_geometry.png ok=True geometry
+SHOT 04_tough2000_assignment.png ok=True body details
+SHOT 11_mechanical_stress_strain_chart.png ok=True reaction chart
+DONE

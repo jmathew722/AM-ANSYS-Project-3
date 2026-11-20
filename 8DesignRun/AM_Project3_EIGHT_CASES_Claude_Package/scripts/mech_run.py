@@ -65,23 +65,38 @@ try:
     ext = [xs[3] - xs[0], xs[4] - xs[1], xs[5] - xs[2]]
     scale = Lx / ext[0] if ext[0] > 0 else 1000.0
     L("scale coord->mm = %s ; extents mm = %s" % (scale, [e * scale for e in ext]))
-    zmin = xs[2] * scale; zmax = xs[5] * scale
     tol = 0.02
-    top = []; bot = []
-    for f in allfaces:
-        try:
-            c = f.Centroid; z = c[2] * scale
-            flat = True
+    lo = [xs[k] * scale for k in range(3)]; hi = [xs[k + 3] * scale for k in range(3)]
+    dims = [hi[k] - lo[k] for k in range(3)]
+    cap = {}
+    for ax_ in range(3):
+        topf = []; botf = []; ta = 0.0; ba = 0.0
+        for f in allfaces:
             try:
-                fb = list(f.GetBoundingBox()); flat = abs(fb[5] - fb[2]) * scale < tol
-            except: pass
-            if flat and abs(z - zmax) < tol: top.append(f.Id)
-            elif flat and abs(z - zmin) < tol: bot.append(f.Id)
-        except Exception as e:
-            L("face err %s" % e)
-    L("zmin=%s zmax=%s top faces=%d bottom faces=%d of %d" % (zmin, zmax, len(top), len(bot), len(allfaces)))
+                c = f.Centroid; z = c[ax_] * scale
+                fb = list(f.GetBoundingBox())
+                if abs(fb[ax_ + 3] - fb[ax_]) * scale >= tol: continue
+                ar = f.Area * scale * scale
+                if abs(z - hi[ax_]) < tol: topf.append(f.Id); ta += ar
+                elif abs(z - lo[ax_]) < tol: botf.append(f.Id); ba += ar
+            except Exception as e:
+                L("face err %s" % e)
+        cap[ax_] = (topf, botf, ta, ba)
+        L("axis %s: top faces=%d area=%.4f | bottom faces=%d area=%.4f" % ("XYZ"[ax_], len(topf), ta, len(botf), ba))
+    forced = CFG.get('axis', 'auto')
+    if forced in ('X', 'Y', 'Z'): AX = "XYZ".index(forced)
+    else:
+        ar_ = [min(cap[k][2], cap[k][3]) for k in range(3)]
+        best_ = max(ar_)
+        AX = [k for k in (2, 1, 0) if ar_[k] >= 0.98 * best_][0]   # ties (symmetric cells) -> prefer Z, then Y, then X
+        L("axis areas (min of top/bottom) X,Y,Z = %s ; selected %s" % (ar_, "XYZ"[AX]))
+    top, bot = cap[AX][0], cap[AX][1]
+    oth = [k for k in range(3) if k != AX]
+    Lx, Ly, Lz = dims[oth[0]], dims[oth[1]], dims[AX]   # Lx,Ly = footprint dims, Lz = height along compression axis
+    zmin = lo[AX]; zmax = hi[AX]
+    L("COMPRESSION AXIS = %s (forced=%s); footprint %.4f x %.4f mm; H0=%.4f mm" % ("XYZ"[AX], forced, Lx, Ly, Lz))
     gb = None
-    W("geometry_probe.csv", [[Lx, Ly, Lz, vol, len(top), len(bot), zmin, zmax, len(bodies), len(allfaces)]], "Lx_mm,Ly_mm,Lz_mm,volume_mm3,n_top_faces,n_bottom_faces,zmin,zmax,n_bodies,n_faces")
+    W("geometry_probe.csv", [[Lx, Ly, Lz, vol, len(top), len(bot), zmin, zmax, len(bodies), len(allfaces), AX, cap[AX][2], cap[AX][3], dims[0], dims[1], dims[2]]], "Lx_mm,Ly_mm,Lz_mm,volume_mm3,n_top_faces,n_bottom_faces,zmin,zmax,n_bodies,n_faces,axis_index,top_area_mm2,bottom_area_mm2,bboxX,bboxY,bboxZ")
     if CFG.get('probe_only'):
         raise SystemExit
     def sel(ids):
@@ -93,11 +108,11 @@ try:
     mode = CFG['mode']
     if mode == 'force':
         ld = an.AddForce(); ld.DefineBy = LoadDefineBy.Components; ld.Location = sel(top)
-        ld.ZComponent.Output.DiscreteValues = [Q(-CFG['force_N'], 'N')]
-        ld.Name = "Top compressive force (-Z)"
+        getattr(ld, 'XYZ'[AX] + 'Component').Output.DiscreteValues = [Q(-CFG['force_N'], 'N')]
+        ld.Name = "Top compressive force (-%s)" % "XYZ"[AX]
     else:
-        ld = an.AddDisplacement(); ld.Location = sel(top); ld.Name = "Top displacement (-Z)"
-        ld.ZComponent.Output.DiscreteValues = [Q(-CFG['disp_mm'], 'mm')]
+        ld = an.AddDisplacement(); ld.Location = sel(top); ld.Name = "Top displacement (-%s)" % "XYZ"[AX]
+        getattr(ld, 'XYZ'[AX] + 'Component').Output.DiscreteValues = [Q(-CFG['disp_mm'], 'mm')]
     s = an.AnalysisSettings
     s.NumberOfSteps = 1; s.CurrentStepNumber = 1
     s.StepEndTime = Q(1, 'sec')
@@ -109,7 +124,7 @@ try:
     except Exception as e: L("nodal forces opt: %s" % e)
     sol = an.Solution
     fr = sol.AddForceReaction(); fr.LocationMethod = LocationDefinitionMethod.BoundaryCondition; fr.BoundaryConditionSelection = fs; fr.Name = "Reaction Z (bottom support)"
-    dz = sol.AddDirectionalDeformation(); dz.NormalOrientation = NormalOrientationType.ZAxis; dz.Name = "Directional Deformation Z"
+    dz = sol.AddDirectionalDeformation(); dz.NormalOrientation = [NormalOrientationType.XAxis, NormalOrientationType.YAxis, NormalOrientationType.ZAxis][AX]; dz.Name = "Directional Deformation (compression axis)"
     td = sol.AddTotalDeformation()
     es = sol.AddEquivalentStress()
     ee = sol.AddEquivalentTotalStrain()
@@ -167,7 +182,7 @@ try:
                     for r_ in (es, ee, dz, fr, td):
                         r_.DisplayTime = Q(t, 'sec')
                     es.EvaluateAllResults()
-                    rows.append([t, es.Maximum.Value, es.Average.Value, ee.Maximum.Value, dz.Minimum.Value, fr.ZAxis.Value, td.Maximum.Value])
+                    rows.append([t, es.Maximum.Value, es.Average.Value, ee.Maximum.Value, dz.Minimum.Value, getattr(fr, 'XYZ'[AX] + 'Axis').Value, td.Maximum.Value])
                 except Exception as e:
                     L("history point t=%s failed: %s" % (t, e))
             W("raw_history_%s.csv" % tag, rows, "Time,EqvStress_max_MPa,EqvStress_avg_MPa,EqvTotalStrain_max,DirDefZ_min_mm,ReactionZ_N,TotalDef_max_mm")

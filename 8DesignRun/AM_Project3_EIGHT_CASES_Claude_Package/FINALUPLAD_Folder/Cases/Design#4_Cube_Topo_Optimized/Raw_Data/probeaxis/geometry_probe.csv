@@ -1,0 +1,2 @@
+Lx_mm,Ly_mm,Lz_mm,volume_mm3,n_top_faces,n_bottom_faces,zmin,zmax,n_bodies,n_faces,axis_index,top_area_mm2,bottom_area_mm2,bboxX,bboxY,bboxZ
+6.00050005215,6.00000005215,6.00002519786,100.764513098,1,1,0.0,6.00002519786,1,43,1,31.5119659717,25.6582303422,6.00050005215,6.00002519786,6.00000005215

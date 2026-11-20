@@ -1,0 +1,11 @@
+bodies=1
+LengthXYZ 6.0 6.0 6.0 unit=mm
+volume 97.3522517669 mm mm mm
+material assigned: Tough 2000
+bbox raw [-1.0408347473305743e-17, -1.7347234759768071e-17, -2.7755575615628914e-17, 6.0, 6.0, 6.0] nfaces=5618
+scale coord->mm = 1.0 ; extents mm = [6.0, 6.0, 6.0]
+axis X: top faces=6 area=8.8113 | bottom faces=6 area=8.8113
+axis Y: top faces=5 area=13.3132 | bottom faces=5 area=13.3132
+axis Z: top faces=6 area=8.8114 | bottom faces=6 area=8.8114
+COMPRESSION AXIS = Y (forced=auto); footprint 6.0000 x 6.0000 mm; H0=6.0000 mm
+probe only done

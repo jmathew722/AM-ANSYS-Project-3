@@ -109,7 +109,8 @@ def chg(a, b): return abs(a - b) / abs(b) if (a is not None and b not in (None, 
 
 
 def process_case(c):
-    sd = os.path.join(F, "Cases", c["folder"], "Raw_Data", TAG)
+    tg = "v2" if os.path.isdir(os.path.join(F, "Cases", c["folder"], "Raw_Data", "v2")) and TAG == "v1" else TAG
+    sd = os.path.join(F, "Cases", c["folder"], "Raw_Data", tg)
     files = sorted(glob.glob(os.path.join(sd, "raw_history_L*.csv")))
     if not files: return None
     gp = load_csv(os.path.join(sd, "geometry_probe.csv"))[1][0]
@@ -148,11 +149,11 @@ def process_case(c):
     wcsv("equivalent_max_history.csv", ["time", "max_eqv_stress_MPa", "max_eqv_total_strain"], [[a, b, d] for a, b, d in zip(fin["t"], fin["smax"], fin["emax"])])
     wcsv("mesh_convergence.csv", ["level", "size_mm", "nodes", "elements", "E_eff_MPa", "Keff_N_per_mm", "Fmax_N", "yield_MPa", "yield_strain", "yield_force_N"],
          [[r["level"], r["size"], r["nodes"], r["elements"], r["E_eff"], r["Keff"], r["Fmax"], r["sigma_y"], r["eps_y"], r["F_y"]] for r in levels])
-    lg = os.path.join(F, "Logs", "%s_%s_mech.log" % (c["folder"], TAG))
+    lg = os.path.join(F, "Logs", "%s_%s_mech.log" % (c["folder"], tg))
     if os.path.exists(lg): shutil.copy(lg, os.path.join(rd, "solver.log"))
     s = dict(status="SOLVED_CONVERGED" if conv else "SOLVED_UNCONVERGED", Lx=Lx, Ly=Ly, Lz=Lz, vol=vol, A=A, H0=H0, RD=vol / (Lx * Ly * Lz), E_eff=fin["E_eff"], Keff=fin["Keff"],
              yield_reached=fin["y"]["reached"], sigma_y=fin["sigma_y"], eps_y=fin["eps_y"], F_y=fin["F_y"], Fmax=fin["Fmax"], max_eng_stress=float(fin["sig"].max()), first_peak=fin["y"]["first_peak"],
-             conv_E=cE, conv_y=cY, conv_K=cK, elements=fin["elements"], nlevels=len(levels), finest_size=fin["size"], method=fin["y"]["method"], tag=TAG,
+             conv_E=cE, conv_y=cY, conv_K=cK, elements=fin["elements"], nlevels=len(levels), finest_size=fin["size"], method=fin["y"]["method"], tag=tg,
              levels=[{k: r[k] for k in ("level", "size", "nodes", "elements", "E_eff", "Keff", "Fmax", "sigma_y", "eps_y", "F_y")} for r in levels],
              _curve=dict(eps=fin["eps"].tolist(), sig=fin["sig"].tolist(), smax=fin["smax"].tolist(), emax=fin["emax"].tolist()))
     json.dump({k: v for k, v in s.items() if k != "_curve"}, open(os.path.join(F, "Cases", c["folder"], "Reports", "case_results_%s.json" % TAG), "w"), indent=1, default=str)
