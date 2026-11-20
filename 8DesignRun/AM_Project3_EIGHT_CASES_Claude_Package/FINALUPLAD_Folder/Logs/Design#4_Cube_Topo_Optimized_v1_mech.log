@@ -1,0 +1,16 @@
+bodies=1
+LengthXYZ 6.00050005215 6.00002519786 6.00000005215 unit=mm
+volume 100.764513098 mm mm mm
+material assigned: Tough 2000
+bbox raw [-4.9999999873762135e-07, 0.0, 0.0, 0.0060000000521540642, 0.0060000251978635788, 0.0060000000521540642] nfaces=43
+scale coord->mm = 1000.0 ; extents mm = [6.000500052152802, 6.000025197863579, 6.000000052154064]
+axis X: top faces=2 area=3.5000 | bottom faces=2 area=3.5000
+axis Y: top faces=1 area=31.5120 | bottom faces=1 area=25.6582
+axis Z: top faces=2 area=3.5000 | bottom faces=2 area=3.5000
+axis areas (min of top/bottom) X,Y,Z = [3.5000001938900738, 25.658230342173738, 3.500000275380444] ; selected Y
+COMPRESSION AXIS = Y (forced=auto); footprint 6.0005 x 6.0000 mm; H0=6.0000 mm
+mesh time 4.7 s
+LEVEL 1 size=0.5 nodes=17807 elements=10126
+SHOT 05_mesh_L1_size0.5.png ok=True mesh
+solve returned; status=Done
+history rows 61 last=[1.0, 64.8134836436986, 45.87074939336469, 0.75930088013410568, -0.89999997615814209, 941.94907398398777, 0.90162882915770903]

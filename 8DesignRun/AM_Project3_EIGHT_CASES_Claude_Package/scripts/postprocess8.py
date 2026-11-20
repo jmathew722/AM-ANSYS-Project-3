@@ -109,7 +109,10 @@ def chg(a, b): return abs(a - b) / abs(b) if (a is not None and b not in (None, 
 
 
 def process_case(c):
-    tg = "v2" if os.path.isdir(os.path.join(F, "Cases", c["folder"], "Raw_Data", "v2")) and TAG == "v1" else TAG
+    tg = TAG
+    if TAG == "v1":
+        for cand in ("v3", "v2"):
+            if glob.glob(os.path.join(F, "Cases", c["folder"], "Raw_Data", cand, "raw_history_L*.csv")) and os.path.exists(os.path.join(F, "Cases", c["folder"], "Raw_Data", cand, "mesh_metrics.csv")): tg = cand; break
     sd = os.path.join(F, "Cases", c["folder"], "Raw_Data", tg)
     files = sorted(glob.glob(os.path.join(sd, "raw_history_L*.csv")))
     if not files: return None
