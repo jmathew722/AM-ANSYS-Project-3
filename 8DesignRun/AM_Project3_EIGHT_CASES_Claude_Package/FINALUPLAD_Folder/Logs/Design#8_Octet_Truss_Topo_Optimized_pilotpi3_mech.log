@@ -15,3 +15,4 @@ LEVEL 1 size=0.9 nodes=2071036 elements=1389933
 SHOT 05_mesh_L1_size0.9.png ok=True mesh
 SHOT 05_mesh.png ok=True mesh final
 solve returned; status=RestartRequired
+history rows 21 last=[1.0, 0.0, 0.0, 0.0, -0.53099983930587769, 0.0, 0.53355017345853395]
