@@ -1,0 +1,4 @@
+level,element_size_mm,nodes,elements,solution_status
+1,0.6,60566,33906,RestartRequired
+2,0.45,60566,33906,RestartRequired
+3,0.35,61461,34492,RestartRequired

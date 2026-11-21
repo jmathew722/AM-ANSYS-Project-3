@@ -1,0 +1,27 @@
+bodies=1
+LengthXYZ 6.00000000032 6.00000009339 6.00000000021 unit=mm
+volume 91.4844645856 mm mm mm
+material assigned: Tough 2000
+bbox raw [-3.203136089702241e-10, -9.3386908872616914e-08, -2.123253795005553e-10, 6.0, 6.0, 6.0] nfaces=93160
+scale coord->mm = 1.0 ; extents mm = [6.0000000003203136, 6.000000093386909, 6.000000000212325]
+axis X: top faces=368 area=9.6229 | bottom faces=368 area=9.6229
+axis Y: top faces=540 area=24.3681 | bottom faces=540 area=24.3681
+axis Z: top faces=364 area=9.6233 | bottom faces=364 area=9.6233
+axis areas (min of top/bottom) X,Y,Z = [9.622937801410444, 24.3680663832929, 9.623266117181629] ; selected Y
+COMPRESSION AXIS = Y (forced=auto); footprint 6.0000 x 6.0000 mm; H0=6.0000 mm
+mesh time 152.9 s
+LEVEL 1 size=0.6 nodes=501039 elements=399767
+SHOT 05_mesh_L1_size0.6.png ok=True mesh
+SHOT 05_mesh.png ok=True mesh final
+solve returned; status=SolveRequired
+history rows 21 last=[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+SHOT 07_total_deformation.png ok=True Total Deformation
+SHOT 08_directional_deformation_z.png ok=True Directional Deformation (compression axis)
+SHOT 09_equivalent_stress_von_mises.png ok=True Equivalent Stress
+SHOT 10_equivalent_total_strain.png ok=True Equivalent Total Strain
+SHOT 10b_equivalent_plastic_strain.png ok=True Equivalent Plastic Strain
+SHOT 06_fixed_support_and_loading.png ok=True loading
+SHOT 03_ansys_geometry.png ok=True geometry
+SHOT 04_tough2000_assignment.png ok=True body details
+SHOT 11_mechanical_stress_strain_chart.png ok=True reaction chart
+DONE

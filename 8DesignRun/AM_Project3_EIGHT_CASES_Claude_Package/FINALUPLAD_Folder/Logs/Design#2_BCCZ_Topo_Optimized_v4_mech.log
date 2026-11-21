@@ -14,3 +14,7 @@ mesh time 76.5 s
 LEVEL 1 size=1.5 nodes=476623 elements=322676
 SHOT 05_mesh_L1_size1.5.png ok=True mesh
 solve returned; status=Done
+history rows 61 last=[1.0, 64.818442512366815, 43.829573673401441, 1.1398065785566966, -1.0652154684066772, 234.94912160627854, 1.3387037347038193]
+mesh time 376.4 s
+LEVEL 2 size=1.0 nodes=476387 elements=322509
+SHOT 05_mesh_L2_size1.0.png ok=True mesh

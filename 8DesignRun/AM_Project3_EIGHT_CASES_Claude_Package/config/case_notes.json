@@ -1,0 +1,5 @@
+{
+ "BCCZ_Topo_Optimized": {"status": "IN PROGRESS (no validated result yet)", "note": "Patch-independent mesh run (tag v4) still solving; default mesher hangs on this geometry."},
+ "Octet_Truss_Topo_Optimized": {"status": "IN PROGRESS (no validated result yet)", "note": "93k-face geometry; patch-independent mesh runs (pilotpi3, v5) in progress."},
+ "Fluorite_Truss_Topo_Optimized": {"status": "PARTIAL - mesh sizing not controlling (v4)", "note": "Interim v4 mesh sizes 0.6/0.45/0.35 mm gave ~34k elements each, so convergence is not demonstrated; v5 patch-independent rerun in progress."}
+}
