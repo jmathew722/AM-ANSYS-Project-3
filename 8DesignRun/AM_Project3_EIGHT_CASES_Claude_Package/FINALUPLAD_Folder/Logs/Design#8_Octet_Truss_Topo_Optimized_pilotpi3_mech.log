@@ -14,3 +14,4 @@ mesh time 4010.5 s
 LEVEL 1 size=0.9 nodes=2071036 elements=1389933
 SHOT 05_mesh_L1_size0.9.png ok=True mesh
 SHOT 05_mesh.png ok=True mesh final
+solve returned; status=RestartRequired

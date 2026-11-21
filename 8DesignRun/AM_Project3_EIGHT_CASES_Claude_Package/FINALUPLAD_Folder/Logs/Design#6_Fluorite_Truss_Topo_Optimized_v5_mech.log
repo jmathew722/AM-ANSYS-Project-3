@@ -14,3 +14,4 @@ mesh time 105.9 s
 LEVEL 1 size=0.6 nodes=375725 elements=248915
 SHOT 05_mesh_L1_size0.6.png ok=True mesh
 solve returned; status=RestartRequired
+history rows 61 last=[1.0, 0.0, 0.0, 0.0, -0.75750553607940674, 0.0, 0.82213651039452862]
