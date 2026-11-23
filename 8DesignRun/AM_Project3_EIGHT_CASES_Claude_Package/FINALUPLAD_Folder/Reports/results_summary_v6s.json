@@ -1,0 +1,47 @@
+{
+ "BCCZ_Topo_Optimized": {
+  "status": "SOLVED_UNCONVERGED",
+  "Lx": 6.0,
+  "Ly": 6.0,
+  "Lz": 6.0,
+  "vol": 56.739958072,
+  "A": 36.0,
+  "H0": 6.0,
+  "RD": 0.26268499107407406,
+  "E_eff": 237.80067974936506,
+  "Keff": 1424.286499252381,
+  "yield_reached": true,
+  "sigma_y": 8.239091864133806,
+  "eps_y": 0.03664704925493723,
+  "F_y": 296.60730710881705,
+  "Fmax": 351.382664934,
+  "max_eng_stress": 9.7606295815,
+  "first_peak": [
+   0.048999999999999995,
+   9.7606295815
+  ],
+  "truncated_at_time": null,
+  "conv_E": null,
+  "conv_y": null,
+  "conv_K": null,
+  "elements": 322601,
+  "nlevels": 1,
+  "finest_size": 1.5,
+  "method": "0.2% strain offset on initial effective slope (secant of first 2 increments)",
+  "tag": "v6s",
+  "levels": [
+   {
+    "level": 1,
+    "size": 1.5,
+    "nodes": 476518,
+    "elements": 322601,
+    "E_eff": 237.80067974936506,
+    "Keff": 1424.286499252381,
+    "Fmax": 351.382664934,
+    "sigma_y": 8.239091864133806,
+    "eps_y": 0.03664704925493723,
+    "F_y": 296.60730710881705
+   }
+  ]
+ }
+}

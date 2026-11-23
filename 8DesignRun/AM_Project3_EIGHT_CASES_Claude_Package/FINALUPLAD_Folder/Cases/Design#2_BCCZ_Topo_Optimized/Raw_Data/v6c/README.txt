@@ -1,0 +1,1 @@
+v6c = combined convergence set, unmodified copies: L1=tag v6s (1.5 mm), L2=tag v6t (0.6 mm), L3=tag v6u (1.0 mm). All: MODE=disp DISP_MM=0.42 INIT_SUB=20, PI mesher, Tough 2000. Ordered by element count.

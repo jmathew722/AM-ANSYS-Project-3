@@ -1,5 +1,14 @@
 {
- "BCCZ_Topo_Optimized": {"status": "IN PROGRESS (no validated result yet)", "note": "Patch-independent mesh run (tag v4) still solving; default mesher hangs on this geometry."},
- "Octet_Truss_Topo_Optimized": {"status": "IN PROGRESS (no validated result yet)", "note": "93k-face geometry; patch-independent mesh runs (pilotpi3, v5) in progress."},
- "Fluorite_Truss_Topo_Optimized": {"status": "PARTIAL - mesh sizing not controlling (v4)", "note": "Interim v4 mesh sizes 0.6/0.45/0.35 mm gave ~34k elements each, so convergence is not demonstrated; v5 patch-independent rerun in progress."}
+ "BCCZ_Topo_Optimized": {
+  "status": "PARTIAL",
+  "note": "Tag v6c, 3 distinct meshes (322,601 / 380,898 / 405,426 elements), Tough 2000, displacement-controlled -Y compression to 0.42 mm (7% strain), 20 increments, all solves status Done. Engineering yield (0.2% offset, F/36 mm2 full footprint) 8.235 MPa at strain 0.03664; E_eff 237.76 MPa. Change between last two levels: E_eff 0.002%, yield 0.0005%, stiffness 0.002% (<2% criterion met). Why PARTIAL: element counts differ only 26% (mesher cannot go below ~321k elements for this CAD, so no coarse level), so convergence is shown over a narrow range only; element-quality logging failed; no .wbpz archive or reopen test; no literature validation; unit-cell CAD; curve ends at 7% strain (post-peak softening only partly traced); history increments (0.0035 strain) are coarser than the 0.2% offset, yield is linearly interpolated. Earlier tag v4 (60 incr to 0.9 mm, 322,676 elem) gave 8.29 MPa; difference 0.7%."
+ },
+ "Octet_Truss_Topo_Optimized": {
+  "status": "IN PROGRESS (no validated result yet)",
+  "note": "93k-face geometry; patch-independent mesh runs (pilotpi3, v5) in progress."
+ },
+ "Fluorite_Truss_Topo_Optimized": {
+  "status": "PARTIAL - mesh sizing not controlling (v4)",
+  "note": "Interim v4 mesh sizes 0.6/0.45/0.35 mm gave ~34k elements each, so convergence is not demonstrated; v5 patch-independent rerun in progress."
+ }
 }
