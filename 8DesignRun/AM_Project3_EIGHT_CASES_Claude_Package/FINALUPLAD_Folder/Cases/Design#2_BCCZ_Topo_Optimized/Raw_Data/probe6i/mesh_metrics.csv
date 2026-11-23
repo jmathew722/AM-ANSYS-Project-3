@@ -1,0 +1,2 @@
+level,element_size_mm,nodes,elements,solution_status
+1,0.45,588933,406456,MESH_ONLY

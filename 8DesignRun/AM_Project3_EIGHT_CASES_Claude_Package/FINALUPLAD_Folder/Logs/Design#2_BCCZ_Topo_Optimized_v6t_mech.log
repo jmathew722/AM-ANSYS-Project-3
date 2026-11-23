@@ -17,3 +17,13 @@ SHOT 05_mesh_L1_size0.6.png ok=True mesh
 SHOT 05_mesh.png ok=True mesh final
 solve returned; status=Done
 history rows 21 last=[1.0, 64.81823983431299, 44.143637364943537, 0.31118274331092832, -0.48281455039978027, 321.39632758593456, 0.64633486123522788]
+SHOT 07_total_deformation.png ok=True Total Deformation
+SHOT 08_directional_deformation_z.png ok=True Directional Deformation (compression axis)
+SHOT 09_equivalent_stress_von_mises.png ok=True Equivalent Stress
+SHOT 10_equivalent_total_strain.png ok=True Equivalent Total Strain
+SHOT 10b_equivalent_plastic_strain.png ok=True Equivalent Plastic Strain
+SHOT 06_fixed_support_and_loading.png ok=True loading
+SHOT 03_ansys_geometry.png ok=True geometry
+SHOT 04_tough2000_assignment.png ok=True body details
+SHOT 11_mechanical_stress_strain_chart.png ok=True reaction chart
+DONE
