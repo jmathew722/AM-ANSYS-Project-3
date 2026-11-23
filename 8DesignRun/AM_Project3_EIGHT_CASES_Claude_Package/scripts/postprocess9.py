@@ -117,7 +117,7 @@ def get_mesh(sd, folder, tg, nfiles):
     if os.path.exists(p): rows = [list(r[:4]) for r in load_csv(p)[1]]
     else:
         lg = os.path.join(F, "Logs", "%s_%s_mech.log" % (folder, tg))
-        for ln in open(lg, errors="ignore"):
+        for ln in (open(lg, errors="ignore") if os.path.exists(lg) else []):
             m_ = re.search(r"LEVEL (\d+) size=([\d.]+) nodes=(\d+) elements=(\d+)", ln)
             if m_: rows.append([float(x) for x in m_.groups()])
     pe = os.path.join(sd, "mesh_extra.csv")
