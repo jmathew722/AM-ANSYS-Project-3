@@ -15,6 +15,10 @@ for dp, dn, fn in os.walk(ROOT):
         try: sz = os.path.getsize(p)
         except OSError: continue
         if sz <= LIM: continue
+        if subprocess.call(["git", "-C", ROOT, "check-ignore", "-q", os.path.relpath(p, ROOT)]) == 0 and (sz > 1024**3 or f.lower().rsplit(".", 1)[-1] in ("rst", "rth", "full", "esav", "emat")):
+            note = os.path.join(PARTS, f + ".LOCAL_ONLY.txt")
+            if not os.path.exists(note): open(note, "w").write("%s is %.1f GB: too large to push to GitHub even when split; kept locally only (git-ignored). Regenerate by re-running the case or copy from the original machine.\n" % (f, sz / 1024**3))
+            continue
         rel = os.path.relpath(p, ROOT).replace("\\", "/")
         if rel in excl: continue
         base = os.path.join(PARTS, f)

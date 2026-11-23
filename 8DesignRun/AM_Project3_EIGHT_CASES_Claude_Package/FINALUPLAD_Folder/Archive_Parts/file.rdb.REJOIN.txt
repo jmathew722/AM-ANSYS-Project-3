@@ -1,0 +1,2 @@
+Original file.rdb exceeded GitHub's 100 MB limit.
+Rejoin: copy /b file.rdb.zip.part000+file.rdb.zip.part001+... file.rdb.zip (or cat parts > file.zip), then unzip.

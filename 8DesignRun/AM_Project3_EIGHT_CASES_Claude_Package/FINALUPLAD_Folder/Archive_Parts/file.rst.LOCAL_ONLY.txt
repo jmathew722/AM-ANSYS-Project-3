@@ -1,0 +1,1 @@
+file.rst is 9.9 GB: too large to push to GitHub even when split; kept locally only (git-ignored). Regenerate by re-running the case or copy from the original machine.

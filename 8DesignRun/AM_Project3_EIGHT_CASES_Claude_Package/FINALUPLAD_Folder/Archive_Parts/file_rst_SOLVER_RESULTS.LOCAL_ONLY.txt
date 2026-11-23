@@ -1,0 +1,1 @@
+Solver result files (file*.rst, ~10 GB total) from the Design 6 run are scratch outputs, not deliverables. Kept locally in Workbench_Projects/Design#6_..._v5_files/dp0/SYS/MECH/. Not pushed to GitHub.

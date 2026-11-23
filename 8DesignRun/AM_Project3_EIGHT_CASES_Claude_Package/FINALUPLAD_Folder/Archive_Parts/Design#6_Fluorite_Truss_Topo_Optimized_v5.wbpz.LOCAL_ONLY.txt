@@ -1,0 +1,3 @@
+Design#6_Fluorite_Truss_Topo_Optimized_v5.wbpz is 16 GB (a Workbench archive of the 249k-element nonlinear solve). It is already compressed, so zipping/splitting does not shrink it (175 parts of 90 MB = 16 GB), which is too large to push to GitHub.
+Kept locally only: FINALUPLAD_Folder/Workbench_Archives/Design#6_Fluorite_Truss_Topo_Optimized_v5.wbpz and Workbench_Projects/Design#6_..._v5_files.
+The lightweight Design#6_..._v5.wbpj project file, CSVs, plots and screenshots ARE in the repo.
