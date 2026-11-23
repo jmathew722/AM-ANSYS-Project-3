@@ -1,0 +1,17 @@
+unit system set to StandardNMM (mm, N, MPa)
+bodies=1
+LengthXYZ 6.0 6.0 6.0 unit=mm
+volume 97.3522517669 mm mm mm
+material assigned: Tough 2000
+bbox raw [-1.0408347473305743e-17, -1.7347234759768071e-17, -2.7755575615628914e-17, 6.0, 6.0, 6.0] nfaces=5618
+scale coord->mm = 1.0 ; extents mm = [6.0, 6.0, 6.0]
+axis X: top faces=6 area=8.8113 | bottom faces=6 area=8.8113
+axis Y: top faces=5 area=13.3132 | bottom faces=5 area=13.3132
+axis Z: top faces=6 area=8.8114 | bottom faces=6 area=8.8114
+axis areas (min of top/bottom) X,Y,Z = [8.811314833903452, 13.313202977122273, 8.811368169815978] ; selected Y
+COMPRESSION AXIS = Y (forced=auto); footprint 6.0000 x 6.0000 mm; H0=6.0000 mm
+mesh method: tetra patch-independent set
+mesh time 92.4 s
+LEVEL 1 size=0.6 nodes=375697 elements=248890
+SHOT 05_mesh_L1_size0.6.png ok=True mesh
+SHOT 05_mesh.png ok=True mesh final

@@ -45,6 +45,11 @@ def write_hist(nm, c, d, tag):
     W("raw_%s_%s.csv" % (nm, tag), rows, ",".join([str(k) for k in c]))
 
 try:
+    try:
+        ExtAPI.Application.ActiveUnitSystem = MechanicalUnitSystem.StandardNMM
+        L("unit system set to StandardNMM (mm, N, MPa)")
+    except Exception as e_:
+        L("unit system set FAIL %s" % e_)
     geo = m.Geometry
     parts = [p for p in geo.Children]
     bodies = [b for p in parts for b in p.Children]

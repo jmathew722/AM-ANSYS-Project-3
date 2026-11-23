@@ -2,3 +2,16 @@ split/excluded BCCZ_Topo_Smooth/BCCZ_Topo_Smooth_6mm_rho26.SLDPRT 240953815
 split/excluded FEM Consolidation/IGES/Octet_Topo_Cell.IGS 320383922
 split/excluded FEM Consolidation/SLDPRT 2025/BCCZ Topo Cell.SLDPRT 188910201
 split/excluded Fluorite_Topo_Smooth/Fluorite_Topo_Smooth_6mm_rho49.IGS 370038612
+warning: in the working copy of '8DesignRun/AM_Project3_EIGHT_CASES_Claude_Package/config/cases_resolved.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '8DesignRun/AM_Project3_EIGHT_CASES_Claude_Package/FINALUPLAD_Folder/Logs/finalize_runs.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '8DesignRun/AM_Project3_EIGHT_CASES_Claude_Package/scripts/bigfiles.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '8DesignRun/AM_Project3_EIGHT_CASES_Claude_Package/scripts/run_finalize.sh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '8DesignRun/AM_Project3_EIGHT_CASES_Claude_Package/scripts/sync_loop.sh', LF will be replaced by CRLF the next time Git touches it
+remote: warning: See https://gh.io/lfs for more information.        
+remote: warning: File 8DesignRun/AM_Project3_EIGHT_CASES_Claude_Package/FINALUPLAD_Folder/Archive_Parts/BCCZ Topo Cell.SLDPRT.zip.part000 is 89.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File 8DesignRun/AM_Project3_EIGHT_CASES_Claude_Package/FINALUPLAD_Folder/Archive_Parts/BCCZ Topo Cell.SLDPRT.zip.part001 is 89.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File 8DesignRun/AM_Project3_EIGHT_CASES_Claude_Package/FINALUPLAD_Folder/Archive_Parts/BCCZ_Topo_Smooth_6mm_rho26.SLDPRT.zip.part000 is 89.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File 8DesignRun/AM_Project3_EIGHT_CASES_Claude_Package/FINALUPLAD_Folder/Archive_Parts/BCCZ_Topo_Smooth_6mm_rho26.SLDPRT.zip.part001 is 89.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File 8DesignRun/AM_Project3_EIGHT_CASES_Claude_Package/FINALUPLAD_Folder/Archive_Parts/BCCZ_Topo_Smooth_6mm_rho26.SLDPRT.zip.part002 is 51.46 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+synced Sun Nov 22 20:20:28 EST 2026 edf25ab
