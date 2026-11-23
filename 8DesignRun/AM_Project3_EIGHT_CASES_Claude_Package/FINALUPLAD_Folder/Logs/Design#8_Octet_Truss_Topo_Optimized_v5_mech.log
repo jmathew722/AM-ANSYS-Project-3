@@ -1,0 +1,7 @@
+bodies=0
+LengthXYZ 0.0 0.0 0.0 unit=m
+ERR Traceback (most recent call last):
+  File "C:\Users\jmathew7\AppData\Local\Temp\WB_jmathew7_22268_2\wbnew_files\dp0\global\MECH\a7544aaf-b9e4-423d-9381-904b21390c86.py", line 57, in <module>
+    L("volume %s %s" % (vol, bodies[0].Volume.Unit))
+IndexError: index out of range: 0
+

@@ -2,7 +2,7 @@
 # Workbench journal: one case -> Static Structural, Tough 2000, Mechanical script, save + archive.
 # env: CASE_ID, TAG, MODE(force|disp), MESH_SIZES, DISP_MM, FORCE_N, INIT_SUB, MAX_SUB, PROBE_ONLY, MESH_PROPS(optional ';'-sep name=expr)
 import os, json
-R = r"C:\Users\jmathew7\Downloads\AM-ANSYS-Project-3"
+R = r"C:\Users\jmathew7\Downloads\ANSYS"
 P = R + r"\8DesignRun\AM_Project3_EIGHT_CASES_Claude_Package"
 E = os.environ
 cases = json.load(open(P + r"\config\cases_resolved.json"))
