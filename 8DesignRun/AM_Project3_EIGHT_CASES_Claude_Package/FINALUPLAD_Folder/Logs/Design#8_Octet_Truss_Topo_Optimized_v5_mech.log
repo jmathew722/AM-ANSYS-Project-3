@@ -11,3 +11,7 @@ axis Z: top faces=364 area=9.6233 | bottom faces=364 area=9.6233
 axis areas (min of top/bottom) X,Y,Z = [9.622937801410444, 24.3680663832929, 9.623266117181629] ; selected Y
 COMPRESSION AXIS = Y (forced=auto); footprint 6.0000 x 6.0000 mm; H0=6.0000 mm
 mesh method: tetra patch-independent set
+mesh time 764.1 s
+LEVEL 1 size=1.0 nodes=2017648 elements=1354671
+SHOT 05_mesh_L1_size1.0.png ok=True mesh
+SHOT 05_mesh.png ok=True mesh final
