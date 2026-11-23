@@ -1,0 +1,61 @@
+# -*- coding: utf-8 -*-
+# Workbench journal: one case -> Static Structural, Tough 2000, Mechanical script, save + archive.
+# env: CASE_ID, TAG, MODE(force|disp), MESH_SIZES, DISP_MM, FORCE_N, INIT_SUB, MAX_SUB, PROBE_ONLY, MESH_PROPS(optional ';'-sep name=expr)
+import os, json
+R = r"C:\Users\jmathew7\Downloads\AM-ANSYS-Project-3"
+P = R + r"\8DesignRun\AM_Project3_EIGHT_CASES_Claude_Package"
+E = os.environ
+cases = json.load(open(P + r"\config\cases_resolved.json"))
+case = [c for c in cases if c["case_id"] == E["CASE_ID"]][0]
+tag = E.get("TAG", "run")
+F = P + r"\FINALUPLAD_Folder"
+logdir = F + r"\Logs"
+cdir = F + r"\Cases\%s" % case["folder"]
+logfile = logdir + r"\%s_%s_mech.log" % (case["folder"], tag)
+SKIPFLAG = logdir + r"\%s_%s.skip" % (case["folder"], tag)
+if os.path.exists(SKIPFLAG):
+    open(logdir + r"\%s_%s_wb.log" % (case["folder"], tag), "a").write("SKIPPED by flag")
+    raise SystemExit
+wlog = open(logdir + r"\%s_%s_wb.log" % (case["folder"], tag), "w")
+def L(m):
+    wlog.write(str(m) + "\n"); wlog.flush()
+try:
+    if os.path.exists(logfile): os.remove(logfile)
+    mp = []
+    for kv in E.get("MESH_PROPS", "").split(";"):
+        if "=" in kv:
+            k, v = kv.split("=", 1); mp.append((k.strip(), v.strip()))
+    cfg = {'logfile': logfile, 'material': 'Tough 2000', 'simdir': cdir + r"\Raw_Data\%s" % tag, 'shotdir': cdir + r"\Screenshots",
+           'mode': E.get("MODE", "disp"), 'force_N': float(E.get("FORCE_N", "1000")), 'disp_mm': float(E.get("DISP_MM", "0.9")),
+           'init_sub': int(E.get("INIT_SUB", "60")), 'max_sub': int(E.get("MAX_SUB", "240")),
+           'mesh_sizes': [float(x) for x in E.get("MESH_SIZES", "0.5,0.35,0.25").split(",")],
+           'probe_only': E.get("PROBE_ONLY", "0") == "1", 'mesh_only': E.get("MESH_ONLY", "0") == "1", 'diag': False, 'mesh_props': mp, 'axis': E.get("AXIS", "auto"), 'mesh_method': E.get("MESH_METHOD", "")}
+    iges = E.get("GEOM") or (R + "\\" + case["iges"].replace("/", "\\"))
+    L("IGES: " + iges)
+    template = GetTemplate(TemplateName="Static Structural", Solver="ANSYS")
+    system = template.CreateSystem()
+    system.GetContainer(ComponentName="Geometry").SetFile(FilePath=iges)
+    ed = system.GetContainer(ComponentName="Engineering Data")
+    ed.ImportMaterial(Name="Tough 2000", Source=P + r"\materials\AM_Formlabs.xml")
+    L("system + material ok")
+    system.GetComponent(Name="Geometry").Refresh()
+    model = system.GetContainer(ComponentName="Model")
+    model.Edit()
+    L("mechanical open")
+    model.SendCommand(Language="Python", Command="CFG = " + repr(cfg) + "\n" + open(P + "\\scripts\\" + E.get("MECH_SCRIPT", "mech_run.py")).read())
+    L("mech script returned")
+    if not cfg['probe_only'] and not cfg['mesh_only']:
+        proj = F + r"\Workbench_Projects\%s_%s.wbpj" % (case["folder"], tag)
+        Save(FilePath=proj, Overwrite=True)
+        L("saved " + proj)
+        try:
+            arc = F + r"\Workbench_Archives\%s_%s.wbpz" % (case["folder"], tag)
+            Archive(FilePath=arc, IncludeExternalImportedFiles=True)
+            L("archived " + arc)
+        except Exception as e:
+            L("ARCHIVE ERR %s" % e)
+    model.Exit()
+except Exception as e:
+    import traceback
+    L("ERR " + traceback.format_exc())
+wlog.close()
