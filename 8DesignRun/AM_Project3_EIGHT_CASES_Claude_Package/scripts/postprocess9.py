@@ -16,7 +16,7 @@ CASE_FILTER = sys.argv[2] if len(sys.argv) > 2 else None   # e.g. BCCZ_Topo_Opti
 SUF = "_" + TAG if TAG != "v1" else ""
 WARN = ""
 OFFSET = 0.002; NFIT = 2
-DISP_MM = 0.9
+DISP_MM = float(os.environ.get("DISP_MM", "0.9"))   # must match the solve (v6s: 0.42)
 CASES = json.load(open(os.path.join(PKG, "config", "cases_resolved.json")))
 PAIRS = [("BCCZ_Original", "BCCZ_Topo_Optimized"), ("Cube_Original", "Cube_Topo_Optimized"),
          ("Fluorite_Truss_Original", "Fluorite_Truss_Topo_Optimized"), ("Octet_Truss_Original", "Octet_Truss_Topo_Optimized")]
