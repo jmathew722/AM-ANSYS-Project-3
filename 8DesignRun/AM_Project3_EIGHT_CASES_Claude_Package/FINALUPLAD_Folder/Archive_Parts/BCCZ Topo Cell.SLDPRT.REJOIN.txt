@@ -1,0 +1,2 @@
+Original BCCZ Topo Cell.SLDPRT exceeded GitHub's 100 MB limit.
+Rejoin: copy /b BCCZ Topo Cell.SLDPRT.zip.part000+BCCZ Topo Cell.SLDPRT.zip.part001+... BCCZ Topo Cell.SLDPRT.zip (or cat parts > file.zip), then unzip.

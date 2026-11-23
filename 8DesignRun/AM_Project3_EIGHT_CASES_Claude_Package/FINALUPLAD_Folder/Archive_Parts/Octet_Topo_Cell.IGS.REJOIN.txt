@@ -1,0 +1,2 @@
+Original Octet_Topo_Cell.IGS exceeded GitHub's 100 MB limit.
+Rejoin: copy /b Octet_Topo_Cell.IGS.zip.part000+Octet_Topo_Cell.IGS.zip.part001+... Octet_Topo_Cell.IGS.zip (or cat parts > file.zip), then unzip.

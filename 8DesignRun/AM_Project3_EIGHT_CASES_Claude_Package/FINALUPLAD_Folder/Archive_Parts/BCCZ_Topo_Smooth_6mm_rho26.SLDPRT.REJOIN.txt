@@ -1,0 +1,2 @@
+Original BCCZ_Topo_Smooth_6mm_rho26.SLDPRT exceeded GitHub's 100 MB limit.
+Rejoin: copy /b BCCZ_Topo_Smooth_6mm_rho26.SLDPRT.zip.part000+BCCZ_Topo_Smooth_6mm_rho26.SLDPRT.zip.part001+... BCCZ_Topo_Smooth_6mm_rho26.SLDPRT.zip (or cat parts > file.zip), then unzip.

@@ -1,7 +1,0 @@
-bodies=0
-LengthXYZ 0.0 0.0 0.0 unit=m
-ERR Traceback (most recent call last):
-  File "C:\Users\jmathew7\AppData\Local\Temp\WB_jmathew7_24312_2\wbnew_files\dp0\global\MECH\61436fd2-11c2-4cd1-a6e4-cf4bc1f08a5f.py", line 57, in <module>
-    L("volume %s %s" % (vol, bodies[0].Volume.Unit))
-IndexError: index out of range: 0
-

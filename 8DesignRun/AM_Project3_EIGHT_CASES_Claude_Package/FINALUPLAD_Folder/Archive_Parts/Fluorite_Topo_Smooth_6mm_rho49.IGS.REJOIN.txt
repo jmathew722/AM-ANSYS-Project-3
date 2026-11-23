@@ -1,0 +1,2 @@
+Original Fluorite_Topo_Smooth_6mm_rho49.IGS exceeded GitHub's 100 MB limit.
+Rejoin: copy /b Fluorite_Topo_Smooth_6mm_rho49.IGS.zip.part000+Fluorite_Topo_Smooth_6mm_rho49.IGS.zip.part001+... Fluorite_Topo_Smooth_6mm_rho49.IGS.zip (or cat parts > file.zip), then unzip.
